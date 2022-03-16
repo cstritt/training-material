@@ -357,7 +357,7 @@
   "evolution": {
     "name": "evolution",
     "title": "Evolution",
-    "summary": null,
+    "summary": "phylogenetics",
     "url": "https://training.galaxyproject.org/training-material/api/topics/evolution.json",
     "maintainers": [
       {
