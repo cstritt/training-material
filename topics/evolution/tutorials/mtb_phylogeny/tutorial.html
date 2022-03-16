@@ -657,6 +657,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -863,8 +865,25 @@ Below we will see that this has implications for the interpretation of a tree.</
     <li>
       <p>Copy the files we need into our workspace so we can see them in the Files pane.</p>
 
-      <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">treefile</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gx_get</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">  </span><span class="c1"># Use the correct ID for your differentially expressed results dataset.</span><span class="w">
+      <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">treefile</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gx_get</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
 </span></code></pre></div>      </div>
+      <p><strong>Note:</strong> the <code class="language-plaintext highlighter-rouge">1</code> in this command refers to dataset 1 in your active <span class="notranslate">Galaxy</span> history. If this dataset has a different number in your history, please change it in the command.</p>
+    </li>
+    <li>
+      <p>Install the <a href="https://cran.r-project.org/web/packages/ape/index.html">ape R package</a></p>
+      <ul>
+        <li>Click on the <strong>Terminal</strong> tab (top of the Rstudio window)
+          <ul>
+            <li>Execute the command: <code class="language-plaintext highlighter-rouge">conda install r-ape</code></li>
+          </ul>
+        </li>
+        <li>Once done, switch back to the <strong>Console</strong> tab
+          <ul>
+            <li>Type: <code class="language-plaintext highlighter-rouge">library("ape")</code></li>
+            <li>You might get a warning about R versions, we can ignore that in our case.</li>
+          </ul>
+        </li>
+      </ul>
     </li>
   </ol>
 
