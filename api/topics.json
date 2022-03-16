@@ -185,20 +185,6 @@
       }
     ]
   },
-  "phylogenetics": {
-    "name": "phylogenetics",
-    "title": "Title of the topic",
-    "summary": "Summary of the topic",
-    "url": "https://training.galaxyproject.org/training-material/api/topics/phylogenetics.json",
-    "maintainers": [
-      {
-        "name": "Christoph Stritt",
-        "joined": "2022-03",
-        "id": "cstritt",
-        "url": "https://training.galaxyproject.org/training-material/api/contributors/cstritt.json"
-      }
-    ]
-  },
   "variant-analysis": {
     "name": "variant-analysis",
     "title": "Variant Analysis",
@@ -365,6 +351,29 @@
         "joined": "2017-09",
         "id": "hexylena",
         "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json"
+      }
+    ]
+  },
+  "evolution": {
+    "name": "evolution",
+    "title": "Evolution",
+    "summary": null,
+    "url": "https://training.galaxyproject.org/training-material/api/topics/evolution.json",
+    "maintainers": [
+      {
+        "name": "Christoph Stritt",
+        "joined": "2022-03",
+        "id": "cstritt",
+        "url": "https://training.galaxyproject.org/training-material/api/contributors/cstritt.json"
+      },
+      {
+        "name": "Peter van Heusden",
+        "twitter": "pvanheus",
+        "orcid": "0000-0001-6553-5274",
+        "joined": "2017-09",
+        "bio": "Research at the South African National Bioinformatics Institute",
+        "id": "pvanheus",
+        "url": "https://training.galaxyproject.org/training-material/api/contributors/pvanheus.json"
       }
     ]
   },
