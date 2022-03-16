@@ -363,6 +363,12 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/chrisbarnettster.json"
   },
   {
+    "name": "Christoph Stritt",
+    "joined": "2022-03",
+    "id": "cstritt",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/cstritt.json"
+  },
+  {
     "name": "Krzys Poterlowicz",
     "github": false,
     "joined": "2017-09",
@@ -392,6 +398,12 @@
     "joined": "2021-06",
     "id": "davebx",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/davebx.json"
+  },
+  {
+    "name": "Daniela Brites",
+    "joined": "2022-03",
+    "id": "dbrites",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/dbrites.json"
   },
   {
     "name": "Delphine Lariviere",
@@ -580,6 +592,12 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/gallardoalba.json"
   },
   {
+    "name": "Galo A. Goig",
+    "joined": "2022-03",
+    "id": "GaloGS",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/GaloGS.json"
+  },
+  {
     "name": "Valentine Gatwiri",
     "email": "valegjohn@gmail.com",
     "twitter": "ValentineGatwi3",
@@ -681,6 +699,13 @@
     "joined": "2020-11",
     "id": "jaidevjoshi83",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/jaidevjoshi83.json"
+  },
+  {
+    "name": "Jean-Baptiste Mihoub",
+    "email": "jean-baptiste.mihoub@mnhn.fr",
+    "joined": "2022-03",
+    "id": "jbmihoub",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/jbmihoub.json"
   },
   {
     "name": "Jennifer Hillman-Jackson",
@@ -831,6 +856,13 @@
     "joined": "2021-02",
     "id": "kxk302",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/kxk302.json"
+  },
+  {
+    "name": "Lain Pavot",
+    "email": "lain.pavot@inrae.fr",
+    "joined": "2022-02",
+    "id": "Lain-inrae",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/Lain-inrae.json"
   },
   {
     "name": "Love O'tudor",
@@ -1050,6 +1082,12 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/mritchie.json"
   },
   {
+    "name": "Marcella Sozzoni",
+    "joined": "2022-03",
+    "id": "msozzoni",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/msozzoni.json"
+  },
+  {
     "name": "Mehmet Tekman",
     "email": "mtekman89@gmail.com",
     "joined": "2018-11",
@@ -1107,6 +1145,14 @@
     "joined": "2017-09",
     "id": "nekrut",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/nekrut.json"
+  },
+  {
+    "name": "Cameron Hyde",
+    "email": "c.hyde@qcif.edu.au",
+    "orcid": "0000-0002-5913-9766",
+    "joined": "2022-02",
+    "id": "neoformit",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/neoformit.json"
   },
   {
     "name": "Nic Herndon",
@@ -1434,6 +1480,13 @@
     "url": "https://training.galaxyproject.org/training-material/api/contributors/sunyi000.json"
   },
   {
+    "name": "Sylvia Mahara",
+    "github": false,
+    "joined": "2022-03",
+    "id": "sylviamahara",
+    "url": "https://training.galaxyproject.org/training-material/api/contributors/sylviamahara.json"
+  },
+  {
     "name": "tealiie",
     "joined": "2017-09",
     "id": "tealiie",
@@ -1641,7 +1694,7 @@
     "joined": "2020-09",
     "github": false,
     "funder": true,
-    "funding_statement": "This project (`2020-1-NL01-KA203-064717`) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
+    "funding_statement": "This project ([`2020-1-NL01-KA203-064717`](https://ec.europa.eu/programmes/erasmus-plus/projects/eplus-project-details/#project/2020-1-NL01-KA203-064717)) is funded with the support of the Erasmus+ programme of the European Union. Their funding has supported a large number of tutorials within the GTN across a wide array of topics.\n![eu flag with the text: with the support of the erasmus programme of the european union](https://gallantries.github.io/assets/images/logosbeneficaireserasmusright_en.jpg)\n",
     "id": "erasmusplus",
     "url": "https://training.galaxyproject.org/training-material/api/contributors/erasmusplus.json"
   },

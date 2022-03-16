@@ -217,7 +217,7 @@
 			{
 				"id": "admin/tutorials/users-groups-quotas/slides",
 				"topic": "Galaxy Server administration",
-				"title": "User, Group and Quota managment"
+				"title": "User, Role, Group and Quota managment"
 			},
 								
                                
@@ -461,6 +461,8 @@
                                
                        
                                
+                       
+                               
 			{
 				"id": "dev/tutorials/bioblend-api/slides",
 				"topic": "Development in Galaxy",
@@ -599,6 +601,15 @@
                                
                        
                                
+			{
+				"id": "genome-annotation/tutorials/crispr-screen/slides",
+				"topic": "Genome Annotation",
+				"title": "CRISPR screen analysis"
+			},
+								
+                               
+                       
+                               
                        
                                
                        
@@ -637,13 +648,6 @@
                        
                                
                        
-               
-					
-                       
-                       
-                       
-                               
-                       
                                
                        
                                
@@ -714,6 +718,13 @@
                                
                        
                                
+                       
+                               
+                       
+               
+					
+                       
+                       
                        
                                
                        
@@ -943,6 +954,8 @@
 					
                        
                        
+                       
+                               
                        
                                
                        

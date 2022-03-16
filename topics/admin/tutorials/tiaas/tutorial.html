@@ -312,7 +312,7 @@
   "name": "Hands-on for 'Training Infrastructure as a Service (TIaaS)' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/tiaas/tutorial.html",
   "timeRequired": "PT30M",
-  "keywords": "training, jobs",
+  "keywords": "ansible, training, jobs, git-gat",
   "description": "The questions this  addresses are:\n - How to deploy EU's TIaaS\n\n\\nThe objectives are:\n - Setup TIaaS\n - Request and manage trainings\n - Join a training\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -1100,7 +1100,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 10, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 10, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1174,7 +1174,7 @@ resources, thus reducing queue times on the day of the training.</p>
 
       <div data-commit="Configure tiaas" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -215,6 +215,15 @@</span> telegraf_plugins_extra:
+</span><span class="p">@@ -217,6 +217,15 @@</span> telegraf_plugins_extra:
        - data_format = "influx"
        - interval = "15s"
     
@@ -1254,7 +1254,7 @@ to perform this process every night at midnight. You can control when this runs 
 
       <div data-commit="Add TIaaS role to the Galaxy playbook" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/<span class="notranslate">galaxy</span>.yml
 </span><span class="gi">+++ b/<span class="notranslate">galaxy</span>.yml
-</span><span class="p">@@ -34,3 +34,4 @@</span>
+</span><span class="p">@@ -35,3 +35,4 @@</span>
      - <span class="notranslate">galaxy</span>project.cvmfs
      - <span class="notranslate">galaxy</span>project.gxadmin
      - dj-wasabi.telegraf
@@ -1492,7 +1492,7 @@ to perform this process every night at midnight. You can control when this runs 
 
       <div data-commit="Add to list of deployed rules" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/group_vars/<span class="notranslate">galaxy</span>servers.yml
 </span><span class="gi">+++ b/group_vars/<span class="notranslate">galaxy</span>servers.yml
-</span><span class="p">@@ -140,6 +140,7 @@</span> <span class="notranslate">galaxy</span>_local_tools:
+</span><span class="p">@@ -142,6 +142,7 @@</span> <span class="notranslate">galaxy</span>_local_tools:
  <span class="notranslate">galaxy</span>_dynamic_job_rules:
  - my_rules.py
  - map_resources.py
@@ -1566,6 +1566,9 @@ to perform this process every night at midnight. You can control when this runs 
   <div data-test="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2.sh
 </code></pre></div>  </div>
 </blockquote>
+
+<!--SNIPPET-->
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-12">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-11...step-12#files_bucket">the previous tutorial</a>.</p></blockquote>
 
 
                 
@@ -1647,7 +1650,7 @@ to perform this process every night at midnight. You can control when this runs 
 author = "Helena Rasche and Saskia Hiltemann",
 title = "Training Infrastructure as a Service (TIaaS) (Galaxy Training Materials)",
 year = "2022",
-month = "02",
+month = "03",
 day = "10"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/tiaas/tutorial.html}",
 note = "[Online; accessed TODAY]"

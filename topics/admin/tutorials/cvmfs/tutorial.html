@@ -312,6 +312,7 @@
   "name": "Hands-on for 'Reference Data with CVMFS' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/admin/tutorials/cvmfs/tutorial.html",
   "timeRequired": "PT1H",
+  "keywords": "ansible, git-gat",
   "description": "The objectives are:\n - Have an understanding of what CVMFS is and how it works\n - Install and configure the CVMFS client on a linux machine and mount the Galaxy reference data repository\n - Configure your Galaxy to use these reference genomes and indices\n - Use an Ansible playbook for all of the above.\n\n",
   "inLanguage": {
     "@type": "Language",
@@ -757,7 +758,7 @@
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Feb 10, 2022 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Mar 10, 2022 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
             
             <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Tutorial Content is licensed under Creative Commons Attribution 4.0 International License</a>
@@ -1134,10 +1135,10 @@ disk of these machines. So I’ll save that.</p>
 
       <div data-commit="Add role to playbook" data-ref="pb" class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- a/<span class="notranslate">galaxy</span>.yml
 </span><span class="gi">+++ b/<span class="notranslate">galaxy</span>.yml
-</span><span class="p">@@ -21,3 +21,4 @@</span>
-       become: true
+</span><span class="p">@@ -22,3 +22,4 @@</span>
        become_user: "{{ <span class="notranslate">galaxy</span>_user.name }}"
      - <span class="notranslate">galaxy</span>project.nginx
+     - <span class="notranslate">galaxy</span>project.tusd
 <span class="gi">+    - <span class="notranslate">galaxy</span>project.cvmfs
 </span>   
 </code></pre></div>      </div>
@@ -1477,7 +1478,7 @@ having no options available, you can see here we’ve got the Bee genome.</p>
 </blockquote>
 
 <!--SNIPPET-->
-<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-4">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-3...step-4#files_bucket">the previous tutorial</a>.</p></blockquote>
+<blockquote class="comment">  <h3 data-toc-skip="" id="-got-lost-along-the-way"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Got lost along the way?</h3>  <p>If you missed any steps, you can compare against the <a href="https://github.com/hexylena/git-gat/tree/step-5">reference files</a>, or see what changed since <a href="https://github.com/hexylena/git-gat/compare/step-4...step-5#files_bucket">the previous tutorial</a>.</p></blockquote>
 
 <h1 id="common-production-questions">Common Production Questions</h1>
 
@@ -1625,7 +1626,7 @@ day soon at a <span class="notranslate">Galaxy</span> conference. Thank you and 
 author = "Simon Gladman and Helena Rasche",
 title = "Reference Data with CVMFS (Galaxy Training Materials)",
 year = "2022",
-month = "02",
+month = "03",
 day = "10"
 url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/cvmfs/tutorial.html}",
 note = "[Online; accessed TODAY]"

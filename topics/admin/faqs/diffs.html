@@ -244,6 +244,15 @@
   <h1>How to read a Diff</h1>
 
     
+    <div class="contributors-line" style="font-size:1rem;">Authors: 
+<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
+
+
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+
+</div>
+    <hr>
+    
 
     <div class="container">
       <div class="row">
@@ -287,26 +296,26 @@
 
 <p>Diff lets us compare these files</p>
 
-<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> diff old new
-<span class="p">5c5
-</span><span class="gd">&lt; 🍒
-</span><span class="p">---
-</span><span class="gi">&gt; 🍍
-</span></code></pre></div></div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff old new
+5c5
+&lt; 🍒
+<span class="nt">---</span>
+<span class="o">&gt;</span> 🍍
+</code></pre></div></div>
 
 <p>Here we see that ‘pears’ is only in a, and ‘ananas’ is only in b. But otherwise the files are identical.</p>
 
 <p>There are a couple different formats to diffs, one is the ‘unified diff’</p>
 
-<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">$</span> diff -U2 old new
-<span class="gd">--- old	2022-02-16 14:06:19.697132568 +0100
-</span><span class="gi">+++ new	2022-02-16 14:06:36.340962616 +0100
-</span><span class="p">@@ -3,4 +3,4 @@</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> old new
+<span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100
++++ new	2022-02-16 14:06:36.340962616 +0100
+@@ <span class="nt">-3</span>,4 +3,4 @@
  🍊
  🍋
-<span class="gd">-🍒
-</span><span class="gi">+🍍
-</span> 🥑
+-🍒
++🍍
+ 🥑
 </code></pre></div></div>
 
 <p>This is basically what you see in the training materials which gives you a lot of context about the changes:</p>
@@ -333,22 +342,22 @@
 
 <p>Removals are very easy to spot, we just have removed lines</p>
 
-<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- old	2022-02-16 14:06:19.697132568 +0100
-</span><span class="gi">+++ new	2022-02-16 14:10:14.370722802 +0100
-</span><span class="p">@@ -4,3 +4,2 @@</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100
++++ new	2022-02-16 14:10:14.370722802 +0100
+@@ <span class="nt">-4</span>,3 +4,2 @@
  🍋
  🍒
-<span class="gd">-🥑
-</span></code></pre></div></div>
+-🥑
+</code></pre></div></div>
 
 <p>And additions likewise are very easy, just add a new line, between the other lines in your file.</p>
 
-<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gd">--- old	2022-02-16 14:06:19.697132568 +0100
-</span><span class="gi">+++ new	2022-02-16 14:11:11.422135393 +0100
-</span><span class="p">@@ -1,3 +1,4 @@</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100
++++ new	2022-02-16 14:11:11.422135393 +0100
+@@ <span class="nt">-1</span>,3 +1,4 @@
  🍎
-<span class="gi">+🍍
-</span> 🍐
++🍍
+ 🍐
  🍊
 </code></pre></div></div>
 
@@ -356,10 +365,10 @@
 
 <p>Completely new files look a bit different, there the “old” file is <code class="language-plaintext highlighter-rouge">/dev/null</code>, the empty file in a Linux machine.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ diff -U2 /dev/null old
---- /dev/null	2022-02-15 11:47:16.100000270 +0100
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>diff <span class="nt">-U2</span> /dev/null old
+<span class="nt">---</span> /dev/null	2022-02-15 11:47:16.100000270 +0100
 +++ old	2022-02-16 14:06:19.697132568 +0100
-@@ -0,0 +1,6 @@
+@@ <span class="nt">-0</span>,0 +1,6 @@
 +🍎
 +🍐
 +🍊
@@ -370,9 +379,9 @@
 
 <p>And removed files are similar, except with the the new file being /dev/null</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--- old	2022-02-16 14:06:19.697132568 +0100
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span> old	2022-02-16 14:06:19.697132568 +0100
 +++ /dev/null	2022-02-15 11:47:16.100000270 +0100
-@@ -1,6 +0,0 @@
+@@ <span class="nt">-1</span>,6 +0,0 @@
 -🍎
 -🍐
 -🍊
@@ -438,7 +447,7 @@ add a button, include configuration options:
         <p>
 The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
 </p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/806ac51b8f5d4fd8fd8b5b56e0fab772d0fab242">806ac51b8f5d4fd8fd8b5b56e0fab772d0fab242</a></p>
+        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/1c069edb9fdbcc0fccfe3f75a42959358f170b40">1c069edb9fdbcc0fccfe3f75a42959358f170b40</a></p>
     </div>
 </footer>
 
