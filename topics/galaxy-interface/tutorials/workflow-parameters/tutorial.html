@@ -102,7 +102,7 @@
         </a>
         
         <a class="dropdown-item" href="/training-material/topics/galaxy-interface/faqs/" title="Check our FAQs for the Using Galaxy and Managing your Data topic">
-           <i class="fais tutorial! You have now seen how you can create Circos plots withinì¡ *Circos is a very Topic FAQs
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
         </a>
         
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
@@ -366,7 +366,7 @@
 <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a>
 
 
-<a href="https://training.galaxyproject.org/                         contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
@@ -651,6 +651,12 @@
         
     
         
+        <a class="dropdown-item" href="http://galaxy.migale.inra.fr/" title="Migale">
+            Migale
+        </a>
+        
+    
+        
         <a class="dropdown-item" href="https://nanopore.usegalaxy.eu/" title="NanoGalaxy">
             NanoGalaxy
         </a>
@@ -773,7 +779,7 @@
 <p>Workflows are a powerful feature in <span class="notranslate">Galaxy</span> that allow you to chain multiple steps of an analysis together.
 To make a <span class="notranslate">workflow</span> reusable with slightly different settings you can define and use <span class="notranslate">workflow</span> parameters.</p>
 
-<blkflow\n - Learn agenda">
+<blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
 
   <p>In this tutorial, we will cover:</p>
@@ -783,14 +789,20 @@ To make a <span class="notranslate">workflow</span> reusable with slightly diffe
   <li><a href="#add-an-integer-workflow-parameter" id="markdown-toc-add-an-integer-workflow-parameter">Add an integer <span class="notranslate">workflow</span> parameter</a></li>
   <li><a href="#create-a-text-parameter-from-multiple-parameters" id="markdown-toc-create-a-text-parameter-from-multiple-parameters">Create a text parameter from multiple parameters</a></li>
   <li><a href="#read-a-parameter-from-a-dataset" id="markdown-toc-read-a-parameter-from-a-dataset">Read a parameter from a dataset</a></li>
-yusufìod>Enter</kbd></lh1 id="add-workflow-parameters-to-a-workflow">Add <span class="notranslate">workflow</span> parameters to a <span class="notranslate">workflow</span></h1>
+</ol>
+
+</blockquote>
+
+<h1 id="add-workflow-parameters-to-a-workflow">Add <span class="notranslate">workflow</span> parameters to a <span class="notranslate">workflow</span></h1>
 
 <p>We will import a simple <span class="notranslate">workflow</span> and then demonstrate how <span class="notranslate">workflow</span> parameters
 can be added.</p>
 
-<blkflow\n - Learn how to share your workì†;kìÏ=N
-Anne Pajonìé>8lemenimport-integer-workflower to compare the two files, we have to make sure that the chromosome names follow the same format.
-As we can Import integer <span class="notranslate">workflow</span>pecting several files Click on <span class="notranslate">Workflow</span> in the top menu</li>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-import-integer-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Import integer <span class="notranslate">workflow</span></h3>
+
+  <ol>
+    <li>Click on <span class="notranslate">Workflow</span> in the top menu</li>
     <li>Click on the <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> import <span class="notranslate">workflow</span> button on the right</li>
     <li>
       <p>Enter the following URL into the ‚ÄúArchived <span class="notranslate">Workflow</span>‚Äù URL box</p>
@@ -802,18 +814,23 @@ As we can Import integer <span class="notranslate">workflow</span>pecting severa
   </ol>
 </blockquote>
 
-<t1 id="add-an-integer-workflow-parameter">Add an integer <span class="notranslate">workflow</span> parameter</h1>
+<h1 id="add-an-integer-workflow-parameter">Add an integer <span class="notranslate">workflow</span> parameter</h1>
 
 <p>This <span class="notranslate">workflow</span> takes an input dataset and outputs the first 10 lines of that input dataset.
-The number of lines that should be output can be set using    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="Number of lines</code> parameter
+The number of lines that should be output can be set using the <code class="language-plaintext highlighter-rouge">Number of lines</code> parameter
 of the select first tool.</p>
 
 <p>Instead of selecting a specific number of lines we can choose to insert a <span class="notranslate">workflow</span> parameter
 that allows the user to set this parameter when running the <span class="notranslate">workflow</span>.</p>
 
-<figure id="figure-1"ì‡µ;(devteam/column_mconnection-module.png" alt="Button for selecting connectionsteam/column_maker/Add_figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figurd></ln(s)ó°∞>2000ì1Ωhow to share your workì†;kìÏ=N
-Anne Pajonìé>8lemenupdating-the-workflower to compare the two files, we have to make sure that the chromosome names follow the same format.
-As we can Updating the <span class="notranslate">Workflow</span></cting several files using the Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents:</p>
+<figure id="figure-1"><img src="../../images/connection-module.png" alt="Button for selecting connections. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 1:</span> The new button for creating a <span class="notranslate">workflow</span> parameter connection. When you click this, it will add a new 'input' to the tool that can be connected, just like other tools in workflows.</figcaption></figure>
+
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-updating-the-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Updating the <span class="notranslate">Workflow</span></h3>
+
+  <ol>
+    <li>
+      <p>Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents:</p>
 
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>E. coli (O19:H34. Extracellular pathogenic)
 E. coli (O7:K1. Extracellular pathogenic)
@@ -834,107 +851,138 @@ E. coli UTI89 O18:K1:H7. UPEC)
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Open the <strong to something more recognizworkflow</span> editor</strong></p>
+      <p>Open the <strong><span class="notranslate">workflow</span> editor</strong></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-opening-the-workflow-editor Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Opening the <span class="notranslate">workflow</span> editor</h3>  <ol>  <li>Click on the name of the imported <span class="notranslate">workflow</span>                             topics/galaxy-interface/images/edit_workflow.png" alt="Workflow drop down menu showing Edit option" title="When you click on the name of a workflow it will open a drop down menu whose first option is Edit. Select the Edit option to edit the workflow." /></li>  <li>Select the Edit <span class="notranslate">workflow</span> to open the <span class="notranslate">workflow</span> in the <span class="notranslate">workflow</span> editor</li></ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-opening-the-workflow-editor"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Opening the <span class="notranslate">workflow</span> editor</h3>  <ol>  <li>Click on the name of the imported <span class="notranslate">workflow</span><img src="/training-material/topics/galaxy-interface/images/edit_workflow.png" alt="Workflow drop down menu showing Edit option" title="When you click on the name of a workflow it will open a drop down menu whose first option is Edit. Select the Edit option to edit the workflow." /></li>  <li>Select the Edit <span class="notranslate">workflow</span> to open the <span class="notranslate">workflow</span> in the <span class="notranslate">workflow</span> editor</li></ol></blockquote>
     </li>
     <li>Click the <strong>Select first</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool in your <span class="notranslate">workflow</span></li>
     <li>Find the <strong>Number of lines</strong> parameter in the right hand panel.</li>
     <li>
-      <p>Click on the <span class="notranslate">workflow</span> connection button <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><}(‚Äôs right pane. It will g<span class="notranslate">galaxy</span>-wf-connection</span> to convert the Number of lines parameter into a <span class="notranslate">workflow</span> parameter connection</p>
+      <p>Click on the <span class="notranslate">workflow</span> connection button <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-connection</span> to convert the Number of lines parameter into a <span class="notranslate">workflow</span> parameter connection</p>
 
       <p>You will see that a new input with the text <code class="language-plaintext highlighter-rouge">Number of lines</code> has appeared on the <strong>Select first</strong> tool in the editor.</p>
     </li>
     <li>Add a <strong>Simple inputs used for <span class="notranslate">workflow</span> logic</strong>, found under the Inputs section of your toolbox</li>
     <li>
-      <p>If you click on the Input parameter box in the editor you will see in    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="Details panel</code> that the <strong>Parameter type</strong> is set to <code class="language-plaintext highlighter-rouge">Text</code>. If you try to connect this parameter to the ‚ÄúNumber of lines‚Äù parameter you will see that the noodle turns orange and that you cannot create a connection.</p>
+      <p>If you click on the Input parameter box in the editor you will see in the <code class="language-plaintext highlighter-rouge">Details panel</code> that the <strong>Parameter type</strong> is set to <code class="language-plaintext highlighter-rouge">Text</code>. If you try to connect this parameter to the ‚ÄúNumber of lines‚Äù parameter you will see that the noodle turns orange and that you cannot create a connection.</p>
     </li>
     <li>
       <p>Click on Input parameter, and change the <strong>Parameter type</strong> to <strong>Integer</strong></p>
     </li>
     <li>
-      <p>Connect <em>‚Äúoutput‚Äù</em> from Input parameter <i class="fas fa- just by looking at it, we cannot find out what the numbers in the differto the /visuNumber of lines‚Äù</em> input of the Select first <i class="fas fa- just by looking at it, we cannot find out what the numbers in the diffe.</p>
+      <p>Connect <em>‚Äúoutput‚Äù</em> from Input parameter <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <em>‚ÄúNumber of lines‚Äù</em> input of the Select first <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</p>
     </li>
     <li>
-      <p>Save <i class="far fa-savon</span></li>
-            <li>Connect the output of theto something more recognizable, e.g.ì—Îsave</span> your <span class="notranslate">workflow</span></p>
+      <p>Save <i class="far fa-save" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-save</span> your <span class="notranslate">workflow</span></p>
     </li>
     <li>
       <p>Run your <span class="notranslate">workflow</span></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-iunning-a-workflow Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <emg<span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden">to something more recognizworkflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-running-a-workflow"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <em><span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">workflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
     </li>
-  yusufìo  <p>Notice the new input that can be changed before the <span class="notranslate">workflow</span> is run</p>
+  </ol>
+
+  <p>Notice the new input that can be changed before the <span class="notranslate">workflow</span> is run</p>
 </blockquote>
 
-<figure id="figure-2"><img src=".óÌX  <p>workflow_integer_param.gif" alt="Animation of simple integer workflow parameterteam/column_maker/Add_figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figurd></ln(s)ó°∞>2000ì1Ωtip">
-  <h3 id="tip-tip-parameter-reuse Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Parameter Reuse</h3>
+<figure id="figure-2"><img src="../../images/workflow_integer_param.gif" alt="Animation of simple integer workflow parameter. " loading="lazy" /><figcaption><span class="figcaption-prefix">Figure 2:</span> Integer <span class="notranslate">workflow</span> parameter</figcaption></figure>
+
+<blockquote class="tip">
+  <h3 id="tip-tip-parameter-reuse"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Parameter Reuse</h3>
 
   <p>You can connect a parameter to multiple steps or to multiple parameters within a step, everywhere you need to use it.</p>
 </blockquote>
-ioh1 id="create-a-text-parameter-from-multiple-parameters">Create a text parameter from multiple parameters</h1>
+
+<h1 id="create-a-text-parameter-from-multiple-parameters">Create a text parameter from multiple parameters</h1>
 
 <p>It is often necessary to create a text parameter that is flanked by additional text.
-Take for instance a regular <span class="notranslate">expression/strong that finds/../data/data-1.txt
- debuggroup summary 31.57s drawfoo</code> in a string and replaces it
-with/../data/data-1.txt
- debuggroup summary 31.57s drawfoobar</code> as in <code class="language-plaintext highlighter-rouge">s/(foo)/\1bar/</code>.
-The <span class="notranslate">Galaxy</span> tool/../data/data-1.txt
- debuggroup summary 31.57s drawRegex Find And Replace</code> can be used to tune such a regular <span class="notranslate">expression/strong. The find part of the regex (<code class="language-plaintext highlighter-rouge">s/(foo)/</code>) can be defined in    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="Find regex</code> parameter and the replacement part can be entered in    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="Replacement</code> parameter.
-If we want to make    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="foo</code> part of the regular <span class="notranslate">expression/strong configurable we can
-compose this text parameter using    Galaxy@AuBiìf)ì0a+≥bÏì0a+ìbGhyphy.org/" title="Compose text parameter value</code> tool.</p>
+Take for instance a regular <span class="notranslate">expression</span> that finds <code class="language-plaintext highlighter-rouge">foo</code> in a string and replaces it
+with <code class="language-plaintext highlighter-rouge">foobar</code> as in <code class="language-plaintext highlighter-rouge">s/(foo)/\1bar/</code>.
+The <span class="notranslate">Galaxy</span> tool <code class="language-plaintext highlighter-rouge">Regex Find And Replace</code> can be used to tune such a regular <span class="notranslate">expression</span>. The find part of the regex (<code class="language-plaintext highlighter-rouge">s/(foo)/</code>) can be defined in the <code class="language-plaintext highlighter-rouge">Find regex</code> parameter and the replacement part can be entered in the <code class="language-plaintext highlighter-rouge">Replacement</code> parameter.
+If we want to make the <code class="language-plaintext highlighter-rouge">foo</code> part of the regular <span class="notranslate">expression</span> configurable we can
+compose this text parameter using the <code class="language-plaintext highlighter-rouge">Compose text parameter value</code> tool.</p>
 
 <blockquote class="notranslate hands_on">
-  flanking regions for every ompose-a-text-parameterer to compare the two files, we have to make sure that the chromosome names follow the same format.
-As we can Compose a text parameter</h3>g several files using the scratchbook</<span class="notranslate">workflow</span></p>
+  <h3 id="hands_on-hands-on-compose-a-text-parameter"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Compose a text parameter</h3>
+  <ol>
+    <li>
+      <p>Create a new <span class="notranslate">workflow</span></p>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-workflow Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new <span class="notranslate">workflow</span></h3>  <ol>  <li>Click <strong>to something more recognizWorkflow</span></strong> on the top bar</li>  <li>Click the new <span class="notranslate">workflow</span> <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-new</span> button</li>  <li>Give it a clear and memorable name</li>  <li>Clicking <strong>Save</strong> will take you directly into the <span class="notranslate">workflow</span> editor for that <span class="notranslate">workflow</span></li>  <li>Need more help? Please see the <em>How to make a <span class="notranslate">workflow</span> subsection</em> <a href="/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html">here</a></li></ol></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-workflow"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new <span class="notranslate">workflow</span></h3>  <ol>  <li>Click <strong><span class="notranslate">Workflow</span></strong> on the top bar</li>  <li>Click the new <span class="notranslate">workflow</span> <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-new</span> button</li>  <li>Give it a clear and memorable name</li>  <li>Clicking <strong>Save</strong> will take you directly into the <span class="notranslate">workflow</span> editor for that <span class="notranslate">workflow</span></li>  <li>Need more help? Please see the <em>How to make a <span class="notranslate">workflow</span> subsection</em> <a href="/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html">here</a></li></ol></blockquote>
     </li>
     <li>Add an Inputs ‚Üí <strong>Input Dataset</strong> to the <span class="notranslate">workflow</span></li>
-    <li>Add an Inputs ‚Üí <strong>Simple inputs used for <span class="notranslate">workflow</span> logic</strong> to the <span class="notranslate">workflow</span>nd of fióaSearch for i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúParameter typircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawText on the left, your oìˇB0dyusufì,D(d  <li>Add <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <span class="notranslate">workflow</span>nd of fióaSearch forAdd two more ‚ÄúComponents‚Äù using the ‚ÄúInsert components‚Äù button in the <span class="notranslate">workflow</span> editor tool form on the right of the screen. You will need three ‚ÄúComponent‚Äù blocks in total. left, your an€ -upthe first component upload from UCSCó1û 
-Search forì—Î48UCEnter text that should be part of the computed valuircos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw( on the left, your ane alt="Avatar">Nicola Soranz  <li>In the second component upload from UCSCó1û 
-Search forì—Î48UCEnter text that should be part of the computed value‚Äù</em>: Leave empty and click ‚ÄúAdd connection to module‚Äù <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><}(‚Äôs right pane. It will g<span class="notranslate">galaxy</span>-wf-connection</span></li>
-            <li>Connect the output of the <strong>Input parameter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto this new inputalaxy interface alt="Avatar">Nicola Soranz  <li>In the third component upload from UCSCó1û 
-Search forì—Î48UCEnter text that should be part of the computed valuircos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw) on the left, your ane alt="Avatar">Nicola Soranzoìul>
-dyusufì,D(d  <li>Add the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <span class="notranslate">workflow</span>nd of fióaSearch forClick on <code class="language-plaintext highlighter-rouge">Insert Check on the left, your anol.</visuFind Regex‚Äù</em>: Click ‚ÄúAdd connection to module‚Äù <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><}(‚Äôs right pane. It will g<span class="notranslate">galaxy</span>-wf-connection</span></li>
-        <l.</visuReplacementrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw\1bar on the left, your anol.<Connect the output of the <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <em>‚ÄúFind Regex‚Äù</em> parameter of <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the diffe.</li>
-        <li>Connect the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <em>‚ÄúSelect lines from‚Äù</em> input of the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the diffe.</li>
-      le</lidyusufì,D(d  <li><strong>Save</strong> <i class="far fa-savon</span></li>
-            <li>Connect the output of theto something more recognizable, e.g.ì—Îsave</span> your <span class="notranslate">workflow</span></li>
+    <li>Add an Inputs ‚Üí <strong>Simple inputs used for <span class="notranslate">workflow</span> logic</strong> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúParameter type‚Äù</em>: <code class="language-plaintext highlighter-rouge">Text</code></li>
+      </ul>
+    </li>
+    <li>Add <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li>Add two more ‚ÄúComponents‚Äù using the ‚ÄúInsert components‚Äù button in the <span class="notranslate">workflow</span> editor tool form on the right of the screen. You will need three ‚ÄúComponent‚Äù blocks in total.</li>
+        <li>In the first component:
+          <ul>
+            <li><em>‚ÄúEnter text that should be part of the computed value‚Äù</em>: <code class="language-plaintext highlighter-rouge">(</code></li>
+          </ul>
+        </li>
+        <li>In the second component:
+          <ul>
+            <li><em>‚ÄúEnter text that should be part of the computed value‚Äù</em>: Leave empty and click ‚ÄúAdd connection to module‚Äù <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-connection</span></li>
+            <li>Connect the output of the <strong>Input parameter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to this new input</li>
+          </ul>
+        </li>
+        <li>In the third component:
+          <ul>
+            <li><em>‚ÄúEnter text that should be part of the computed value‚Äù</em>: <code class="language-plaintext highlighter-rouge">)</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Add the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li>Click on <code class="language-plaintext highlighter-rouge">Insert Check</code></li>
+        <li><em>‚ÄúFind Regex‚Äù</em>: Click ‚ÄúAdd connection to module‚Äù <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-connection</span></li>
+        <li><em>‚ÄúReplacement‚Äù</em>: <code class="language-plaintext highlighter-rouge">\1bar</code></li>
+        <li>Connect the output of the <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <em>‚ÄúFind Regex‚Äù</em> parameter of <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</li>
+        <li>Connect the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <em>‚ÄúSelect lines from‚Äù</em> input of the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>.</li>
+      </ul>
+    </li>
+    <li><strong>Save</strong> <i class="far fa-save" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-save</span> your <span class="notranslate">workflow</span></li>
   </ol>
 </blockquote>
 
-<óYou‚Äôve now built a <span class="notranslate">workflow</span> with a parameterised input! It‚Äôs time to test it out.</p>
+<p>You‚Äôve now built a <span class="notranslate">workflow</span> with a parameterised input! It‚Äôs time to test it out.</p>
 
-<blkflow\n - Learn how to share your workì†;kìÏ=N
-Anne Pajonìé>8lemenrunning-the-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Running the <span class="notranslate">workflow</span>pecting several files using the Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents/../data/data-1.txt
- debuggroup summary 31.57s drawwunder</code></p>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-running-the-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Running the <span class="notranslate">workflow</span></h3>
+
+  <ol>
+    <li>
+      <p>Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents <code class="language-plaintext highlighter-rouge">wunder</code></p>
     </li>
     <li>
-      <p>Run your <span class="notranslate">workflow</span> with ew-end-of-filóQVoView </p>
-nd of fióaSearch for
-          <p><em>‚ÄúInput parameterrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawwunder</code></p>
+      <p>Run your <span class="notranslate">workflow</span> with the following parameters</p>
 
-          <p>This is the value that will be looked for in your input dataset.</pÂ%introduction/faqs/">FA</li
+      <ul>
+        <li>
+          <p><em>‚ÄúInput parameter‚Äù</em>: <code class="language-plaintext highlighter-rouge">wunder</code></p>
+
+          <p>This is the value that will be looked for in your input dataset.</p>
+        </li>
+      </ul>
+
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-iunning-a-workflow Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <emg<span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden">to something more recognizworkflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-running-a-workflow"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <em><span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">workflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
     </li>
     <li>
-      <p>Examine the outputs_a_conm</li>
-  yusufì</blockquote>
+      <p>Examine the outputs</p>
+    </li>
+  </ol>
+</blockquote>
 
-<óYou should see two new datasets in your history. The first dataset has the data type/../data/data-1.txt
- debuggroup summary 31.57s drawto something more recognizexpression/strong.json</code> and contains the composed parameter value/../data/data-1.txt
- debuggroup summary 31.57s draw(wunder)</code>, the second dataset will contain the output of the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differstep. A click on the information <i class="fas fa-                                                                                 button will show the parameters for the tool. You will see that the <em>‚ÄúFind Regex‚Äù</em> parameter will contain the values that you entered in the <span class="notranslate">workflow</span> run form. If you look at the dataset content you will see it is/../data/data-1.txt
- debuggroup summary 31.57s drawwunderbar</code>.</p>
+<p>You should see two new datasets in your history. The first dataset has the data type <code class="language-plaintext highlighter-rouge"><span class="notranslate">expression</span>.json</code> and contains the composed parameter value <code class="language-plaintext highlighter-rouge">(wunder)</code>, the second dataset will contain the output of the <strong>Regex Find And Replace</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> step. A click on the information <i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> button will show the parameters for the tool. You will see that the <em>‚ÄúFind Regex‚Äù</em> parameter will contain the values that you entered in the <span class="notranslate">workflow</span> run form. If you look at the dataset content you will see it is <code class="language-plaintext highlighter-rouge">wunderbar</code>.</p>
 
 <h1 id="read-a-parameter-from-a-dataset">Read a parameter from a dataset</h1>
 
@@ -942,28 +990,63 @@ nd of fióaSearch for
 In this example we will construct a <span class="notranslate">workflow</span> where we calculate the sum of all values in a dataset and then divide the values in this dataset by the sum calculated in the previous step.</p>
 
 <blockquote class="notranslate hands_on">
-  flanking regions for every onstruct-workflow-with-parameters-read-fromvalsìq—BED</span></codthe two files, we have to make sure that the chromosome names follow the same format.
-As we can Construct <span class="notranslate">Workflow</span> with Parameters read from a datasetpecting several files Create a new <span class="notranslate">workflow</span></li>
+  <h3 id="hands_on-hands-on-construct-workflow-with-parameters-read-from-a-dataset"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Construct <span class="notranslate">Workflow</span> with Parameters read from a dataset</h3>
+
+  <ol>
+    <li>Create a new <span class="notranslate">workflow</span></li>
     <li>Add an <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
-    <li>Add <strong>Datamash</strong> (operations on tabular data) <i class="fas fa- just by looking at it, we cannot find out what the numbers in the differto the <span class="notranslate">workflow</span>nd of fióaSearch for i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput tabular dataset‚Äù</em>: Connect the noodle from the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to this input left, your anol.</i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Operation to perform in each group</strong>upload from UCSCó1û 
-Search forìi class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> ìared wTypircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawsum on the left, your an    <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> ctor orOn columl": "Introductory"ì—@-introducìAFrom peaks to geneì<Adpaj share-your-work">Share alt="Avatar">Nicola Soranzoìul>
-dyusufì,D(d  <li>Add <strong>Parse parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <span class="notranslate">workflow</span>nd of fióaSearch for <stronSelect type of parameter to parse‚Äù</em>: integer left, your anol.</i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput file containing parameter to parse out of‚Äù</em>: Connect the <strong>Datamash</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differoutput to this input</li>
-      le</lidyusufì,D(d  <li>Add <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <span class="notranslate">workflow</span>nd of fióaSearch forIn the first repeat upload from UCSCó1û 
-Search forìi class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúChoose the type of parameter for this field‚Äù</em>: Text Parameter</li>
-            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>‚ÄúEnter text that should be part of the computed valuircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawc1/ on the left, your ane alt="Avatar">Nicola Soranz  <li>Click Insert Repeat left, your an€ -upthe second repeat upload from UCSCó1û 
-Search forìi class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúChoose the type of parameter for this field‚Äù</em>: Integer Parameter left, your analysis hctor orEnter integer that should be part of the computed value‚Äù</em>: Click on <code class="language-plaintext highlighter-rouge">Add connection to module</code> <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><}(‚Äôs right pane. It will g<span class="notranslate">galaxy</span>-wf-connection</span></li>
-            <li><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput‚Äù</em>: Connect the output of the <strong>Parse parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the diffe</li>
-      ace alt="Avatar">Nicola Soranzoìul>
-dyusufì,D(d  <li>Add <strong>Compute an <span class="notranslate">expression/strong>on every row</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the differto the <span class="notranslate">workflow</span>nd of fióaSearch for <stronAdd <span class="notranslate">expression/strong as a new column to‚Äù</em>: click on <code class="language-plaintext highlighter-rouge">Add connection to module</code>, then connect the output of <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">n the diffe</li>
-        <l.</visuas a new column to‚Äù</em>: Select the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
-      le</lidyusufì,D(dyusufì</blockquote>
+    <li>Add <strong>Datamash</strong> (operations on tabular data) <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput tabular dataset‚Äù</em>: Connect the noodle from the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to this input</li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Operation to perform in each group</strong>
+          <ul>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúType‚Äù</em>: <code class="language-plaintext highlighter-rouge">sum</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>‚ÄúOn column‚Äù</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Add <strong>Parse parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li><em>‚ÄúSelect type of parameter to parse‚Äù</em>: integer</li>
+        <li><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput file containing parameter to parse out of‚Äù</em>: Connect the <strong>Datamash</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> output to this input</li>
+      </ul>
+    </li>
+    <li>Add <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li>In the first repeat:
+          <ul>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúChoose the type of parameter for this field‚Äù</em>: Text Parameter</li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <em>‚ÄúEnter text that should be part of the computed value‚Äù</em>: <code class="language-plaintext highlighter-rouge">c1/</code></li>
+          </ul>
+        </li>
+        <li>Click Insert Repeat</li>
+        <li>In the second repeat:
+          <ul>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>‚ÄúChoose the type of parameter for this field‚Äù</em>: Integer Parameter</li>
+            <li><em>‚ÄúEnter integer that should be part of the computed value‚Äù</em>: Click on <code class="language-plaintext highlighter-rouge">Add connection to module</code> <i class="fas fa-arrows-alt-h" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-wf-connection</span></li>
+            <li><i class="fas fa-chevron-circle-right" aria-hidden="true"></i><span class="visually-hidden">wf-input</span> <em>‚ÄúInput‚Äù</em>: Connect the output of the <strong>Parse parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Add <strong>Compute an <span class="notranslate">expression</span> on every row</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> to the <span class="notranslate">workflow</span>
+      <ul>
+        <li><em>‚ÄúAdd <span class="notranslate">expression</span> as a new column to‚Äù</em>: click on <code class="language-plaintext highlighter-rouge">Add connection to module</code>, then connect the output of <strong>Compose text parameter value</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+        <li><em>‚Äúas a new column to‚Äù</em>: Select the output of the <strong>Input dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
 
-<óWith this you‚Äôre ready to run the <span class="notranslate">workflow</span>!</p>
+<p>With this you‚Äôre ready to run the <span class="notranslate">workflow</span>!</p>
 
-<blkflow\n - Learn how to share your workì†;kìÏ=N
-Anne Pajonìé>8lemenrunning-the-workflow-1"><i class="fan be added.óaLimport-integer-workflowì·ùomport integóë>ónó€ìP˙	ìSÅów$ in the topRunning the <span class="notranslate">workflow</span>pecting several files using the Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents, and set the filetype manually to ‚Äútabular‚Äù during upload</p>
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-running-the-workflow-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Running the <span class="notranslate">workflow</span></h3>
+
+  <ol>
+    <li>
+      <p>Upload a dataset using ‚ÄúPaste/Fetch data‚Äù with the contents, and set the filetype manually to ‚Äútabular‚Äù during upload</p>
 
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>16378
 16014
@@ -978,35 +1061,201 @@ Anne Pajonìé>8lemenrunning-the-workflow-1"><i class="fan be added.óaLimport-
 </code></pre></div>      </div>
     </li>
     <li>
-      <p>Run your <span class="notranslate">workflow</span> with ew-end-of-filóQVoView </p>
-nd of fióaSearch for <stronInput dataset‚Äù</em>: the table you have just uploaded left, your </ul>
+      <p>Run your <span class="notranslate">workflow</span> with the following parameters</p>
+
+      <ul>
+        <li><em>‚ÄúInput dataset‚Äù</em>: the table you have just uploaded</li>
+      </ul>
 
       <!--SNIPPET-->
-      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-iunning-a-workflow Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <emg<span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden">to something more recognizworkflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-running-a-workflow"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Running a <span class="notranslate">workflow</span></h3>  <ul>  <li>Click on <em><span class="notranslate">Workflow</span></em> on the top menu bar of <span class="notranslate">Galaxy</span>. You will see a list of all your workflows.</li>  <li>Click on the <i class="fas fa-play" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">workflow</span>-run</span> (<em>Run <span class="notranslate">workflow</span></em>) button next to your <span class="notranslate">workflow</span></li>  <li>Configure the <span class="notranslate">workflow</span> as needed</li>  <li>Click the <strong>Run <span class="notranslate">Workflow</span></strong> button at the top-right of the screen</li>  <li>You may have to refresh your history to see the queued jobs</li></ul></blockquote>
     </li>
     <li>
-      <p>Examine the outputs_a_conm</li>
-  yusufì</blockquote>
+      <p>Examine the outputs</p>
+    </li>
+  </ol>
+</blockquote>
 
-<óThis <span class="notranslate">workflow</span> will produce a new dataset, where the last column will be the
+<p>This <span class="notranslate">workflow</span> will produce a new dataset, where the last column will be the
 result of dividing the value in the first column by the sum of all values in
 the first column.</p>
 
-<blkflow\n - Learn tip">
-  <h3 id="tip-tip-you-can-try-many-different-parameter-values-at-once Gardner <i>et al.<lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: You can try many different parameter values at once</h3>
+<blockquote class="tip">
+  <h3 id="tip-tip-you-can-try-many-different-parameter-values-at-once"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: You can try many different parameter values at once</h3>
 
   <ul>
     <li>Often times you need to try a couple of different parameter values and pick the best one.
 You can create or compute a dataset for each parameter you would like to try and run the
 <code class="language-plaintext highlighter-rouge">Parse parameter value</code> tool on it, running all <span class="notranslate">downstream</span> tools once for each parameter.</li>
-  </uufì</blockquote>
+  </ul>
+</blockquote>
 
-<h1 class="no_toc" id=" your Data∑fèFDMarius van den <span class="notranslate">Galaxy</span> Workflows chain together different steps of an analysis. To make your workflows
+<h1 class="no_toc" id="conclusion">Conclusion</h1>
+
+<p><span class="notranslate">Galaxy</span> Workflows chain together different steps of an analysis. To make your workflows
 more useful to your colleagues you can add <span class="notranslate">workflow</span> parameters. Sometimes a parameter is not
 known in advance, but can be calculated as part of the <span class="notranslate">workflow</span>. Now you know how to read these
-parameters from datasets!                                                                                                                                                                                                                                               Use Workflow Parameters to make your Workflows more versatile</p>
-</erised input! It‚Ä          
-                    </m>: Leave empty and cl                                                                                                                                                                                                                                     galaxy-interface/faqs/">FAQ page for the Using Galaxy and Managing your Data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Using Workflow Parameters (Using Galaxy and Managing your Data                                                                                                                                                                                                                                                                                                                                      Marius van den Beek, Helena Rasche, 2021 <b>Using Workflow Parameter                                                                                                        galaxy-interface/tutorials/workflow-parameter                                                                             galaxy-interface/tutorials/workflow-parameter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         galaxy-interface-workflow-parameters,
+parameters from datasets!</p>
+
+
+                
+                <blockquote class="key_points">
+                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <ul>
+                        
+                        <li><p>Use Workflow Parameters to make your Workflows more versatile</p>
+</li>
+                        
+                    </ul>
+                </blockquote>
+                
+
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/galaxy-interface/faqs/">FAQ page for the Using Galaxy and Managing your Data topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
+
+                
+
+                
+
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
+
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
+                            }
+                        }
+
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
+
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Using Workflow Parameters (Using Galaxy and Managing your Data)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
+
+
+
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">Marius van den Beek, Helena Rasche, 2021 <b>Using Workflow Parameters (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html">https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+
+                <blockquote class="details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                  <p style="display: none;">
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{galaxy-interface-workflow-parameters,
 author = "Marius van den Beek and Helena Rasche",
-title = "Using Workflow Parameter                                                        09",
-day = "29                                                                          galaxy-interface/tutorials/workflow-parameter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+title = "Using Workflow Parameters (Galaxy Training Materials)",
+year = "2021",
+month = "09",
+day = "29"
+url = "\url{https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html}",
+note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+    doi = {10.1016/j.cels.2018.05.012},
+    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+    year = 2018,
+    month = {jun},
+    publisher = {Elsevier {BV}},
+    volume = {6},
+    number = {6},
+    pages = {752--758.e1},
+    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Bj√∂rn Gr√ºning},
+    title = {Community-Driven Data Analysis Training for Biology},
+    journal = {Cell Systems}
+}</code>
+                </pre></div></div>
+                </p>
+                </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+<br/>
+<br/>
+<br/>
+
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+</html>
