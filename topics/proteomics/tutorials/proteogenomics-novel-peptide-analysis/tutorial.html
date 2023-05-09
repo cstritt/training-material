@@ -431,7 +431,7 @@
 <a href="/training-material/hall-of-fame/pravs3683/" class="contributor-badge contributor-pravs3683"><img src="https://avatars.githubusercontent.com/pravs3683?s=27" alt="Avatar">Praveen Kumar</a>
 
 
-<a href="https://training.galaxyproject.org/                         contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
+<a href="https://training.galaxyproject.org/training-material/topics/contributing/" class="contributor-badge contributor-newcontributors"><i class="fas fa-users" aria-hidden="true"></i><span class="visually-hidden">hall-of-fame</span>Add Contributions!</a>
 
 </div>
 
@@ -502,14 +502,15 @@
         <ul class="supporting_material">
             
                 <li class="btn btn-default supporting_material"><a href="/training-material/topics/proteomics/slides/introduction.html" title="Topic Overview slides">
-                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides                   a></li>
+                    <i class="fab fa-slideshare" aria-hidden="true"></i> Topic Overview slides
+                </a></li>
             
 
             
                 <li class="btn btn-default supporting_material">
 
 
-<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://           5281/zenodo.1489208">
+<a class="topic-icon" title="Zenodo datasets used in this tutorial" href="https://doi.org/10.5281/zenodo.1489208">
     <i class="far fa-copy" aria-hidden="true"></i> Datasets
 </a>
 
@@ -559,7 +560,7 @@
   
   <li class="btn btn-default supporting_material">
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Latest recordings of this tutorial in the GTN Video Library">
-        <i class="fas fa-video" aria-hidden="true"></i>                              video</span> Recordings
+        <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Recordings
     </a>
     <ul class="dropdown-menu">
         
@@ -571,9 +572,10 @@
 
         <li>
             <a class="dropdown-item" href="https://gallantries.github.io/video-library/videos/proteomics/proteogenomics-novel-peptide-analysis/tutorial" title="View GTN Video Library for this Tutorial">
-                <i class="fas fa-video" aria-hidden="true"></i>                              video</span> Tutorial (February 2021)
+                <i class="fas fa-video" aria-hidden="true"></i><span class="visually-hidden">video</span> Tutorial (February 2021)
             </a>
-                      
+        </li>
+        
         
         
     </ul>
@@ -737,8 +739,6 @@
         
     
         
-    
-        
         <a class="dropdown-item" href="https://usegalaxy.no/" title="UseGalaxy.no">
             UseGalaxy.no
         </a>
@@ -754,8 +754,6 @@
         <a class="dropdown-item" href="https://usegalaxy.org.au" title="UseGalaxy.org.au">
             UseGalaxy.org.au
         </a>
-        
-    
         
     
         
@@ -795,11 +793,13 @@
 <p>The third and the last <span class="notranslate">workflow</span> in the proteogenomics tutorial is to identifying the “<strong>Novel peptides</strong>” using BlastP and to localize the peptides to its genomic coordinates. Inputs from both <span class="notranslate">workflow</span> 1 and 2 will be used in this <span class="notranslate">workflow</span>.
 Please look at the following tutorials in this proteogenomics series before starting this tutorial:</p>
 <ol>
-  <li><a href="/                         proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">Proteogenomics database creation</a></li>
-  <li><a href="                          proteomics/tutorials/proteogenomics-dbsearch/tutorial.html">Proteogenomics database search</a></li>
+  <li><a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">Proteogenomics database creation</a></li>
+  <li><a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html">Proteogenomics database search</a></li>
 </ol>
 
-<p><img src="../../images/Third_workflow.png" alt="Workflow.                           bl Mehta��>7Timotagenda">
+<p><img src="../../images/Third_workflow.png" alt="Workflow. " loading="lazy" /></p>
+
+<blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
 
   <p>In this tutorial, we will deal with:</p>
@@ -816,132 +816,285 @@ Please look at the following tutorials in this proteogenomics series before star
 
 <h1 id="pretreatments">Pretreatments</h1>
 
-<p class="no_toc">All the files to run this <span class="notranslate">workflow</span> can be obtained from the  a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html">second tutorial</a> output. Once the tabular output is generated, we convert this tabular report into a FASTA file. This can be achieved by using the Tabular to FASTA convertion tool.</p>
+<p class="no_toc">All the files to run this <span class="notranslate">workflow</span> can be obtained from the <a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html">second tutorial</a> output. Once the tabular output is generated, we convert this tabular report into a FASTA file. This can be achieved by using the Tabular to FASTA convertion tool.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuandata-organization"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: data organizationmetaquantome_viz/metaqThe inputs for this <span class="notranslate">workflow</span> arentome_stat/2.0.0-0"><stronstrong>Tabular file</strong> – “<strong>Peptides for BlastP analysis</strong>”/li>  <li>Pres     strong>Tabular file</strong> – “<strong>PeptideShaker_PSM</strong>”/li>  <li>Pres     strong>Mz to sqlite</strong</li>  <li>Pres     strong>Genomic <span class="notranslate">mapping</span> sqlite</strong>                              ally ex  <p>If you do not have these files from the previous tutorials in this series, you can import them from Zenodo:</p>
+  <h3 id="hands_on-hands-on-data-organization"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: data organization</h3>
+
+  <ol>
+    <li>The inputs for this <span class="notranslate">workflow</span> are:
+      <ul>
+        <li><strong>Tabular file</strong> – “<strong>Peptides for BlastP analysis</strong>”</li>
+        <li><strong>Tabular file</strong> – “<strong>PeptideShaker_PSM</strong>”</li>
+        <li><strong>Mz to sqlite</strong></li>
+        <li><strong>Genomic <span class="notranslate">mapping</span> sqlite</strong></li>
+      </ul>
+    </li>
+  </ol>
+
+  <p>If you do not have these files from the previous tutorials in this series, you can import them from Zenodo:</p>
   <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/1489208/files/Peptides_for_Blast-P_analysis.tabular
 https://zenodo.org/record/1489208/files/PeptideShaker_PSM.tabular
 https://zenodo.org/record/1489208/files/mz_to_sqlite.mz.sqlite
 https://zenodo.org/record/1489208/files/genomic_<span class="notranslate">mapping</span>_sqlite.sqlite
-</code></pre></div>  </div>                 u1 id="peptide-selection">Peptide Selection</h1>
+</code></pre></div>  </div>
+</blockquote>
+
+<h1 id="peptide-selection">Peptide Selection</h1>
 
 <p><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a> is a web based tool used to compare biological sequences. BlastP, matches protein sequences against a protein database. More specifically, it looks at the amino acid sequence of proteins and can detect and evaluate the amount of differences between say, an experimentally derived sequence and all known amino acid sequences from a database. It can then find the most similar sequences and allow for identification of known proteins or for identification of potential peptides associated with novel proteoforms.</p>
 
 <p>The first step in this tutorial is to perfrom BLAST-P analysis using the NCBI-NR database. The output from BLASTP will determine the identification of the novel peptides. The result is a tabular file with 25 columns containing all the information regarding the alignment of these peptides with the sequences in the NCBI-NR database.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanncbi-blast-blastp"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: NCBI BLAST+ blastpmetaquantome_viz/metaq  pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3"><strong>NCBI BLAST+ blastp</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3</span></span> axyp/metaquantome_stat/metaquantome_stat/2.0.0-0"><stron                fil                                                              file</span> <strong>Protein query sequence(s)</strong> - <code class="language-plaintext highlighter-rouge">Peptides for Blast-P analysis.tabularw name</li>  <li>Pres                s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Subject database/sequences</strong> - <code class="language-plaintext highlighter-rouge">Locally installed BLAST database                  nk 8provided and make            s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Protein BLAST database</strong> - <code class="language-plaintext highlighter-rouge">NCBI-NR(dated)w name</li>  <li>Press                                 =           s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Type of BLAST</strong> - <code class="language-plaintext highlighter-rouge">blast-p shortw name</li>  <li>Pres                s fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">      text</span> <strong>Set expectation value cutoff</strong> - <code class="language-plaintext highlighter-rouge">200000.0w name</li>  <li>Pres                s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Output format</strong> -/../data/data-1.txt
- debuggroup summary 31.57s drawTabular format (25 columns)w name</li>  <li>Pres                s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Advanced Options</strong> - <code class="language-plaintext highlighter-rouge">show advanced options                  nk 8provided and make                 check-square" aria-hidden="true"></i><span class="visually-hidden">      check</span> <strong>Filter out low complexity regions (with SEG)</strong> - <code class="language-plaintext highlighter-rouge">iles/Intensity-File.tabul<kbd>En           s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Scoring matrix and gap costs</strong> - <code class="language-plaintext highlighter-rouge">PAM30                                                           s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Gap Costs</strong> - <code class="language-plaintext highlighter-rouge">Extension:9 Extension:1w name</li>  <li>Press <k                                    <kbd>En           s fa-ar Proteomics 18: S82–S91.�H�74/mcp.ra118.001240">10.1074/mc      text</span> <strong>Maximum hits to consider/show</strong> - <code class="language-plaintext highlighter-rouge">  visualize</em> Volca    bd>En           s fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">      text</span> <strong>Maximum number of HSPs (alignments) to keep for any single query-subject pair</strong> - <code class="language-plaintext highlighter-rouge">  visualize</em> Volca    bd>En           s fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">      text</span> <strong>Word size for wordfinder algorithm</strong> - <code class="language-plaintext highlighter-rouge">ew name</li>  <li>Pres    bd>En           s fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">      text</span> <strong>Multiple hits window size: use 0 to specify 1-hit algorithm, leave blank for default</strong> - <code class="language-plaintext highlighter-rouge">40w name</li>  <li>Press <kbd>En           s fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">      text</span> <strong>Minimum score to add a word to the BLAST lookup table</strong> - <code class="language-plaintext highlighter-rouge">11w name</li>  <li>Press <kbd>En           s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Composition-based statistics</strong> - <code class="language-plaintext highlighter-rouge">0: no composition-based statisticsw name</li>  <li>Press <kbd>En                check-square" aria-hidden="true"></i><span class="visually-hidden">      check</span> <strong>Should the query and subject defline(s) be parsed?</strong> - <code class="language-plaintext highlighter-rouge">iles/Intensity-File.tabul<kbd>En           s fa-filter" aria-hidden="true"></i>                                    select</span> <strong>Restrict search of database to a given set of ID’s</strong> - <code class="language-plaintext highlighter-rouge">No restriction, search the entire databasew name</li>  <li>Press <kbd>En                check-square" aria-hidden="true"></i><span class="visually-hidden">      check</span> <strong>Minimum query coverage per hsp (percentage, 0 to 100)?</strong> - <code class="language-plaintext highlighter-rouge">0w name</li>  <li>Press <kbd>En                check-square" aria-hidden="true"></i><span class="visually-hidden">      check</span> <strong>Compute locally optimal Smith-Waterman alignments</strong> - <code class="language-plaintext highlighter-rouge">iles/Intensity-File.tabul<a�`,*�Ў� D\/How do I loul>
-              <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.        ally exabases to Downlop>Once Blast-P search is performed, it provides a tabular output containing “<strong>Novel peptides</strong>”. Now this output is further processed by comparing the Novel Peptide output with the PSM report for selecting only distinct peptides which meet the criteria.</p>
+  <h3 id="hands_on-hands-on-ncbi-blast-blastp"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: NCBI BLAST+ blastp</h3>
+
+  <ol>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3"><strong>NCBI BLAST+ blastp</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/ncbi_blast_plus/ncbi_blastp_wrapper/0.3.3</span></span>  with the following parameters:
+      <ul>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <strong>Protein query sequence(s)</strong> - <code class="language-plaintext highlighter-rouge">Peptides for Blast-P analysis.tabular</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Subject database/sequences</strong> - <code class="language-plaintext highlighter-rouge">Locally installed BLAST database</code>
+          <ul>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Protein BLAST database</strong> - <code class="language-plaintext highlighter-rouge">NCBI-NR(dated)</code></li>
+          </ul>
+        </li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Type of BLAST</strong> - <code class="language-plaintext highlighter-rouge">blast-p short</code></li>
+        <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Set expectation value cutoff</strong> - <code class="language-plaintext highlighter-rouge">200000.0</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Output format</strong> - <code class="language-plaintext highlighter-rouge">Tabular format (25 columns)</code></li>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Advanced Options</strong> - <code class="language-plaintext highlighter-rouge">show advanced options</code>
+          <ul>
+            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <strong>Filter out low complexity regions (with SEG)</strong> - <code class="language-plaintext highlighter-rouge">No</code></li>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Scoring matrix and gap costs</strong> - <code class="language-plaintext highlighter-rouge">PAM30</code>
+              <ul>
+                <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Gap Costs</strong> - <code class="language-plaintext highlighter-rouge">Extension:9 Extension:1</code></li>
+              </ul>
+            </li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Maximum hits to consider/show</strong> - <code class="language-plaintext highlighter-rouge">1</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Maximum number of HSPs (alignments) to keep for any single query-subject pair</strong> - <code class="language-plaintext highlighter-rouge">1</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Word size for wordfinder algorithm</strong> - <code class="language-plaintext highlighter-rouge">2</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Multiple hits window size: use 0 to specify 1-hit algorithm, leave blank for default</strong> - <code class="language-plaintext highlighter-rouge">40</code></li>
+            <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">param-text</span> <strong>Minimum score to add a word to the BLAST lookup table</strong> - <code class="language-plaintext highlighter-rouge">11</code></li>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Composition-based statistics</strong> - <code class="language-plaintext highlighter-rouge">0: no composition-based statistics</code></li>
+            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <strong>Should the query and subject defline(s) be parsed?</strong> - <code class="language-plaintext highlighter-rouge">No</code></li>
+            <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <strong>Restrict search of database to a given set of ID’s</strong> - <code class="language-plaintext highlighter-rouge">No restriction, search the entire database</code></li>
+            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <strong>Minimum query coverage per hsp (percentage, 0 to 100)?</strong> - <code class="language-plaintext highlighter-rouge">0</code></li>
+            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <strong>Compute locally optimal Smith-Waterman alignments</strong> - <code class="language-plaintext highlighter-rouge">No</code></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.</li>
+  </ol>
+
+</blockquote>
+
+<p>Once Blast-P search is performed, it provides a tabular output containing “<strong>Novel peptides</strong>”. Now this output is further processed by comparing the Novel Peptide output with the PSM report for selecting only distinct peptides which meet the criteria.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanquery-tabular"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabularmetaquantome_viz/metaq  pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span> axyp/metaquantome_stat/metaquantome_stat/2.0.0-0"><stron                plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Database Table</strong            nk 8provided and makeSection <strong>Table Options</strong>
-                                              Specify Name for Tablircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawblastw name</li>  <li>Press <k               Use first line as column names”</em> f/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                 Specify Column Names (comma-separated list)”</em>:
-<code class="language-plaintext highlighter-rouge">qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore,sallseqid,score,nident,positive,gaps,ppos,qframe,sframe,qseq,sseq,qlen,slen,salltitlesw name</li>  <li>Press <k               Only load the columns you have named into databasircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control gess <k                         plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Table Index</strong>
-                  <                                   Table Indexrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                     Index on Columnsrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawqseqidw name</li>  <li>Press <k                                                                                                            es                     plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Database Table</strong            nk 8provided and makeSection <strong>Filter Dataset Input</strong>
-                                                        plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Filter Tabular Input Lines</strong>
-                  <                                   Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading linesw name</li>  <li>Press <k                   Skip linesrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw  visualize</em> Volcas <k                                                                                  <kbd>ESection <strong>Table Options</strong>
-                                              Specify Name for Tablircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawpsmw name</li>  <li>Press <k               Use first line as column names”</em> f/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                 Specify Column Names (comma-separated list)rcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawID,Proteins,Sequence,AAs_Before,AAs_After,Position,Modified_Sequence,Variable_Modifications,Fixed_Modifications,Spectrum_File,Spectrum_Title,Spectrum_Scan_Number,RT,mz,Measured_Charge,Identification_Charge,Theoretical_Mass,Isotope_Number,Precursor_mz_Error_ppm,Localization_Confidence,Probabilistic_PTM_score,Dscore,Confidence,Validationw name</li>  <li>Press <k               Only load the columns you have named into databasircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control gess <k                                                                <li>
-          <p><em>“Save the sqlite database in your historyrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawNo</code></p>
+  <h3 id="hands_on-hands-on-query-tabular"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabular</h3>
 
-                             comment">
-            <h3 id="comment-querying-an-sqlite-database                                                                                                     Querying an SQLite Database</h3>
+  <ol>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span>  with the following parameters:
+      <ul>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Database Table</strong>
+          <ul>
+            <li>Section <strong>Table Options</strong>
+              <ul>
+                <li><em>“Specify Name for Table”</em>: <code class="language-plaintext highlighter-rouge">blast</code></li>
+                <li><em>“Use first line as column names”</em> : <code class="language-plaintext highlighter-rouge">No</code></li>
+                <li><em>“Specify Column Names (comma-separated list)”</em>:
+<code class="language-plaintext highlighter-rouge">qseqid,sseqid,pident,length,mismatch,gapopen,qstart,qend,sstart,send,evalue,bitscore,sallseqid,score,nident,positive,gaps,ppos,qframe,sframe,qseq,sseq,qlen,slen,salltitles</code></li>
+                <li><em>“Only load the columns you have named into database”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+                <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Table Index</strong>
+                  <ul>
+                    <li><em>“Table Index”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
+                    <li><em>“Index on Columns”</em>: <code class="language-plaintext highlighter-rouge">qseqid</code></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Database Table</strong>
+          <ul>
+            <li>Section <strong>Filter Dataset Input</strong>
+              <ul>
+                <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Filter Tabular Input Lines</strong>
+                  <ul>
+                    <li><em>“Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading lines</code></li>
+                    <li><em>“Skip lines”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Section <strong>Table Options</strong>
+              <ul>
+                <li><em>“Specify Name for Table”</em>: <code class="language-plaintext highlighter-rouge">psm</code></li>
+                <li><em>“Use first line as column names”</em> : <code class="language-plaintext highlighter-rouge">No</code></li>
+                <li><em>“Specify Column Names (comma-separated list)”</em>: <code class="language-plaintext highlighter-rouge">ID,Proteins,Sequence,AAs_Before,AAs_After,Position,Modified_Sequence,Variable_Modifications,Fixed_Modifications,Spectrum_File,Spectrum_Title,Spectrum_Scan_Number,RT,mz,Measured_Charge,Identification_Charge,Theoretical_Mass,Isotope_Number,Precursor_mz_Error_ppm,Localization_Confidence,Probabilistic_PTM_score,Dscore,Confidence,Validation</code></li>
+                <li><em>“Only load the columns you have named into database”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><em>“Save the sqlite database in your history”</em>: <code class="language-plaintext highlighter-rouge">No</code></p>
+
+          <blockquote class="comment">
+            <h3 id="comment-querying-an-sqlite-database"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Querying an SQLite Database</h3>
 
             <p><strong>Query Tabular</strong> can also use an existing SQLite database. Activating <code class="language-plaintext highlighter-rouge">Save the sqlite database in your history</code>
 will store the created database in the history, allowing to reuse it directly.</p>
 
-                                                   "http:SQL Query to generate tabular output”</em>:
+          </blockquote>
+        </li>
+        <li><em>“SQL Query to generate tabular output”</em>:
           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT distinct psm.*
 FROM psm join blast ON psm.Sequence = blast.qseqid
 WHERE blast.pident &lt; 100 OR blast.gapopen &gt;= 1 OR blast.length &lt; blast.qlen
 ORDER BY psm.Sequence, psm.ID
 </code></pre></div>          </div>
 
-                             comment">
-            <h3 id="comment-query-information                                                                                                     Query information</h3>
+          <blockquote class="comment">
+            <h3 id="comment-query-information"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Query information</h3>
 
             <p>The query wants a tabular list of peptides in which the lenght of the PSM sequence is equal to the length of the Blast sequence, where in the pident (percentage identity) is less that 100 i.e. Peptide cannot be a 100% identical to the NCBI-nr reference database. Or it should fulfill the criteria that there should be atleast 1 gap present (blast.gapopen &gt;= 1) or the length of the peptide in NCBI-nr should be less than the length of the query length. If the peptide follows all this then it is accepted as a “Novel” proteoform.</p>
 
-                                                   "http:Include query result column headersrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control ge T4 at differenti  <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.        ally exabases to Downlop>Once this step is completed, a tabular output containing novel proteoforms are displayed. These novel proteforms fulfill our criteria of not being present in the existing NCBI repository. The next step is to remove any duplicate sequences. For this, we use the Query tabular tool again to select distinct sequences from the tabular output.</p>
+          </blockquote>
+        </li>
+        <li><em>“Include query result column headers”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+      </ul>
+    </li>
+    <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.</li>
+  </ol>
+
+</blockquote>
+
+<p>Once this step is completed, a tabular output containing novel proteoforms are displayed. These novel proteforms fulfill our criteria of not being present in the existing NCBI repository. The next step is to remove any duplicate sequences. For this, we use the Query tabular tool again to select distinct sequences from the tabular output.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanquery-tabular-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabularmetaquantome_viz/metaq  pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span>tome_stat/2.0.0-0"><stron                plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Database Table</strong            nk 8provided and makeSection <strong>Filter Dataset Input</strong>
-                                                        plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Filter Tabular Input Lines</strong>
-                  <                                   Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading linesw name</li>  <li>Press <k                   Skip linesrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw  visualize</em> Volcas <k                                                                                  <kbd>ESection <strong>Table Options</strong>
-                                              Specify Name for Tablircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawpsmw name</li>  <li>Press <k               Use first line as column names”</em> f/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                 Specify Column Names (comma-separated list)”</em>:<code class="language-plaintext highlighter-rouge">ID,Proteins,Sequencew name</li>  <li>Press <k               Only load the columns you have named into databasircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control gess <k                                                              es     "http:SQL Query to generate tabular output”</em>:
+  <h3 id="hands_on-hands-on-query-tabular-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabular</h3>
+
+  <ol>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span>
+      <ul>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Database Table</strong>
+          <ul>
+            <li>Section <strong>Filter Dataset Input</strong>
+              <ul>
+                <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Filter Tabular Input Lines</strong>
+                  <ul>
+                    <li><em>“Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading lines</code></li>
+                    <li><em>“Skip lines”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Section <strong>Table Options</strong>
+              <ul>
+                <li><em>“Specify Name for Table”</em>: <code class="language-plaintext highlighter-rouge">psm</code></li>
+                <li><em>“Use first line as column names”</em> : <code class="language-plaintext highlighter-rouge">No</code></li>
+                <li><em>“Specify Column Names (comma-separated list)”</em>:<code class="language-plaintext highlighter-rouge">ID,Proteins,Sequence</code></li>
+                <li><em>“Only load the columns you have named into database”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><em>“SQL Query to generate tabular output”</em>:
           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT distinct Sequence from psm
-</code></pre></div>          </div>
-                           "http:include query result column headersrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control ge T4 at differenti  <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.        ally exabases to Downloh1 id="multiomics-visualization-platform-mvp">Multiomics Visualization Platform (MVP)</h1>
+</code></pre></div>          </div>
+        </li>
+        <li><em>“include query result column headers”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+      </ul>
+    </li>
+    <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.</li>
+  </ol>
+
+</blockquote>
+
+<h1 id="multiomics-visualization-platform-mvp">Multiomics Visualization Platform (MVP)</h1>
 
 <p>The Multiomics Visualization Platform is a <span class="notranslate">Galaxy</span> visualization plugin that allows the user to browse the selected proteomics data. It uses the SQlite database which allows the data to be filtered and aggregated in a user defined manner. It allows various features such as; the PSM can be displayed with a lorikeet spectral view, the selected peptide can be displayed in a protein view and an IGV browser is also available for the selected protein. The step by step guide shown below will provide a walkthrough on how to use this plugin (NOTE: the example shown below is a representative peptide which is subjected to change, so while you are running this tool please take a look at the “Novel Peptide” output from the previous steps).</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanguide-to-mvp"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Guide to MVP</h3>
+  <h3 id="hands_on-hands-on-guide-to-mvp"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Guide to MVP</h3>
 
-  <p>The spectra belonging to these “Novel peptides” can be viewed using MVP,this can be achieved by selecting the output from the/../data/data-1.txt
- debuggroup summary 31.57s drawmz to sqlite tool</code> (Generated in the second <span class="notranslate">workflow</span>).
+  <p>The spectra belonging to these “Novel peptides” can be viewed using MVP,this can be achieved by selecting the output from the <code class="language-plaintext highlighter-rouge">mz to sqlite tool</code> (Generated in the second <span class="notranslate">workflow</span>).
 Here is a step by step guide to obtain the proteogenomic view of the “Novel peptides”.</p>
 
   <p>1) Click on the <strong>Visualize in MVP application</strong>, it will open up options for visualization application in the center pane, Select <strong>MVP Application</strong> from the options (or Right click to open in a new window).</p>
 
-  <p><img src="../../images/Visualize.png" alt="mz to sqlite. " width="20%                           <p>This will open in the Center Pane. Select the MVP application.</p>
+  <p><img src="../../images/Visualize.png" alt="mz to sqlite. " width="20%" loading="lazy" /></p>
 
-  <p><img src="../../images/Open_MVP.png" alt="MVP. " width="20%                           <p>This is how it will look.</p>
+  <p>This will open in the Center Pane. Select the MVP application.</p>
 
-  <p><img src="../../images/Peptide_overview.png" alt="Overview. " width="60%                           <p>2) Click on <strong>Load from <span class="notranslate">Galaxy</span></strong> to open the list of peptides you would like to view.</p>
+  <p><img src="../../images/Open_MVP.png" alt="MVP. " width="20%" loading="lazy" /></p>
 
-  <p><img src="../../images/load_from_Galaxy.png" alt="load from galaxy. " width="80%                           <p>This will open a dropdown list. Select the novel peptides from there.</p>
+  <p>This is how it will look.</p>
 
-  <p><img src="../../images/DropDown_novel.png" alt="dropdown. " width="50%                           <p>3) Select <strong>Novel Peptides</strong> from the right hand side.</p>
+  <p><img src="../../images/Peptide_overview.png" alt="Overview. " width="60%" loading="lazy" /></p>
 
-  <p><img src="../../images/novel_peptides_view.png" alt="novel peptides view. " width="70%                           <p>4) Select any peptide, For egf/../data/data-1.txt
- debuggroup summary 31.57s drawDGDLENPVLYSGAV</code>, and then click on <strong>Selected Peptide PSMs</strong>.</p>
+  <p>2) Click on <strong>Load from <span class="notranslate">Galaxy</span></strong> to open the list of peptides you would like to view.</p>
 
-  <p><img src="../../images/Filtering_novelpeptides.png" alt="select_pep. " width="70%                           <p>5) If you scroll down, the PSM associated with the peptide will be displayed. By clicking on the PSM, the <em>Lorikeet</em>
+  <p><img src="../../images/load_from_Galaxy.png" alt="load from galaxy. " width="80%" loading="lazy" /></p>
+
+  <p>This will open a dropdown list. Select the novel peptides from there.</p>
+
+  <p><img src="../../images/DropDown_novel.png" alt="dropdown. " width="50%" loading="lazy" /></p>
+
+  <p>3) Select <strong>Novel Peptides</strong> from the right hand side.</p>
+
+  <p><img src="../../images/novel_peptides_view.png" alt="novel peptides view. " width="70%" loading="lazy" /></p>
+
+  <p>4) Select any peptide, For eg: <code class="language-plaintext highlighter-rouge">DGDLENPVLYSGAV</code>, and then click on <strong>Selected Peptide PSMs</strong>.</p>
+
+  <p><img src="../../images/Filtering_novelpeptides.png" alt="select_pep. " width="70%" loading="lazy" /></p>
+
+  <p>5) If you scroll down, the PSM associated with the peptide will be displayed. By clicking on the PSM, the <em>Lorikeet</em>
 values will be shown. The Lorikeet visualization is interactive, i.e the user can change the values or select any
 parameter and click on Update button to view these changes.</p>
 
-  <p><img src="../../images/Peptide-Protein_Viewer.png" alt="PSM. " width="90%                           <p><img src="../../images/Lorikeet_Viewer.png" alt="lorikeet. " width="70%                           <p>6) For a Protein centric view, click on <strong>View in Protein</strong> , it will open up all the proteins associate with the
+  <p><img src="../../images/Peptide-Protein_Viewer.png" alt="PSM. " width="90%" loading="lazy" /></p>
+
+  <p><img src="../../images/Lorikeet_Viewer.png" alt="lorikeet. " width="70%" loading="lazy" /></p>
+
+  <p>6) For a Protein centric view, click on <strong>View in Protein</strong> , it will open up all the proteins associate with the
 peptides. For eg: Select the <code class="language-plaintext highlighter-rouge">DGDLENPVLYSGAV</code> peptide and click on the first protein. The chromosome location
 of the peptide will be displayed.</p>
 
-  <p><img src="../../images/Selecting_peptide.png" alt="view in protein. " width="70%                           <p>Once you click on protein it will show the list of proteins the belongs to the peptides.</p>
+  <p><img src="../../images/Selecting_peptide.png" alt="view in protein. " width="70%" loading="lazy" /></p>
 
-  <p><img src="../../images/opening_IGV.png" alt="select protein. " width="60%                           <p>Once you select the protein that you want to visualize you can click on the protein view.</p>
+  <p>Once you click on protein it will show the list of proteins the belongs to the peptides.</p>
 
-  <p><img src="../../images/ProteinViewer.png" alt="protein view. " width="80%                           <p>7) Clicking on the arrow marks will open up the IGV(js) visualization tool, where-in the genomic localization of the
+  <p><img src="../../images/opening_IGV.png" alt="select protein. " width="60%" loading="lazy" /></p>
+
+  <p>Once you select the protein that you want to visualize you can click on the protein view.</p>
+
+  <p><img src="../../images/ProteinViewer.png" alt="protein view. " width="80%" loading="lazy" /></p>
+
+  <p>7) Clicking on the arrow marks will open up the IGV(js) visualization tool, where-in the genomic localization of the
 peptide will be displayed.</p>
 
-  <p><img src="../../images/IGV_1.png" alt="IGV. " width="90%                           <p>8) To add tracks to your IGV viewer, click on <strong>Add Track</strong>. This will open up a list of tracks that are compatible
+  <p><img src="../../images/IGV_1.png" alt="IGV. " width="90%" loading="lazy" /></p>
+
+  <p>8) To add tracks to your IGV viewer, click on <strong>Add Track</strong>. This will open up a list of tracks that are compatible
 to view in your IGV viewer. For eg. Select the <code class="language-plaintext highlighter-rouge">Pep_gen_coordinate.<span class="notranslate">bed</span></code> file and then click on <strong>Load Track</strong>.
 This will open up the <span class="notranslate">bed</span> will below the nucleotide sequence.</p>
 
-  <p><img src="../../images/Options_for_Track.png" alt="tracks align. " width="90%                           <p>9) By clicking the wheel, you can select the <strong>three frame translate</strong> which will show the three frame translated
+  <p><img src="../../images/Options_for_Track.png" alt="tracks align. " width="90%" loading="lazy" /></p>
+
+  <p>9) By clicking the wheel, you can select the <strong>three frame translate</strong> which will show the three frame translated
 region of your sequence.</p>
 
-  <p><img src="../../images/IGV_viewer.png" alt="IGV viewer. " width="90%                           <p>10) The IGV is inbuilt in the MVP viewer and is very interactive, you could also load more tracks such as the aligned
+  <p><img src="../../images/IGV_viewer.png" alt="IGV viewer. " width="90%" loading="lazy" /></p>
+
+  <p>10) The IGV is inbuilt in the MVP viewer and is very interactive, you could also load more tracks such as the aligned
 proBAM file (from HISAT) or the identified probam file (one of the input file).
 MVP has many useful features beyond those covered in this workshop and is under active development.</p>
 
-  <p><img src="../../images/IGV_2.png" alt="IGV2. " width="60%                          /blockquote>
+  <p><img src="../../images/IGV_2.png" alt="IGV2. " width="60%" loading="lazy" /></p>
+
+</blockquote>
 
 <p>The next tool in the <span class="notranslate">workflow</span> is the Peptide genomic coordinate tool which takes the “novel peptides” as the input along with the mztosqlite file and the genomic <span class="notranslate">mapping</span> sqlite file (obtained during creation of the database). This tool helps create a <span class="notranslate">bed</span> file with the genomic coordinate information of the peptides based on the sqlite files.</p>
 
@@ -952,46 +1105,93 @@ loads two sqlite databases (mzsqlite and genomic <span class="notranslate">mappi
 peptides provided as input. This outputs <span class="notranslate">bed</span> file for peptides.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanpeptide-genomic-coordinate"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Peptide genomic Coordinatemetaquantome_viz/metaqRun   pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1" title="Tested with toolshed.g2.bx.psu.edu/repos/galaxyp/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1"><strong>Peptide genomic Coordinate</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/<span class="notranslate">galaxy</span>p/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1</span></span> axyp/metaquantome_stat/metaquantome_stat/2.0.0-0"><stron"http:Inputrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawPeptide list file</code>,/../data/data-1.txt
- debuggroup summary 31.57s drawmzsqlite sqlite DB file</code>, and <code class="language-plaintext highlighter-rouge">genomic <span class="notranslate">mapping</span> sqlite DB filew name</li>  <li>Pres    
-          <p><em>“Outputrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawTabular <span class="notranslate">BED</span> file with all the columns</code></p>
+  <h3 id="hands_on-hands-on-peptide-genomic-coordinate"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Peptide genomic Coordinate</h3>
 
-          <p><img src="../../images/Output_PGC.png" alt="Output PGC. " width="50%                                                                <li>Click <strong>Execute</strong> and inspect the resulting files        ally exabases to Downloh1 id="classify-peptides">Classify Peptides</h1>
+  <ol>
+    <li>Run <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1" title="Tested with toolshed.g2.bx.psu.edu/repos/galaxyp/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1"><strong>Peptide genomic Coordinate</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/<span class="notranslate">galaxy</span>p/peptide_genomic_coordinate/peptide_genomic_coordinate/0.1.1</span></span>  with the following parameters:
+      <ul>
+        <li><em>“Input”</em>: <code class="language-plaintext highlighter-rouge">Peptide list file</code>, <code class="language-plaintext highlighter-rouge">mzsqlite sqlite DB file</code>, and <code class="language-plaintext highlighter-rouge">genomic <span class="notranslate">mapping</span> sqlite DB file</code></li>
+        <li>
+          <p><em>“Output”</em>: <code class="language-plaintext highlighter-rouge">Tabular <span class="notranslate">BED</span> file with all the columns</code></p>
+
+          <p><img src="../../images/Output_PGC.png" alt="Output PGC. " width="50%" loading="lazy" /></p>
+        </li>
+      </ul>
+    </li>
+    <li>Click <strong>Execute</strong> and inspect the resulting files</li>
+  </ol>
+
+</blockquote>
+
+<h1 id="classify-peptides">Classify Peptides</h1>
 
 <p>Given chromosomal locations of peptides in a <span class="notranslate">BED</span> file, PepPointer classifies them as CDS, UTR, exon, intron, or intergene.</p>
 
 <blockquote class="notranslate hands_on">
-  olcano-plots"><em>metaQuanpeppointer"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Peppointermetaquantome_viz/metaq  pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/pep_pointer/pep_pointer/0.1.3" title="Tested with toolshed.g2.bx.psu.edu/repos/galaxyp/pep_pointer/pep_pointer/0.1.3"><strong>Peppointer</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/<span class="notranslate">galaxy</span>p/pep_pointer/pep_pointer/0.1.3</span></span> axyp/metaquantome_stat/metaquantome_stat/2.0.0-0"><stron           s fa-filter" aria-hidden="true"></i>                                    select</span> <em>“Choose the source of the GTF file”</em> - <code class="language-plaintext highlighter-rouge">From Historyw name</li>  <li>Pres                     fil                                                              file</span> <em>“GTF file with the genome of interest”</em> - <code class="language-plaintext highlighter-rouge">edited_Mus_Musculus_GRCm38.90_Ensembl_GTFw name</li>  <li>Pres                     fil                                                              file</span> <em>“<span class="notranslate">BED</span> file with chromosomal coordinates of peptiderple)����p
-�3��/��$�3�����p
-����#�3��8$�<span class="notranslate">Bed</span> file from Peptide genomic coordinate toolfrom thhe control ge T4 at differenti  <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.</li>
+  <h3 id="hands_on-hands-on-peppointer"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Peppointer</h3>
+
+  <ol>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/pep_pointer/pep_pointer/0.1.3" title="Tested with toolshed.g2.bx.psu.edu/repos/galaxyp/pep_pointer/pep_pointer/0.1.3"><strong>Peppointer</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/<span class="notranslate">galaxy</span>p/pep_pointer/pep_pointer/0.1.3</span></span>  with the following parameters:
+      <ul>
+        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Choose the source of the GTF file”</em> - <code class="language-plaintext highlighter-rouge">From History</code></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“GTF file with the genome of interest”</em> - <code class="language-plaintext highlighter-rouge">edited_Mus_Musculus_GRCm38.90_Ensembl_GTF</code></li>
+        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">BED</span> file with chromosomal coordinates of peptides”</em>: <code class="language-plaintext highlighter-rouge"><span class="notranslate">Bed</span> file from Peptide genomic coordinate tool</code></li>
+      </ul>
+    </li>
+    <li>Click <strong>Execute</strong> and inspect the query results file after it turned green.</li>
   </ol>
 
   <p>This tool provides a <span class="notranslate">bed</span> output with the classification of the genomic location of the peptides.The Mus-musculus GTF file will be in your history if you have completed the proteogenomics 1 tutorial.</p>
 
-  <p><img src="../../images/Output_PP.png" alt="Output PP. " width="50%                          /blockquote>
+  <p><img src="../../images/Output_PP.png" alt="Output PP. " width="50%" loading="lazy" /></p>
+
+</blockquote>
 
 <p>The final tool for this <span class="notranslate">workflow</span> generates a tabular output that summarizes the information after running these workflows. The final summary output consists of the Peptide sequence, the spectra associated with the peptides, the protein accession number, chromosome number, Start and Stop of the genomic coordinate, the annotation, the genomic coordinate entry for viewing in Integrative Genomics Viewer (IGV), MVP or UCSC genome browser and the URL for viewing it on UCSC genome browser. This summary is created with the help of the query tabular tool.</p>
 
 <h1 id="final-summary-output">Final Summary Output</h1>
 
-<T4 sample����_�notranslate hands_on">
-  Jagtap��>7
-Emma Leith��>7
-query-tabular-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabularmetaquantome_viz/metaq  pan class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span>tome_stat/2.0.0-0"><stron                plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span>  <strong>Insert Database Table</strong            nk 8provided and makeSection <strong>Table Options</strong>:
-                                              Specify Name for Tablircos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw<span class="notranslate">bed</span>_pep_pointerw name</li>  <li>Press <k               Use first line as column names”</em> f/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                 Specify Column Names (comma-separated list)”</em>:<code class="language-plaintext highlighter-rouge">chrom,start,end,peptide,score,strand,annotw name</li>  <li>Press <k               Only load the columns you have named into databasircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                                                                es                     plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Database Table</strong            nk 8provided and makeSection <strong>Filter Dataset Input</strong>
-                                                        plus-square" aria-hidden="true"></i><span class="visually-hidden">      repeat</span> <strong>Insert Filter Tabular Input Lines</strong>
-                  <                                   Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading linesw name</li>  <li>Press <k                   Skip linesrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s draw  visualize</em> Volcas <k                                                                                  <kbd>ESection <strong>Table Options</strong>
-                                              Specify Name for Tablircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawpsmw name</li>  <li>Press <k               Use first line as column names”</em> f/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                 Specify Column Names (comma-separated list)rcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawID,Proteins,Sequence,AAs_Before,AAs_After,Position,Modified_Sequence,Variable_Modifications,Fixed_Modifications,Spectrum_File,Spectrum_Title,Spectrum_Scan_Number,RT,mz,Measured_Charge,Identification_Charge,Theoretical_Mass,Isotope_Number,Precursor_mz_Error_ppm,Localization_Confidence,Probabilistic_PTM_score,Dscore,Confidence,Validationw name</li>  <li>Press <k               Only load the columns you have named into databasircos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawiles/Intensity-File.tabul                                                                es     "http:SQL Query to generate tabular output”</em>:
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-query-tabular-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Query Tabular</h3>
+
+  <ol>
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0"><strong>Query Tabular</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/query_tabular/query_tabular/3.0.0</span></span>
+      <ul>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span>  <strong>Insert Database Table</strong>
+          <ul>
+            <li>Section <strong>Table Options</strong>:
+              <ul>
+                <li><em>“Specify Name for Table”</em>: <code class="language-plaintext highlighter-rouge"><span class="notranslate">bed</span>_pep_pointer</code></li>
+                <li><em>“Use first line as column names”</em> : <code class="language-plaintext highlighter-rouge">No</code></li>
+                <li><em>“Specify Column Names (comma-separated list)”</em>:<code class="language-plaintext highlighter-rouge">chrom,start,end,peptide,score,strand,annot</code></li>
+                <li><em>“Only load the columns you have named into database”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Database Table</strong>
+          <ul>
+            <li>Section <strong>Filter Dataset Input</strong>
+              <ul>
+                <li><i class="far fa-plus-square" aria-hidden="true"></i><span class="visually-hidden">param-repeat</span> <strong>Insert Filter Tabular Input Lines</strong>
+                  <ul>
+                    <li><em>“Filter by”</em>:  <code class="language-plaintext highlighter-rouge">skip leading lines</code></li>
+                    <li><em>“Skip lines”</em>: <code class="language-plaintext highlighter-rouge">1</code></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Section <strong>Table Options</strong>
+              <ul>
+                <li><em>“Specify Name for Table”</em>: <code class="language-plaintext highlighter-rouge">psm</code></li>
+                <li><em>“Use first line as column names”</em> : <code class="language-plaintext highlighter-rouge">No</code></li>
+                <li><em>“Specify Column Names (comma-separated list)”</em>: <code class="language-plaintext highlighter-rouge">ID,Proteins,Sequence,AAs_Before,AAs_After,Position,Modified_Sequence,Variable_Modifications,Fixed_Modifications,Spectrum_File,Spectrum_Title,Spectrum_Scan_Number,RT,mz,Measured_Charge,Identification_Charge,Theoretical_Mass,Isotope_Number,Precursor_mz_Error_ppm,Localization_Confidence,Probabilistic_PTM_score,Dscore,Confidence,Validation</code></li>
+                <li><em>“Only load the columns you have named into database”</em>: <code class="language-plaintext highlighter-rouge">No</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><em>“SQL Query to generate tabular output”</em>:
           <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT psm.Sequence AS PeptideSequence,
 count(psm.Sequence) AS SpectralCount,
 psm.Proteins AS Proteins,
@@ -1005,111 +1205,343 @@ psm.Proteins AS Proteins,
 FROM psm
 INNER JOIN <span class="notranslate">bed</span>_pep_pointer on <span class="notranslate">bed</span>_pep_pointer.peptide = psm.Sequence
 GROUP BY psm.Sequence
-</code></pre></div>          </div>
-                           "http:include query result column headersrcos/conf/../data/data-1.txt
- debuggroup summary 31.57s drawta from thhe control ge T4 at differenti  <li>
+</code></pre></div>          </div>
+        </li>
+        <li><em>“include query result column headers”</em>: <code class="language-plaintext highlighter-rouge">Yes</code></li>
+      </ul>
+    </li>
+    <li>
       <p>Click <strong>Execute</strong> and inspect the query results file after it turned green. If everything went well, it should look similiar:</p>
 
-      <p><img src="../../images/final_summary.png" alt="Final Summary. " width="100%                    /p      </li>
+      <p><img src="../../images/final_summary.png" alt="Final Summary. " width="100%" loading="lazy" /></p>
+    </li>
   </ol>
 
   <p>The Final summary displays a tabular output containing the list of novel peptides and its corresponding protein. It also provides the users with the chromosomal location of the novel proteoform along with the peptide’s start and end position.	The output also features the strand information, gene	annotation and the genomic coordinates in a specific format that could be used on IGV or UCSC browser. It also provides the user with a	UCSC Genome Browser link, which the user can directly copy and paste it on a web browser to learn more about the novel proteoform. Here we are demonstrating the use of proteogenomics <span class="notranslate">workflow</span> on an example trimmed mouse dataset. This study explores the possibilities for <span class="notranslate">downstream</span> biological /functional analysis of peptides corresponding to novel proteoforms.</p>
 
 </blockquote>
 
-<h3 id="c                        3      This completes the proteogenomics <span class="notranslate">workflow</span> analysis. This training <span class="notranslate">workflow</span> uses mouse data. For any other organism the data, tool paramters and the <span class="notranslate">workflow</span> will need to be modified accordingly.This <span class="notranslate">workflow</span> is also available at <a href="https://usegalaxy.eu/">use<span class="notranslate">galaxy</span>.eu</a>.</p>
+<h3 id="conclusion">Conclusion</h3>
+
+<p>This completes the proteogenomics <span class="notranslate">workflow</span> analysis. This training <span class="notranslate">workflow</span> uses mouse data. For any other organism the data, tool paramters and the <span class="notranslate">workflow</span> will need to be modified accordingly.This <span class="notranslate">workflow</span> is also available at <a href="https://usegalaxy.eu/">use<span class="notranslate">galaxy</span>.eu</a>.</p>
 
 <p>This <span class="notranslate">workflow</span> was developed by the <span class="notranslate">Galaxy</span>-P team at the University of Minnesota.
-For more information about <span class="notranslate">Galaxy</span>-P or our ongoing work, please visit us at <a href="http://galaxyp.org_viz/2.0.0-0�}G�.�d;Tabular file from p.org</a></p>
+For more information about <span class="notranslate">Galaxy</span>-P or our ongoing work, please visit us at <a href="http://galaxyp.org"><span class="notranslate">galaxy</span>p.org</a></p>
 
 
-                
-                                                                                                                                                                                                                       Learning how to visualize proteomic data and to perform its genomic allocation</p>
+                
+                <blockquote class="key_points">
+                    <h3><i class="fas fa-key" aria-hidden="true"></i> Key points</h3>
+                    <ul>
+                        
+                        <li><p>Learning how to visualize proteomic data and to perform its genomic allocation</p>
 </li>
-                        
-                                                                                                                                                                                                                                                                                 proteomics/faqs/">FAQ page for the Proteomics                                                                                                                                                                                                                                                                                                                     <h1 data-toc-skip>Useful literature</h1>
-                <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/proteomics#references">here</a>.                     
+                        
+                    </ul>
+                </blockquote>
+                
 
+                <h1>Frequently Asked Questions</h1>
+                Have questions about this tutorial? Check out the <a href="faqs/">tutorial FAQ page</a> or the  <a href="/training-material/topics/proteomics/faqs/">FAQ page for the Proteomics topic</a> to see if your question is listed there.
+                If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                
+                <h1 data-toc-skip>Useful literature</h1>
+                <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/proteomics#references">here</a>.</p>
                 
 
                 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Proteogenomics 3: Novel peptide analysis (Proteomics                                                                                                                                                                                                                                                                                                                                      Subina Mehta, Timothy J. Griffin, Pratik Jagtap, Ray Sajulga, James Johnson, Praveen Kumar, 2021 <b>Proteogenomics 3: Novel peptide analysis                                                                                                       proteomics/tutorials/proteogenomics-novel-peptide-analysis                                                                            proteomics/tutorials/proteogenomics-novel-peptide-analysis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        proteomics-proteogenomics-novel-peptide-analysis,
+                
+
+                <h1>Feedback</h1>
+                <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.
+                <br>Did you use this material as a learner or student? Click the form below to leave feedback.<i class="fas fa-hand-point-down"></i>
+                </p>
+
+                <div id="feedback-button">
+                    <img src="/training-material/shared/images/feedback.png" title="Click to activate" alt="Click here to load Google feedback frame" />
+                </div>
+                <div id="feedback-form">
+                </div>
+                <script type="text/javascript">
+                    (function (window, document) {
+                        function onDocumentReady(fn) {
+                            if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+                                fn();
+                            } else {
+                                document.addEventListener('DOMContentLoaded', fn);
+                            }
+                        }
+
+                        onDocumentReady(function () {
+                            $("#feedback-button").click(function(evt){
+                                var e = $(evt.target)
+                                e.hide();
+
+                                $("#feedback-form").html(`
+                                    <iframe id="feedback-google" class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd4VZptFTQ03kHkMz0JyW9b6_S8geU5KjNE_tLM0dixT3ZQmA/viewform?embedded=true&entry.1235803833=Proteogenomics 3: Novel peptide analysis (Proteomics)">Loading...</iframe>
+                                `)
+                            })
+                        });
+                    })(window, document);
+                </script>
+
+
+
+                <h1>Citing this Tutorial</h1>
+                <p>
+                    <ol>
+                        <li id="citation-text">Subina Mehta, Timothy J. Griffin, Pratik Jagtap, Ray Sajulga, James Johnson, Praveen Kumar, 2021 <b>Proteogenomics 3: Novel peptide analysis (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-novel-peptide-analysis/tutorial.html">https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-novel-peptide-analysis/tutorial.html</a> Online; accessed TODAY
+                        </li>
+                        <li>
+                        Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
+                        </li>
+                    </ol>
+                </p>
+
+
+                <blockquote class="details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">details</span> BibTeX</h3>
+                  <p style="display: none;">
+
+                <div class="highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code id="citation-code">@misc{proteomics-proteogenomics-novel-peptide-analysis,
 author = "Subina Mehta and Timothy J. Griffin and Pratik Jagtap and Ray Sajulga and James Johnson and Praveen Kumar",
-title = "Proteogenomics 3: Novel peptide analysis                                                        5",
-day = "31                                                                          proteomics/tutorials/proteogenomics-novel-peptide-analysis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           agenda follow-up">
+title = "Proteogenomics 3: Novel peptide analysis (Galaxy Training Materials)",
+year = "2021",
+month = "05",
+day = "31"
+url = "\url{https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteogenomics-novel-peptide-analysis/tutorial.html}",
+note = "[Online; accessed TODAY]"
+}
+@article{Batut_2018,
+    doi = {10.1016/j.cels.2018.05.012},
+    url = {https://doi.org/10.1016%2Fj.cels.2018.05.012},
+    year = 2018,
+    month = {jun},
+    publisher = {Elsevier {BV}},
+    volume = {6},
+    number = {6},
+    pages = {752--758.e1},
+    author = {B{\'{e}}r{\'{e}}nice Batut and Saskia Hiltemann and Andrea Bagnacani and Dannon Baker and Vivek Bhardwaj and Clemens Blank and Anthony Bretaudeau and Loraine Brillet-Gu{\'{e}}guen and Martin {\v{C}}ech and John Chilton and Dave Clements and Olivia Doppelt-Azeroual and Anika Erxleben and Mallory Ann Freeberg and Simon Gladman and Youri Hoogstrate and Hans-Rudolf Hotz and Torsten Houwaart and Pratik Jagtap and Delphine Larivi{\`{e}}re and Gildas Le Corguill{\'{e}} and Thomas Manke and Fabien Mareuil and Fidel Ram{\'{\i}}rez and Devon Ryan and Florian Christoph Sigloch and Nicola Soranzo and Joachim Wolff and Pavankumar Videm and Markus Wolfien and Aisanjiang Wubuli and Dilmurat Yusuf and James Taylor and Rolf Backofen and Anton Nekrutenko and Björn Grüning},
+    title = {Community-Driven Data Analysis Training for Biology},
+    journal = {Cell Systems}
+}</code>
+                </pre></div></div>
+                </p>
+                </blockquote>
+
+
+<script type="text/javascript">
+// update the date on load, or leave fallback of 'today'
+d = new Date();
+document.getElementById("citation-code").innerHTML = document.getElementById("citation-code").innerHTML.replace("TODAY", d.toDateString());
+document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
+</script>
+
+                <h3><i class="far fa-thumbs-up" aria-hidden="true"></i> Congratulations on successfully completing this tutorial!</h3>
+
+                
+
+                
+                <blockquote class="agenda follow-up">
                     <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
-                                                 
+                    <ul>
+                        
     <li>
     
         
         
         <a href="/training-material/topics/proteomics">Proteomics</a>
         
-            <                    
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                                                                           
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                                          li> Proteogenomics 1: Database Creation:
-                                                                                                                                 a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html"><i class="fas fa-laptopnd fil��>metaQuantome:expand�ډmetaQuantome: expanutorial</span> hands-on</a>
-                                                                                                                        
-                                             
-                                             
-                                             
-                                             
-                                     
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                                                                           
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                             
-                                                          li> Proteogenomics 2: Database Search:
-                                                                                                                                 a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html"><i class="fas fa-laptopnd fil��>metaQuantome:expand�ډmetaQuantome: expanutorial</span> hands-on</a>
-                                                                                                                        
-                                             
-                                             
-                                             
-                                     
-                          
+            <ul>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Proteogenomics 1: Database Creation:
+                            
+                            
+                                
+                                     <a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                            <li> Proteogenomics 2: Database Search:
+                            
+                            
+                                
+                                     <a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbsearch/tutorial.html"><i class="fas fa-laptop" aria-hidden="true"></i><span class="visually-hidden">tutorial</span> hands-on</a>
+                                
+                            
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </ul>
+        
     
     </li>
 
-                    <                                                                 </div>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+                    </ul>
+                </blockquote>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+<br/>
+<br/>
+<br/>
+
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
+    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+
+    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
+    <script type="text/javascript">
+    var snippets=document.querySelectorAll('div.highlight');
+    [].forEach.call(snippets,function(snippet){
+        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+    });
+
+    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+        target:function(trigger){return trigger.nextElementSibling;
+    }});
+    </script>
+    
+
+    <script type="text/javascript">
+        if(window.location.hostname === "galaxyproject.github.io") {
+            // Redirect
+            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+            window.setTimeout(function(){
+                window.location.href = redirect;
+            }, 5000)
+
+        }
+    </script>
+</html>
