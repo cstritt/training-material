@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -8,33 +8,69 @@
         
             <script async defer data-domain="training.galaxyproject.org" src="https://plausible.galaxyproject.eu/js/plausible.js"></script>
 
+<!-- JavaScript Error Monitoring, and performance tracking. -->
+<script
+  src="https://browser.sentry-cdn.com/7.52.1/bundle.tracing.min.js"
+  integrity="sha384-muuFXKS3752PNA4rPm9Uq6BLvOfV4CXyr9MHDBPvozOJJUWLKkogEFWOIRoVps43"
+  crossorigin="anonymous"
+></script>
+<script type="text/javascript">
+Sentry.init({
+  dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
+  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
+  sampleRate: 0.1,
+  tracesSampleRate: 0.1,
+  // Capture Replay for no sessions by default
+  replaysSessionSampleRate: 0.01,
+  // plus for 1% of sessions with an error
+  replaysOnErrorSampleRate: 0.01,
+  // PII OFF
+  sendDefaultPii: false, // Off by default but just in case.
+  environment: "production",
+});
+</script>
+
         
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <script src="https://kit.fontawesome.com/67b3f98409.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
         <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
-        <link rel="stylesheet" href="/training-material/assets/css/syntax_highlighting.css">
-        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon" />
-        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml" />
+        <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
+        <link rel="canonical" href="https://training.galaxyproject.org/training-material/videos/">
+        <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+
+        <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
+<meta name="DC.type" content="text">
+<meta name="DC.title" content="GTN Videos">
+<meta name="DC.publisher" content="Galaxy Training Network">
+<meta name="DC.date" content="2023-01-20 17:19:45 +0000">
 
         
         
         
         
+        <meta name="description" content="Collection of tutorials developed and maintained by the w...">
+        <meta property="og:site_name" content="Galaxy Training Network">
+        <meta property="og:title" content="Galaxy Training: GTN Videos">
+        <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta name="description" content="Collection of tutorials developed and maintained by the w..." />
-        <meta property="og:title" content="Galaxy Training: GTN Videos" />
-        <meta property="og:description" content="Collection of tutorials developed and maintained by the w..." />
-        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png" />
+        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+
+        
     </head>
     <body data-spy="scroll" data-target="#toc">
+        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
             <a class="navbar-brand" href="/training-material/">
                 <img src="/training-material/assets/images/GTN-60px.png" height="30" alt="Galaxy Training Network logo">
-                Galaxy Training!
+                
+                    Galaxy Training!
+                
             </a>
 
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-navbar" aria-controls="top-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,38 +87,10 @@
                         
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Languages">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Languages
+                    <li class="nav-item">
+                        <a class="nav-link" href="/training-material/learning-pathways" title="Learning Pathways">
+                           <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Learning Pathways
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            
-                              <strong class="dropdown-header">Automatic Translations</strong>
-            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                            Français
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                            日本語
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                            Español
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                            Português
-                            </a>
-                            
-            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url">
-                            العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org/videos/&edit-text=&act=url" title="">
-                            And more!
-                            </a>
-                        </div>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -118,8 +126,7 @@
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/videos/" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/mainvideos/index.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -131,6 +138,7 @@
             <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
+        <!-- link to feedback -->
         
             <a class="dropdown-item" href="/training-material/feedback.html" title="Show feedback statistics about this repository">
                 <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN feedback
@@ -143,27 +151,14 @@
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
-                <label data-value="default" class="btn btn-secondary">
-                    <input type="radio" name="options" id="default" autocomplete="off"> Default
-                </label>
-                <label data-value="night" class="btn btn-secondary">
-                    <input type="radio" name="options" id="night" autocomplete="off"> Night
-                </label>
-                <label data-value="midnight" class="btn btn-secondary">
-                    <input type="radio" name="options" id="midnight" autocomplete="off"> Midnight
-                </label>
-                <label data-value="rainbow" class="btn btn-secondary">
-                    <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
-                </label>
-                <label data-value="progress" class="btn btn-secondary">
-                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
-                </label>
-                <label data-value="halloween" class="btn btn-secondary">
-                    <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
-                </label>
-                <label data-value="straya" class="btn btn-secondary">
-                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
-                </label>
+                    <button class="btn" data-theme="default">Default</button>
+                    <button class="btn" data-theme="night">Night</button>
+                    <button class="btn" data-theme="midnight">Midnight</button>
+                    <button class="btn" data-theme="rainbow">Rainbow</button>
+                    <button class="btn" data-theme="blm">✊🏿</button>
+                    <button class="btn" data-theme="progress" >🏳️‍🌈</button>
+                    <button class="btn" data-theme="halloween">🎃</button>
+                    <button class="btn" data-theme="straya">🇦🇺</button>
             </div>
 
         </div>
@@ -173,7 +168,6 @@
                 <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
             </div>
 
-            
             <div id="archive-selector">
             
                 <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/videos/" title="Version 2022-03-01">2022-03-01</a>
@@ -209,6 +203,7 @@
     </nav>
 </header>
 
+        
         <div class="container main-content" role="main">
         <section>
   <h1>GTN Videos</h1>
@@ -277,12 +272,14 @@
 			
 		
 	
+		
+	
+		
+	
 </div>
 
 <h2>Galaxy Server administration</h2>
 <div id="playlist">
-	
-		
 	
 		
 	
@@ -302,113 +299,18 @@
 		
 	
 		
-	
-		
 			
 			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/connect-to-compute-cluster/slides">
+				<a href="watch.html?v=admin/tutorials/backup-cleanup/slides">
 					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/connect-to-compute-cluster/slides.mp4.png" width="200px" />
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/backup-cleanup/slides.mp4.png" width="200px" />
 					</div>
 					<div>
-						<div class="title">Connecting Galaxy to a compute cluster</div>
+						<div class="title">Server Maintenance: Cleanup, Backup, and Restoration</div>
 					</div>
 				</a>
 			</div>
 			
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/systemd-supervisor/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/systemd-supervisor/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Controlling Galaxy with systemd or Supervisor</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/data-library/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/data-library/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Data Libraries</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/database/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/database/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Galactic Database</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/ansible-galaxy/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/ansible-galaxy/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Galaxy Installation with Ansible</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/interactive-tools/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/interactive-tools/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Galaxy Interactive Tools</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
 		
 	
 		
@@ -429,45 +331,20 @@
 		
 	
 		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/monitoring/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/monitoring/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Galaxy Monitoring with Telegraf and Grafana</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
 	
 		
 			
 			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/production/slides">
+				<a href="watch.html?v=admin/tutorials/data-library/slides">
 					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/production/slides.mp4.png" width="200px" />
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/data-library/slides.mp4.png" width="200px" />
 					</div>
 					<div>
-						<div class="title">Gearing towards production</div>
+						<div class="title">Data Libraries</div>
 					</div>
 				</a>
 			</div>
 			
-		
-	
-		
-	
-		
-	
 		
 	
 		
@@ -492,14 +369,31 @@
 		
 	
 		
+	
+		
 			
 			<div class="pl-item">
-				<a href="watch.html?v=admin/tutorials/maintenance/slides">
+				<a href="watch.html?v=admin/tutorials/monitoring/slides">
 					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/maintenance/slides.mp4.png" width="200px" />
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/monitoring/slides.mp4.png" width="200px" />
 					</div>
 					<div>
-						<div class="title">Server Maintenance and Backups</div>
+						<div class="title">Galaxy Monitoring with Telegraf and Grafana</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/database/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/database/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Galactic Database</div>
 					</div>
 				</a>
 			</div>
@@ -508,6 +402,83 @@
 	
 		
 	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/interactive-tools/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/interactive-tools/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Galaxy Interactive Tools</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/ansible-galaxy/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/ansible-galaxy/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Galaxy Installation with Ansible</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/connect-to-compute-cluster/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/connect-to-compute-cluster/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Connecting Galaxy to a compute cluster</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/production/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/production/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Gearing towards production</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=admin/tutorials/systemd-supervisor/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/systemd-supervisor/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Controlling Galaxy with systemd or Supervisor</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 		
@@ -522,13 +493,107 @@
 						<img src="https://training.galaxyproject.org/videos/topics/admin/tutorials/users-groups-quotas/slides.mp4.png" width="200px" />
 					</div>
 					<div>
-						<div class="title">User, Role, Group and Quota managment</div>
+						<div class="title">User, Role, Group, Quota, and Authentication managment</div>
 					</div>
 				</a>
 			</div>
 			
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+</div>
+
+<h2>Image analysis using Deep Learning</h2>
+<div id="playlist">
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=ai4life/tutorials/contribute-materials/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/ai4life/tutorials/contribute-materials/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Contribute to the BioImage.IO models</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=ai4life/tutorials/welcome-bioimageio/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/ai4life/tutorials/welcome-bioimageio/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Welcome to the BioImage Model Zoo</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=ai4life/tutorials/getting-started/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/ai4life/tutorials/getting-started/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">BioImage Model Zoo: Advanced models in one-click</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 </div>
@@ -536,19 +601,6 @@
 <h2>Climate</h2>
 <div id="playlist">
 	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=climate/slides/introduction">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/climate/slides/introduction.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Introduction to climate data</div>
-					</div>
-				</a>
-			</div>
-			
 		
 	
 		
@@ -560,25 +612,6 @@
 					</div>
 					<div>
 						<div class="title">Functionally Assembled Terrestrial Ecosystem Simulator (FATES)</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=climate/tutorials/pangeo/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/climate/tutorials/pangeo/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools</div>
 					</div>
 				</a>
 			</div>
@@ -601,23 +634,43 @@
 		
 	
 		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=climate/tutorials/pangeo/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/climate/tutorials/pangeo/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=climate/tutorials/introduction/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/climate/tutorials/introduction/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Introduction to climate data</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+	
+		
 	
 </div>
 
 <h2>Contributing to the Galaxy Training Material</h2>
 <div id="playlist">
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 		
 	
@@ -648,51 +701,32 @@
 	
 		
 	
-</div>
-
-<h2>RDMBites Data Management</h2>
-<div id="playlist">
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=data-management/tutorials/0013_file-naming/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/data-management/tutorials/0013_file-naming/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">How to Name Files</div>
-					</div>
-				</a>
-			</div>
-			
 		
 	
 		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=data-management/tutorials/0114_data-stewardship/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/data-management/tutorials/0114_data-stewardship/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">What is Data Stewardship?</div>
-					</div>
-				</a>
-			</div>
-			
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 		
 	
 </div>
 
 <h2>Development in Galaxy</h2>
 <div id="playlist">
-	
-		
-	
-		
-	
-		
 	
 		
 	
@@ -732,16 +766,6 @@
 		
 	
 		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 			
 			<div class="pl-item">
 				<a href="watch.html?v=dev/tutorials/tool-generators/slides">
@@ -756,10 +780,32 @@
 			
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 </div>
 
 <h2>Epigenetics</h2>
 <div id="playlist">
+	
+		
+	
+		
+	
+		
 	
 		
 	
@@ -786,16 +832,62 @@
 	
 		
 	
-		
-	
-		
-	
-		
-	
 </div>
 
 <h2>Genome Annotation</h2>
 <div id="playlist">
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=genome-annotation/tutorials/annotation-with-prokka/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/genome-annotation/tutorials/annotation-with-prokka/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Genome annotation with Prokka</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=genome-annotation/tutorials/apollo/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/genome-annotation/tutorials/apollo/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Refining Genome Annotations with Apollo (prokaryotes)</div>
+					</div>
+				</a>
+			</div>
+			
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 	
 		
 	
@@ -814,61 +906,67 @@
 			
 		
 	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=genome-annotation/tutorials/annotation-with-prokka/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/genome-annotation/tutorials/annotation-with-prokka/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Genome annotation with Prokka</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=genome-annotation/tutorials/apollo/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/genome-annotation/tutorials/apollo/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Refining Genome Annotations with Apollo</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
 </div>
 
 <h2>Proteomics</h2>
 <div id="playlist">
 	
 		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
 			
 			<div class="pl-item">
-				<a href="watch.html?v=proteomics/slides/introduction">
+				<a href="watch.html?v=proteomics/tutorials/introduction/slides">
 					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/proteomics/slides/introduction.mp4.png" width="200px" />
+						<img src="https://training.galaxyproject.org/videos/topics/proteomics/tutorials/introduction/slides.mp4.png" width="200px" />
 					</div>
 					<div>
 						<div class="title">Introduction to proteomics, protein identification, quantification and statistical modelling</div>
@@ -880,6 +978,44 @@
 	
 		
 	
+</div>
+
+<h2>Single Cell</h2>
+<div id="playlist">
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=single-cell/tutorials/scrna-intro/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/single-cell/tutorials/scrna-intro/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">An introduction to scRNA-seq data analysis</div>
+					</div>
+				</a>
+			</div>
+			
+			
+			<div class="pl-item">
+				<a href="watch.html?v=single-cell/tutorials/scrna-intro/slides_ES">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/single-cell/tutorials/scrna-intro/slides_ES.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">[ES] An introduction to scRNA-seq data analysis</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 		
@@ -901,9 +1037,52 @@
 		
 	
 		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=single-cell/tutorials/scrna-plates-batches-barcodes/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/single-cell/tutorials/scrna-plates-batches-barcodes/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Plates, Batches, and Barcodes</div>
+					</div>
+				</a>
+			</div>
+			
+		
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+</div>
+
+<h2>Teaching and Hosting Galaxy training</h2>
+<div id="playlist">
+	
+		
+	
+		
+			
+			<div class="pl-item">
+				<a href="watch.html?v=teaching/tutorials/gtn-for-instructors/slides">
+					<div class="cover">
+						<img src="https://training.galaxyproject.org/videos/topics/teaching/tutorials/gtn-for-instructors/slides.mp4.png" width="200px" />
+					</div>
+					<div>
+						<div class="title">Overview of the Galaxy Training Material for Instructors</div>
+					</div>
+				</a>
+			</div>
+			
 		
 	
 		
@@ -940,106 +1119,6 @@
 		
 	
 		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=transcriptomics/tutorials/scrna-intro/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/transcriptomics/tutorials/scrna-intro/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">An introduction to scRNA-seq data analysis</div>
-					</div>
-				</a>
-			</div>
-			
-			
-			<div class="pl-item">
-				<a href="watch.html?v=transcriptomics/tutorials/scrna-intro/slides_ES">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/transcriptomics/tutorials/scrna-intro/slides_ES.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">[ES] An introduction to scRNA-seq data analysis</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-			
-			<div class="pl-item">
-				<a href="watch.html?v=transcriptomics/tutorials/scrna-plates-batches-barcodes/slides">
-					<div class="cover">
-						<img src="https://training.galaxyproject.org/videos/topics/transcriptomics/tutorials/scrna-plates-batches-barcodes/slides.mp4.png" width="200px" />
-					</div>
-					<div>
-						<div class="title">Plates, Batches, and Barcodes</div>
-					</div>
-				</a>
-			</div>
-			
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 			
 			<div class="pl-item">
 				<a href="watch.html?v=transcriptomics/tutorials/mirna-target-finder/slides">
@@ -1054,6 +1133,46 @@
 			
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
+		
+	
 </div>
 
 
@@ -1061,55 +1180,81 @@
 </section>
 
         </div>
-        
-            <footer>
-    <div class="container">
-        <br><br>
-        <p>
-            The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
-            provides researchers with online training materials, connects them with local trainers, and helps promoting open data analysis practices worldwide.
-        </p>
-        <p>
-The content of the tutorials is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. The website and infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>.
-</p>
-        <p>This is revision <a href="https://github.com/galaxyproject/training-material/commit/abbb2805c56879b88bf6f83cffbe8458b287cb84">abbb2805c56879b88bf6f83cffbe8458b287cb84</a></p>
+        <footer>
+	<hr />
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6" style="text-align: left">
+				<p>
+					The <a href="https://galaxyproject.org/teach/gtn/">Galaxy Training Network</a>
+					provides researchers with online training materials, connects them with local trainers, and helps promoting FAIR and Open Science practices worldwide. All contributions are subject to the <a rel="code-of-conduct" href="https://galaxyproject.org/community/coc/">Galaxy Project Code of Conduct</a>.
+				</p>
+				<p>
+				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
+				</p>
+				<p>
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				</p>
+			</div>
+			<div class="col-sm-6" style="text-align: right">
+				
+				<p>
+					<i>This Material</i>:
+					
+					It is licensed under
+					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+						Creative Commons Attribution 4.0 International License
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/galaxyproject/training-material/edit/main/videos/index.md" title="Edit on GitHub">
+					<i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+					</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
     </div>
 </footer>
 
+        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
+        <script src="/training-material/assets/js/popper.min.js"></script>
+        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
+        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
+        <script src="/training-material/assets/js/main.js"></script>
+        <script src="/training-material/assets/js/clipboard.min.js"></script>
+        <script>
+        document.querySelectorAll('div.highlight').forEach((snippet) => {
+                // Google translate has additional #text nodes mixed in with
+                // the pre for some reason.
+                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
+                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
+                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
+                }
+        });
+
+        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
+            target:function(trigger){return trigger.nextElementSibling;
+        }});
+        </script>
         
+
+        <script type="text/javascript">
+            if(window.location.hostname === "galaxyproject.github.io") {
+                // Redirect
+                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
+                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
+
+                window.setTimeout(function(){
+                    window.location.href = redirect;
+                }, 5000)
+
+            }
+        </script>
     </body>
-    <script type="text/javascript" src="/training-material/assets/js/jquery.slim.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-    <script type="text/javascript" src="/training-material/assets/js/details-element-polyfill.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/javascript" src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/main.js"></script>
-    <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
-
-    <script type="text/javascript" src="/training-material/assets/js/clipboard.min.js"></script>
-    <script type="text/javascript">
-    var snippets=document.querySelectorAll('div.highlight');
-    [].forEach.call(snippets,function(snippet){
-        snippet.firstChild.insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-    });
-
-    var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-        target:function(trigger){return trigger.nextElementSibling;
-    }});
-    </script>
-    
-
-    <script type="text/javascript">
-        if(window.location.hostname === "galaxyproject.github.io") {
-            // Redirect
-            var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-            $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-            window.setTimeout(function(){
-                window.location.href = redirect;
-            }, 5000)
-
-        }
-    </script>
 </html>
