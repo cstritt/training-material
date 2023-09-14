@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  release: "galaxy-training-network@ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -32,21 +32,27 @@ Sentry.init({
 </script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">
         <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as="script" crossorigin>
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.theme.js?v=1694703124' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.main.js?v=1694703124' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
+
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
 <meta name="DC.title" content="Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)">
 <meta name="DC.publisher" content="Galaxy Training Network">
-<meta name="DC.date" content="2023-05-17 17:21:19 +0000">
+<meta name="DC.date" content="2023-07-14 10:22:41 +0000">
 <meta name="DC.creator" content="Matej Troják">
 <meta name="DC.creator" content="Helge Hecht">
 <meta name="DC.creator" content="Maxim Skoryk">
@@ -60,7 +66,7 @@ Sentry.init({
         <meta property="og:title" content="Galaxy Training: Mass spectrometry: GC-MS data processing (with XCMS, RAMC...">
         <meta property="og:description" content="Training material to analyse Mass spectrometry data in Ga...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
         <script type="application/ld+json">
@@ -89,7 +95,7 @@ Sentry.init({
     "name": "Galaxy Training Network",
     "url": "https://galaxyproject.org/teach/gtn/"
   },
-  "dateModified": "2023-05-17 17:21:19 +0000",
+  "dateModified": "2023-07-14 10:22:41 +0000",
   "discussionUrl": "https://gitter.im/Galaxy-Training-Network/Lobby",
   "headline": "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)",
   "interactivityType": "mixed",
@@ -295,7 +301,7 @@ Sentry.init({
         
     </head>
     <body data-spy="scroll" data-target="#toc">
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script src='/training-material/assets/js/bundle.theme.js?v=1694703124'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -364,7 +370,7 @@ Sentry.init({
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/maintopics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -411,13 +417,13 @@ Sentry.init({
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -430,7 +436,7 @@ Sentry.init({
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -467,14 +473,7 @@ Sentry.init({
 
 
 
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
 
-
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <article class="tutorial topic-metabolomics">
     <h1 data-toc-skip>Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)</h1>
@@ -490,7 +489,7 @@ Sentry.init({
 	<tr>
 		<td><abbr title="These people wrote the bulk of the tutorial, they may have done the analysis, built the workflow, and wrote the text themselves.">Author(s)</abbr></td>
 		<td>
-			<a href="/training-material/hall-of-fame/xtrojak/" class="contributor-badge contributor-xtrojak"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/xtrojak?s=27" alt="Avatar">Matej Troják</a><a href="/training-material/hall-of-fame/hechth/" class="contributor-badge contributor-hechth"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hechth?s=27" alt="Avatar">Helge Hecht</a><a href="/training-material/hall-of-fame/maximskorik/" class="contributor-badge contributor-maximskorik"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/maximskorik?s=27" alt="Avatar">Maxim Skoryk</a>
+			<a href="/training-material/hall-of-fame/xtrojak/" class="contributor-badge contributor-xtrojak"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/xtrojak?s=36" alt="Avatar" width="36" height="36">Matej Troják</a><a href="/training-material/hall-of-fame/hechth/" class="contributor-badge contributor-hechth"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/hechth?s=36" alt="Avatar" width="36" height="36">Helge Hecht</a><a href="/training-material/hall-of-fame/maximskorik/" class="contributor-badge contributor-maximskorik"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/maximskorik?s=36" alt="Avatar" width="36" height="36">Maxim Skoryk</a>
 		</td>
 	</tr>
 	
@@ -502,7 +501,7 @@ Sentry.init({
 	<tr>
 		<td><abbr title="These people edited the text, either for spelling and grammar, flow, GTN-fit, or other similar editing categories">Editor(s)</abbr></td>
 		<td>
-			<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a></td>
+			<a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/hexylena?s=36" alt="Avatar" width="36" height="36">Helena Rasche</a></td>
 	</tr>
 	
 
@@ -710,12 +709,6 @@ Sentry.init({
 	
 
     
-	<li>
-		<a class="dropdown-item" href="https://usegalaxy.org" title="">
-			UseGalaxy.org (Main) <abbr title="This instance supports the precise tool versions used in this tutorial">✅</abbr> ⭐️
-		</a>
-	</li>
-    
     
 	<li class="dropdown-header">
 		<b>Possibly Working</b>
@@ -739,7 +732,7 @@ Sentry.init({
         </ul>
         
 
-        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> May 17, 2023 </div>
+        <div><strong><i class="far fa-calendar" aria-hidden="true"></i> Last modification:</strong> Jul 14, 2023 </div>
         <div><strong><i class="fas fa-balance-scale" aria-hidden="true"></i> License:</strong>
 		
             
@@ -747,7 +740,7 @@ Sentry.init({
              The GTN Framework is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
         </div>
         
-        <div><strong>Short Link:</strong> <a href="https://gxy.io/GTN:T00344">https://gxy.io/GTN:T00344</a> </div>
+        <div><strong><i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>:</strong> <a href="https://gxy.io/GTN:T00344">https://gxy.io/GTN:T00344</a> </div>
         
     </blockquote>
     </section>
@@ -769,7 +762,7 @@ Sentry.init({
 <p>Many packages are available for the analysis of GC-MS or LC-MS data - for more details see the reviews by <span class="citation"><a href="#Stanstrup2019">Stanstrup <i>et al.</i> 2019</a></span> and <span class="citation"><a href="#Misra2021">Misra 2021</a></span>. In this tutorial, we focus on open-source solutions integrated within the Galaxy framework, namely <strong>XCMS</strong>, <strong>RAMClustR</strong>, <strong>RIAssigner</strong>, and <strong>matchms</strong>. In this tutorial, we will learn how to (1) extract features from the raw data using <strong>XCMS</strong> (<span class="citation"><a href="#Smith2006">Smith <i>et al.</i> 2006</a></span>), (2) deconvolute the detected features into spectra with <strong>RAMClustR</strong> (<span class="citation"><a href="#broeckling2014ramclust">Broeckling <i>et al.</i> 2014</a></span>), (3) compute retention indices with <strong>RIAssigner</strong> (<span class="citation"><a href="#hecht2022riassigner">Hecht <i>et al.</i> 2022</a></span>), and (4) identify the present compounds leveraging spectra and retention indices using <strong>matchms</strong> (<span class="citation"><a href="#Huber2020">Huber <i>et al.</i> 2020</a></span>). For demonstration, we use three GC-[EI+] high-resolution mass spectrometry data files generated from quality control seminal plasma samples.</p>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-seminal-plasma-samples"><button class="gtn-boxify-button details" type="button" aria-controls="details-seminal-plasma-samples" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Seminal plasma samples<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-seminal-plasma-samples"><button class="gtn-boxify-button details" type="button" aria-controls="details-seminal-plasma-samples" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Seminal plasma samples<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <p>The seminal plasma samples were analyzed according to the standard operating procedure <a href="https://zenodo.org/record/5734331">(SOP) for metabolite profiling of seminal plasma via GC Orbitrap</a>.
 The 3 samples used in this training are pooled quality control (QC) samples coming from about 200 samples. The pooled samples were analyzed in dilution series to test the system suitability and the quality of the assay.</p>
@@ -803,6 +796,10 @@ The 3 samples used in this training are pooled quality control (QC) samples comi
   <li><a href="#retention-index-calculation" id="markdown-toc-retention-index-calculation">Retention index calculation</a></li>
   <li><a href="#identification" id="markdown-toc-identification">Identification</a>    <ol>
       <li><a href="#compute-similarity-scores" id="markdown-toc-compute-similarity-scores">Compute similarity scores</a></li>
+      <li><a href="#cosine-greedy" id="markdown-toc-cosine-greedy">Cosine Greedy</a></li>
+      <li><a href="#cosine-hungarian" id="markdown-toc-cosine-hungarian">Cosine Hungarian</a></li>
+      <li><a href="#modified-cosine" id="markdown-toc-modified-cosine">Modified Cosine</a></li>
+      <li><a href="#neutral-losses-cosine" id="markdown-toc-neutral-losses-cosine">Neutral Losses Cosine</a></li>
       <li><a href="#format-the-output" id="markdown-toc-format-the-output">Format the output</a></li>
     </ol>
   </li>
@@ -818,7 +815,7 @@ The 3 samples used in this training are pooled quality control (QC) samples comi
 <h2 id="import-the-data-into-galaxy">Import the data into Galaxy</h2>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-upload-data"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Upload data</div>
+  <div class="box-title hands-on-title" id="hands-on-upload-data"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Upload data</div>
 
   <ol>
     <li>
@@ -837,7 +834,7 @@ https://zenodo.org/record/7890956/files/29_qc_no_dil_milliq.raw
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>     <p>Click on <strong>Collection</strong> on the top</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Change <strong>Type (set all):</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">mzml</code></p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li>     <p>Click on <strong>Build</strong> when available</p>   </li>   <li>     <p>Enter a name for the collection</p>     <ul>       <li>input</li>     </ul>   </li>   <li>Click on <strong>Create list</strong> (and wait a bit)</li> </ul> </blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Click <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Upload Data</strong> at the top of the tool panel</p>   </li>   <li>     <p>Click on <strong>Collection</strong> on the top</p>   </li>   <li>Select <i class="fa fa-edit" aria-hidden="true"></i><span class="visually-hidden">galaxy-wf-edit</span> <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Change <strong>Type (set all):</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">mzml</code></p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li>     <p>Click on <strong>Build</strong> when available</p>   </li>   <li>     <p>Enter a name for the collection</p>     <ul>       <li>input</li>     </ul>   </li>   <li>Click on <strong>Create list</strong> (and wait a bit)</li> </ul> </blockquote>
       <p><!--END_SNIPPET--></p>
     </li>
     <li>
@@ -858,7 +855,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
 </code></pre></div>      </div>
 
       <!--SNIPPET-->
-      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
+      <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Click <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Upload Data</strong> at the top of the tool panel</p>   </li>   <li>Select <i class="fa fa-edit" aria-hidden="true"></i><span class="visually-hidden">galaxy-wf-edit</span> <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
       <p><!--END_SNIPPET--></p>
 
       <!--SNIPPET-->
@@ -872,7 +869,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
       <p><!--END_SNIPPET--></p>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment-the-extra-files"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  The extra files</div>
+        <div class="box-title comment-title" id="comment-the-extra-files"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  The extra files</div>
 
         <p>The three additional files contain the <strong>reference alkanes</strong>, the <strong>reference spectral library</strong>, and the <strong>sample metadata</strong>. Those files are auxiliary inputs used in the data processing and contain either extra information about the samples or serve as reference data for indexing and identification.</p>
 
@@ -894,7 +891,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
 <p>Our input data are in <code class="language-plaintext highlighter-rouge">.raw</code> format, which is not suitable for the downstream tools in this tutorial. We use the tool <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2" title="msconvert tool" aria-role="link"><strong>msconvert</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2</span></span> to convert our samples to the appropriate format (<code class="language-plaintext highlighter-rouge">.mzML</code> in this case).</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-convert-the-raw-data-to-mzml"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Convert the raw data to mzML</div>
+  <div class="box-title hands-on-title" id="hands-on-convert-the-raw-data-to-mzml"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Convert the raw data to mzML</div>
 
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2" title="msconvert tool" aria-role="link"><strong>msconvert</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/galaxyp/msconvert/msconvert/3.0.20287.2</span></span> with the following parameters:
@@ -910,7 +907,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
       </ul>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment-centroids"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  Centroids</div>
+        <div class="box-title comment-title" id="comment-centroids"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  Centroids</div>
 
         <p><code class="language-plaintext highlighter-rouge">msconvert</code> with selected parameters computes centroids in the m/z domain. MS instruments continuously sample and record signals. Therefore, a mass peak for a single ion in one spectrum consists of multiple intensities at discrete m/z values. Centroiding is the process of reducing these mass peaks to a single representative signal, the centroid. This results in much smaller file sizes without losing too much information. In the further steps, <strong>XCMS</strong> uses the <em>centWave</em> chromatographic peak detection algorithm, which was designed for centroided data. That is the reason we perform the centroiding prior to chromatographic peak detection in this step.</p>
       </blockquote>
@@ -924,7 +921,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
 <p>The first part of data processing is using the <strong>XCMS</strong> tool to detect peaks in the MS signal. For that, we first need to take the <code class="language-plaintext highlighter-rouge">.mzML</code> files and create a format usable by the <strong>XCMS</strong> tool. <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0" title="MSnbase readMSData tool" aria-role="link"><strong>MSnbase readMSData</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0</span></span> (<span class="citation"><a href="#gatto2012msnbase">Gatto and Lilley 2012</a></span>. <span class="citation"><a href="#gatto2020msnbase">Gatto <i>et al.</i> 2020</a></span>) takes as input our files and prepares <code class="language-plaintext highlighter-rouge">RData</code> files for the first <strong>XCMS</strong> step.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-create-the-xcms-object"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Create the **XCMS** object</div>
+  <div class="box-title hands-on-title" id="hands-on-create-the-xcms-object"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Create the XCMS object</div>
 
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0" title="MSnbase readMSData tool" aria-role="link"><strong>MSnbase readMSData</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/msnbase_readmsdata/msnbase_readmsdata/2.16.1+galaxy0</span></span> with the following parameters:
@@ -937,7 +934,7 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
       <p><!--END_SNIPPET--></p>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment-output-input-raw-rdata"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  Output - `input.raw.RData`</div>
+        <div class="box-title comment-title" id="comment-output-input-raw-rdata"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  Output - `input.raw.RData`</div>
 
         <p>Collection of <code class="language-plaintext highlighter-rouge">rdata.msnbase.raw</code> files. <code class="language-plaintext highlighter-rouge">Rdata</code> file that is necessary in the next step of the workflow. These serve for an internal R representation of <strong>XCMS</strong> objects needed in the further steps.</p>
       </blockquote>
@@ -950,12 +947,12 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
 <p>The first step in the workflow is to detect the peaks in our data using <strong>XCMS</strong>. This part, however, is covered by a <a href="/training-material/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html">separate tutorial</a>. Although the tutorial is dedicated to LC-MS data, it can also be followed for our GC-MS data. Therefore, in this section, we do not explain this part of the workflow in detail but rather refer the reader to the dedicated tutorial. Please also pay attention to the parameter values for individual Galaxy tools, as these can differ from the referred tutorial and are adjusted to our dataset.</p>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-skip-this-step"><button class="gtn-boxify-button details" type="button" aria-controls="details-skip-this-step" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Skip this step<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-skip-this-step"><button class="gtn-boxify-button details" type="button" aria-controls="details-skip-this-step" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Skip this step<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <p>Since this step is already covered in a <a href="/training-material/topics/metabolomics/tutorials/lcms-preprocessing/tutorial.html">separate tutorial</a>, it is possible to skip it. Instead, you can continue with <a href="/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html#peak-deconvolution">Peak deconvolution</a> step using a preprocessed <strong>XCMS</strong> object file prepared for you.</p>
 
   <blockquote class="notranslate hands_on">
-    <div class="box-title hands-on-title" id="hands-on-upload-data-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Upload data</div>
+    <div class="box-title hands-on-title" id="hands-on-upload-data-1"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Upload data</div>
 
     <ol>
       <li>
@@ -969,15 +966,13 @@ https://zenodo.org/record/7890956/files/sample_metadata.tsv
         <p>Import the following files from <a href="https://zenodo.org/record/7890956">Zenodo</a>:</p>
 
         <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/7890956/files/XCMS_object.rdata.xcms.fillpeaks
-https://zenodo.org/record/7890956/files/reference_alkanes.csv
-https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 </code></pre></div>        </div>
 
         <!--SNIPPET-->
-        <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-2"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-2" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Open the Galaxy Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> on the top-right of the tool panel)</p>   </li>   <li>Select <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
+        <blockquote class="tip">   <div class="box-title tip-title" id="tip-importing-via-links-2"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-importing-via-links-2" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Importing via links<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Copy the link location</li>   <li>     <p>Click <i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden">galaxy-upload</span> <strong>Upload Data</strong> at the top of the tool panel</p>   </li>   <li>Select <i class="fa fa-edit" aria-hidden="true"></i><span class="visually-hidden">galaxy-wf-edit</span> <strong>Paste/Fetch Data</strong></li>   <li>     <p>Paste the link(s) into the text field</p>   </li>   <li>     <p>Press <strong>Start</strong></p>   </li>   <li><strong>Close</strong> the window</li> </ul> </blockquote>
         <p><!--END_SNIPPET--></p>
 
-        <p>Please pay attention to the format of all uploaded files, and make sure they were correctly imported. The format of <strong>XCMS</strong> object is <code class="language-plaintext highlighter-rouge">rdata.xcms.fillpeaks</code>.</p>
+        <p>The format of uploaded file containing <strong>XCMS</strong> object should be <code class="language-plaintext highlighter-rouge">rdata.xcms.fillpeaks</code>.</p>
 
         <!--SNIPPET-->
         <blockquote class="tip">   <div class="box-title tip-title" id="tip-understanding-datatypes-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-understanding-datatypes-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Understanding Datatypes<span class="fold-unfold fa fa-minus-square"></span></button></div>   <ul>   <li>Allow Galaxy to detect the datatype during Upload, and adjust from there if needed.</li>   <li>Tool forms will filter for the appropriate datatypes it can use for each input.</li>   <li><a href="https://training.galaxyproject.org/training-material/faqs/galaxy/datasets_change_datatype.html">Directly changing</a> a datatype can lead to errors. Be intentional and consider <a href="https://training.galaxyproject.org/training-material/faqs/galaxy/datasets_convert_datatype.html">converting</a> instead when possible.</li>   <li>Dataset content can also be adjusted (tools: Data manipulation) and the expected <a href="https://training.galaxyproject.org/training-material/faqs/galaxy/#detecting-the-datatype-file-format">datatype detected</a>. Detected datatypes are the most reliable in most cases.</li>   <li>If a tool does not accept a dataset as valid input, it is not in the correct format with the correct datatype.</li>   <li>Once a dataset’s content matches the datatype, and that dataset is repeatedly used (example: Reference annotation) use that same dataset for all steps in an analysis or expect problems. This may mean rerunning prior tools if you need to make a correction.</li>   <li>Tip: Not sure what datatypes a tool is expecting for an input?     <ol>       <li>Create a new empty history</li>       <li>Click on a tool from the tool panel</li>       <li>The tool form will list the accepted datatypes per input</li>     </ol>   </li>   <li><em>Warning</em>: In some cases, tools will transform a dataset to a new datatype at runtime for you.     <ul>       <li>This is generally helpful, and best reserved for smaller datasets.</li>       <li>Why? This can also unexpectedly create hidden datasets that are near duplicates of your original data, only in a different format.</li>       <li>For large data, that can quickly consume working space (quota).</li>       <li>Deleting/purging any hidden datasets can lead to errors if you are still using the original datasets as an input.</li>       <li>Consider <a href="https://training.galaxyproject.org/training-material/faqs/galaxy/datasets_convert_datatype.html">converting</a> to the expected datatype yourself when data is large.</li>       <li>Then test the tool directly on converted data. If it works, purge the original to recover space.</li>     </ul>   </li> </ul> </blockquote>
@@ -994,7 +989,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>The first step is to extract peaks from each of your data files independently. For this purpose, we use the <em>centWave</em> chromatographic peak detection algorithm implemented in <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0" title="xcms findChromPeaks (xcmsSet) tool" aria-role="link"><strong>xcms findChromPeaks (xcmsSet)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0</span></span>.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-peak-picking"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Peak picking</div>
+  <div class="box-title hands-on-title" id="hands-on-peak-picking"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Peak picking</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0" title="xcms findChromPeaks (xcmsSet) tool" aria-role="link"><strong>xcms findChromPeaks (xcmsSet)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_xcmsset/abims_xcms_xcmsSet/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1022,7 +1017,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>At this step, you obtain a dataset collection containing one <code class="language-plaintext highlighter-rouge">RData</code> file per sample, with independent lists of ions. Next, we want to identify the ions shared between samples. To do so, first, you need to group your individual <code class="language-plaintext highlighter-rouge">RData</code> files into a single one.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-merging-files"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Merging files</div>
+  <div class="box-title hands-on-title" id="hands-on-merging-files"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Merging files</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0" title="xcms findChromPeaks Merger tool" aria-role="link"><strong>xcms findChromPeaks Merger</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_merge/xcms_merge/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1037,7 +1032,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>Now we can proceed with the grouping and determining shared ions among samples. The aim of this step, called <em>grouping</em>, is to obtain a single matrix of ions’ intensities across all samples.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-grouping-peaks"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Grouping peaks</div>
+  <div class="box-title hands-on-title" id="hands-on-grouping-peaks"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Grouping peaks</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0" title="xcms groupChromPeaks (group) tool" aria-role="link"><strong>xcms groupChromPeaks (group)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1060,7 +1055,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>A deviation in retention time occurs from one sample to another, especially when you inject large sequences of samples. This step aims at correcting retention time drift for each peak among samples.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-retention-time-correction"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Retention time correction</div>
+  <div class="box-title hands-on-title" id="hands-on-retention-time-correction"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Retention time correction</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy0" title="xcms adjustRtime (retcor) tool" aria-role="link"><strong>xcms adjustRtime (retcor)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_retcor/abims_xcms_retcor/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1081,7 +1076,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>By applying retention time correction, the used retention time values were modified. Consequently, applying this step to your data requires completing it with an additional <em>grouping</em> step.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-grouping-peaks-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Grouping peaks</div>
+  <div class="box-title hands-on-title" id="hands-on-grouping-peaks-1"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Grouping peaks</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0" title="xcms groupChromPeaks (group) tool" aria-role="link"><strong>xcms groupChromPeaks (group)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_group/abims_xcms_group/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1110,7 +1105,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
 <p>At this point, the peak list may contain <code class="language-plaintext highlighter-rouge">NA</code> values when peaks were not considered in only some of the samples in the first peak-picking step. In this step, we will integrate the signal in the m/z-rt area of an ion (chromatographic peak group) for samples in which no chromatographic peak for this ion was identified.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-integrating-areas-of-missing-peaks"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Integrating areas of missing peaks</div>
+  <div class="box-title hands-on-title" id="hands-on-integrating-areas-of-missing-peaks"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Integrating areas of missing peaks</div>
 
   <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy0" title="xcms fillChromPeaks (fillPeaks) tool" aria-role="link"><strong>xcms fillChromPeaks (fillPeaks)</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/lecorguille/xcms_fillpeaks/abims_xcms_fillPeaks/3.12.0+galaxy0</span></span> with the following parameters:</p>
   <ul>
@@ -1125,7 +1120,7 @@ https://zenodo.org/record/7890956/files/reference_spectral_library.msp
   <p>You can leave the other parameters with their default values.</p>
 
   <blockquote class="comment">
-    <div class="box-title comment-title" id="comment-output"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  Output</div>
+    <div class="box-title comment-title" id="comment-output"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  Output</div>
 
     <p>After the <code class="language-plaintext highlighter-rouge">fillChromPeaks</code> step, you obtain your final intensity table. At this step, you have everything mandatory to begin analysing
 your data:</p>
@@ -1140,10 +1135,10 @@ your data:</p>
 
 <h1 id="peak-deconvolution">Peak deconvolution</h1>
 
-<p>The next step is deconvoluting the detected peaks in order to reconstruct the full spectra of the chemical compounds present in the sample, separated by the chromatography and ionized in the mass spectrometer. <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.2.4+galaxy2" title="RAMClustR tool" aria-role="link"><strong>RAMClustR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.2.4+galaxy2</span></span> is used to group features based on correlations across samples in a hierarchy, focusing on consistency across samples. While each feature is typically derived from a single compound and represents a fragment, the whole mass spectrum can be used to more accurately identify the precursor compound or molecular ion. <strong>RAMClustR</strong> uses a novel grouping method that operates in an unsupervised manner to group peaks into spectra without relying on the predicting in-source phenomena (in-source fragments or adduct formation) or fragmentation mechanisms.</p>
+<p>The next step is deconvoluting the detected peaks in order to reconstruct the full spectra of the chemical compounds present in the sample, separated by the chromatography and ionized in the mass spectrometer. <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.3.0+galaxy0" title="RAMClustR tool" aria-role="link"><strong>RAMClustR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.3.0+galaxy0</span></span> is used to group features based on correlations across samples in a hierarchy, focusing on consistency across samples. While each feature is typically derived from a single compound and represents a fragment, the whole mass spectrum can be used to more accurately identify the precursor compound or molecular ion. <strong>RAMClustR</strong> uses a novel grouping method that operates in an unsupervised manner to group peaks into spectra without relying on the predicting in-source phenomena (in-source fragments or adduct formation) or fragmentation mechanisms.</p>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-ramclust-method"><button class="gtn-boxify-button details" type="button" aria-controls="details-ramclust-method" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  RAMClust method<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-ramclust-method"><button class="gtn-boxify-button details" type="button" aria-controls="details-ramclust-method" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  RAMClust method<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <p>The RAMclust similarity scoring utilises a Gaussian function, allowing flexibility in tuning correlational and retention time similarity decay rates independently, based on the dataset and the acquisition instrumentation. The correlational relationship between two features can be described by either MS-MS, MS-idMS/MS, or idMS/MS-idMS/MS values, and we support several correlation methods (e.g. Pearson’s method) to calculate similarity. These are parametrised by <code class="language-plaintext highlighter-rouge">sigma_t</code> and <code class="language-plaintext highlighter-rouge">sigma_r</code>, Gaussian tuning parameters of retention time similarity and correlational score, respectively, between feature pairs.</p>
 
@@ -1154,10 +1149,10 @@ your data:</p>
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-peak-deconvolution"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Peak deconvolution</div>
+  <div class="box-title hands-on-title" id="hands-on-peak-deconvolution"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Peak deconvolution</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.2.4+galaxy2" title="RAMClustR tool" aria-role="link"><strong>RAMClustR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.2.4+galaxy2</span></span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.3.0+galaxy0" title="RAMClustR tool" aria-role="link"><strong>RAMClustR</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/ramclustr/ramclustr/1.3.0+galaxy0</span></span> with the following parameters:
       <ul>
         <li><em>“Choose input format:”</em>: <code class="language-plaintext highlighter-rouge">XCMS</code>
           <ul>
@@ -1191,44 +1186,46 @@ your data:</p>
 <p>The spectral data comes as an <code class="language-plaintext highlighter-rouge">.msp</code> file, which is a text file structured according to the <strong>NIST MSSearch</strong> spectra format. <code class="language-plaintext highlighter-rouge">.msp</code> is one of the generally accepted formats for mass spectral libraries (or collections of unidentified spectra, so called spectral archives), and it is compatible with lots of spectra processing programmes (MS-DIAL, NIST MS Search, AMDIS, etc.). Because <code class="language-plaintext highlighter-rouge">.msp</code> files are text-based, they can be viewed as simple <code class="language-plaintext highlighter-rouge">txt</code> files:</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-data-exploration"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Data Exploration</div>
+  <div class="box-title hands-on-title" id="hands-on-data-exploration"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Data Exploration</div>
 
   <p>Click <em>“View data”</em> <i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> icon next to the dataset in the Galaxy history. The contents of the file would look like this:</p>
 
-  <p><!--SNIPPET-->&lt;blockquote class="tip"&gt;   &lt;div class="box-title tip-title" id="tip-different-dataset-icons-and-their-usage"&gt;<button class="gtn-boxify-button tip" type="button" aria-controls="tip-different-dataset-icons-and-their-usage" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Different dataset icons and their usage<span class="fold-unfold fa fa-minus-square"></span></button>&lt;/div&gt;   &lt;p&gt;Dataset icons and their usage:&lt;/p&gt;   &lt;ul&gt;   &lt;li&gt;<i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> <strong>“Eye icon”</strong>: Display data of the job in the browser.&lt;/li&gt;   &lt;li&gt;<i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>“Pencil icon”</strong>: Edit attributes of the job.&lt;/li&gt;   &lt;li&gt;<i class="fas fa-trash" aria-hidden="true"></i><span class="visually-hidden">galaxy-delete</span> <strong>“Trash icon”</strong>: Delete the job.&lt;/li&gt;   &lt;li&gt;<i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">galaxy-info</span> <strong>“Info icon”</strong>: Job details and run information.&lt;/li&gt;   &lt;li&gt;<i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> <strong>“Refresh/Rerun icon”</strong>: Run this (selected) job again or examine original submitted form (filled in).&lt;/li&gt;   &lt;li&gt;<i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden">galaxy-bug</span> <strong>“Bug icon”</strong>: Review and optionally submit a bug report.&lt;/li&gt; &lt;/ul&gt; &lt;/blockquote&gt; <!--END_SNIPPET--></p>
+  <!--SNIPPET-->
+  <blockquote class="tip">   <div class="box-title tip-title" id="tip-different-dataset-icons-and-their-usage"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-different-dataset-icons-and-their-usage" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Different dataset icons and their usage<span class="fold-unfold fa fa-minus-square"></span></button></div>   <p>Dataset icons and their usage:</p>   <ul>   <li><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">galaxy-eye</span> <strong>“Eye icon”</strong>: Display data of the job in the browser.</li>   <li><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">galaxy-pencil</span> <strong>“Pencil icon”</strong>: Edit attributes of the job.</li>   <li><i class="fas fa-trash" aria-hidden="true"></i><span class="visually-hidden">galaxy-delete</span> <strong>“Trash icon”</strong>: Delete the job.</li>   <li><i class="fas fa-info-circle" aria-hidden="true"></i><span class="visually-hidden">galaxy-info</span> <strong>“Info icon”</strong>: Job details and run information.</li>   <li><i class="fas fa-redo" aria-hidden="true"></i><span class="visually-hidden">galaxy-refresh</span> <strong>“Refresh/Rerun icon”</strong>: Run this (selected) job again or examine original submitted form (filled in).</li>   <li><i class="fas fa-bug" aria-hidden="true"></i><span class="visually-hidden">galaxy-bug</span> <strong>“Bug icon”</strong>: Review and optionally submit a bug report.</li> </ul> </blockquote>
+  <p><!--END_SNIPPET--></p>
 
-  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    NAME:C001
-    IONMODE:Negative
-    SPECTRUMTYPE:Centroid
-    RETENTIONTIME:383.27
-    Num Peaks:231
-    217.1073 64041926
-    243.0865 35597866
-    257.1134 31831229
-    224.061 27258239
-    258.11 24996353
-    241.0821 23957171
-    315.1188 13756744
-    ...
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NAME:C001
+IONMODE:Negative
+SPECTRUMTYPE:Centroid
+RETENTIONTIME:383.27
+Num Peaks:231
+217.1073 64041926
+243.0865 35597866
+257.1134 31831229
+224.061 27258239
+258.11 24996353
+241.0821 23957171
+315.1188 13756744
+...
 
-    NAME:C002
-    IONMODE:Negative
-    SPECTRUMTYPE:Centroid
-    RETENTIONTIME:281.62
-    Num Peaks:165
-    307.1573 299174880
-    147.0654 298860831
-    149.0447 287809889
-    218.1066 118274758
-    189.076 112486871
-    364.1787 75134143
-    191.0916 52526567
-    308.1579 52057158
-    ...
+NAME:C002
+IONMODE:Negative
+SPECTRUMTYPE:Centroid
+RETENTIONTIME:281.62
+Num Peaks:165
+307.1573 299174880
+147.0654 298860831
+149.0447 287809889
+218.1066 118274758
+189.076 112486871
+364.1787 75134143
+191.0916 52526567
+308.1579 52057158
+...
 </code></pre></div>  </div>
 
   <blockquote class="details">
-    <div class="box-title details-title" id="details-negative-ion-mode"><button class="gtn-boxify-button details" type="button" aria-controls="details-negative-ion-mode" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Negative ion mode<span class="fold-unfold fa fa-minus-square"></span></button></div>
+    <div class="box-title details-title" id="details-negative-ion-mode"><button class="gtn-boxify-button details" type="button" aria-controls="details-negative-ion-mode" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Negative ion mode<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
     <p>You might wonder how can the ionisation mode (<em>IONMODE</em>) for GC-MS data be negative when using electron impact (EI+) ionization. This is, of course, incorrect. This is actually just a default behaviour of <strong>RAMClustR</strong>. We can optionally change this by providing <strong>RAMClustR</strong> an experiment definition file. This file can be created manually or using the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/ramclustr_define_experiment/ramclustr_define_experiment/1.0.2" title="RAMClustR define experiment tool" aria-role="link"><strong>RAMClustR define experiment</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/ramclustr_define_experiment/ramclustr_define_experiment/1.0.2</span></span> tool. There we can specify annotations such as what instrument we used or ionisation mode (which was EI+ in our case), and this will be transfered to the <code class="language-plaintext highlighter-rouge">.msp</code> file. Finally, we can provide such a file as an input to <strong>RAMClustR</strong> in the <em>Extras</em> inputs section.</p>
 
@@ -1246,10 +1243,10 @@ your data:</p>
 
 <p>The retention index (<span class="citation"><a href="#van1963generalization">Van Den Dool and Kratz 1963</a></span>) is a way how to convert equipment- and experiment-specific retention times into system-independent normalised constants for GC-based experiments. The retention index of a compound is computed from the retention time by interpolating between the retention times adjacent alkanes which are assigned a fixed retention index. This can be different for the individual chromatographic system, but the derived retention indices are independent and allow comparing values measured by different analytical laboratories.</p>
 
-<p>We use the package <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.2+galaxy1" title="RIAssigner tool" aria-role="link"><strong>RIAssigner</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.2+galaxy1</span></span> to compute retention indices for files in the <code class="language-plaintext highlighter-rouge">.msp</code> format using an indexed reference list of alkanes in <code class="language-plaintext highlighter-rouge">.csv</code> or <code class="language-plaintext highlighter-rouge">.msp</code> format. The output follows the same format as the input but with added retention index values. These can be used at a subsequent stage to improve compound identification (<span class="citation"><a href="#kumari2011applying">Kumari <i>et al.</i> 2011</a></span>). Multiple computation methods (e.g. piecewise-linear or cubic spline) are supported by the tool.</p>
+<p>We use the package <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy1" title="RIAssigner tool" aria-role="link"><strong>RIAssigner</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy1</span></span> to compute retention indices for files in the <code class="language-plaintext highlighter-rouge">.msp</code> format using an indexed reference list of alkanes in <code class="language-plaintext highlighter-rouge">.csv</code> or <code class="language-plaintext highlighter-rouge">.msp</code> format. The output follows the same format as the input but with added retention index values. These can be used at a subsequent stage to improve compound identification (<span class="citation"><a href="#kumari2011applying">Kumari <i>et al.</i> 2011</a></span>). Multiple computation methods (e.g. piecewise-linear or cubic spline) are supported by the tool.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-retention-index-calculation"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Retention index calculation</div>
+  <div class="box-title hands-on-title" id="hands-on-retention-index-calculation"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Retention index calculation</div>
 
   <ol>
     <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy1" title="RIAssigner tool" aria-role="link"><strong>RIAssigner</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/riassigner/riassigner/0.3.4+galaxy1</span></span> with the following parameters:
@@ -1269,13 +1266,13 @@ your data:</p>
       <p>You can leave the other parameters with their default values.</p>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment-minutes-vs-seconds"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  Minutes vs. seconds</div>
+        <div class="box-title comment-title" id="comment-minutes-vs-seconds"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  Minutes vs. seconds</div>
 
         <p>You might notice that in the last <strong>XCMS</strong> step, we converted the retention times to minutes. However, in this step, we are using seconds again. The reason is that <strong>RAMClustR</strong> converted them internally again to seconds. Regarding the reference compound list, this database already has its retention times in seconds.</p>
       </blockquote>
 
       <blockquote class="details">
-        <div class="box-title details-title" id="details-kováts-method"><button class="gtn-boxify-button details" type="button" aria-controls="details-kováts-method" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Kováts method<span class="fold-unfold fa fa-minus-square"></span></button></div>
+        <div class="box-title details-title" id="details-kováts-method"><button class="gtn-boxify-button details" type="button" aria-controls="details-kováts-method" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Kováts method<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
         <p>The Kováts retention index (or Kováts index) of a compound is its retention time normalized to the retention times of adjacently eluting n-alkanes. It is based on the fact that the logarithm of the retention time converges to the number of carbon atoms in the alkane. For an isothermal chromatogram, you use the following equation to calculate the Kováts index:</p>
 
@@ -1296,7 +1293,7 @@ your data:</p>
 <p>To annotate and putatively identify the deconvoluted spectra, we compare them with a reference spectral library. This library contains spectra of standards measured on the same instrument for optimal comparability. The <strong>matchms</strong> package is used for spectral matching. It was built to import and apply different similarity measures to compare large numbers of spectra. This includes common cosine scores but can also easily be extended with custom similarity measures. For more information on how to use matchms from Python check out this <a href="https://blog.esciencecenter.nl/build-your-own-mass-spectrometry-analysis-pipeline-in-python-using-matchms-part-i-d96c718c68ee">blog</a>.</p>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-reference-spectral-library"><button class="gtn-boxify-button details" type="button" aria-controls="details-reference-spectral-library" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Reference spectral library<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-reference-spectral-library"><button class="gtn-boxify-button details" type="button" aria-controls="details-reference-spectral-library" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Reference spectral library<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <p>Fragmentation patterns of ions (spectra) are widely used in the process of compound identification for EI+ ionization in complex mixtures. The number of identifiable compounds and associated data keeps growing with the increasing sensitivity and resolution of mass spectrometers. These data are clustered into collections of chemical structures and their spectra, also called spectral libraries (<span class="citation"><a href="#stein1995chemical">Stein 1995</a></span>, <span class="citation"><a href="#stein2012mass">Stein 2012</a></span>), which can be used for fast, reliable identifications for any compound whose fragmentation pattern is measured by the instrument.</p>
 
@@ -1311,17 +1308,17 @@ your data:</p>
 <p>We use the cosine score with a greedy peak pairing heuristic to compute the number of matching ions with a given tolerance and the cosine scores for the matched peaks. Compared to more traditional methods of forward and reverse matching, <strong>matchms</strong> is performing matching on peaks present both in the measured sample and the reference data. This inherently yields higher scores than the forward and reverse scoring used by NIST.</p>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-cosine-score-methods"><button class="gtn-boxify-button details" type="button" aria-controls="details-cosine-score-methods" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Cosine score methods<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-cosine-score-methods"><button class="gtn-boxify-button details" type="button" aria-controls="details-cosine-score-methods" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Cosine score methods<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
   <p>One of the most common methods to compute the similarity score between two spectra is computing the cosine of the <em>angle</em> between them. Each spectrum can be represented as a vector with an axis along each of its <em>m/z</em> values. Then the cosine of the angle is basically a normalised <em>dot product</em> of these two vectors. The intensity and <em>m/z</em> weighting corrections have been used to optimise performance. For example, higher mass peaks can be given greater weight since they are more discriminating than lower mass peaks. <em>Reverse</em> scores assign no weight to peaks present only in the measured sample spectrum under the assumption that they arise from impurities.</p>
 
 </blockquote>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-compute-similarity-scores"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Compute similarity scores</div>
+  <div class="box-title hands-on-title" id="hands-on-compute-similarity-scores"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Compute similarity scores</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.17.0+galaxy0" title="matchms similarity tool" aria-role="link"><strong>matchms similarity</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms/matchms/0.17.0+galaxy0</span></span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms_similarity/matchms_similarity/0.20.0+galaxy0" title="matchms similarity tool" aria-role="link"><strong>matchms similarity</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms_similarity/matchms_similarity/0.20.0+galaxy0</span></span> with the following parameters:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Queries spectra”</em>: <code class="language-plaintext highlighter-rouge">RI using kovats of Mass spectra from RAMClustR</code> (output of <strong>RIAssigner</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li><em>“Symmetric”</em>: <code class="language-plaintext highlighter-rouge">No</code> (if we were to query our spectra agains itself, we would select <code class="language-plaintext highlighter-rouge">Yes</code>)
@@ -1340,7 +1337,7 @@ your data:</p>
       <p>You can leave the other parameters with their default values.</p>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment-used-reference-spectra"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment:  Used reference spectra</div>
+        <div class="box-title comment-title" id="comment-used-reference-spectra"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment:  Used reference spectra</div>
         <p>The RECETOX Metabolome HR-[EI+]-MS library is a collection of mostly endogenous compounds from the MetaSci Human Metabolite Library. Analytes underwent methoximation/silylation prior to acquisition. Spectra were acquired at 70 eV on Thermo Fisher Q Exactive™ GC Orbitrap™ GC-MS/MS at 60000 resolving power.</p>
       </blockquote>
     </li>
@@ -1349,35 +1346,35 @@ your data:</p>
 </blockquote>
 
 <blockquote class="details">
-  <div class="box-title details-title" id="details-overview-of-the-spectral-similarity-scores"><button class="gtn-boxify-button details" type="button" aria-controls="details-overview-of-the-spectral-similarity-scores" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true"></i> Details:  Overview of the spectral similarity scores<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title details-title" id="details-overview-of-the-spectral-similarity-scores"><button class="gtn-boxify-button details" type="button" aria-controls="details-overview-of-the-spectral-similarity-scores" aria-expanded="true"><i class="fas fa-info-circle" aria-hidden="true" ></i> Details:  Overview of the spectral similarity scores<span class="fold-unfold fa fa-minus-square"></span></button></div>
 
-  <h3 id="cosine-greedy">Cosine Greedy</h3>
+  <h2 id="cosine-greedy">Cosine Greedy</h2>
   <p>The cosine score, also known as the dot product, is based on representing the similarity of two spectra through the cosine of an angle between the vectors that the spectra produce. Two peaks are considered as matching if their <em>m/z</em> values lie within the given tolerance. Cosine greedy looks up matching peaks in a “greedy” way, which does not always lead to the most optimal alignments.</p>
 
   <p>This score was among the first to be used for looking up matching spectra in spectral libraries and, to this day, remains one of the most popular scoring methods for both library matching and molecular networking workflows.</p>
 
-  <h3 id="cosine-hungarian">Cosine Hungarian</h3>
+  <h2 id="cosine-hungarian">Cosine Hungarian</h2>
   <p>This method computes the similarities in the same way as the <em>Cosine Greedy</em> but with a difference in <em>m/z</em> peak alignment. The difference lies in that the Hungarian algorithm is used here to find matching peaks. This leads to the best peak pairs match but can take significantly longer than the “greedy” algorithm.</p>
 
-  <h3 id="modified-cosine">Modified Cosine</h3>
+  <h2 id="modified-cosine">Modified Cosine</h2>
   <p>Modified Cosine is another, as its name states, representative of the family of cosine-based scores. This method aligns peaks by finding the best possible matches and considers two peaks a match if their <em>m/z</em> values are within tolerance before or after a mass-shift is applied. A mass shift is essentially a difference of precursor-<em>m/z</em> of two compared spectra. The similarity is then again expressed as a cosine of the angle between two vectors.</p>
 
-  <h3 id="neutral-losses-cosine">Neutral Losses Cosine</h3>
+  <h2 id="neutral-losses-cosine">Neutral Losses Cosine</h2>
   <p>Neutral Loss metric works similarly to all described above with one major difference: instead of encoding the spectra as “intensity vs <em>m/z</em>” vector, it encodes it to an “intensity vs <em>Δm/z</em>”, where delta is computed as an <em>m/z</em> difference between precursor and a fragment <em>m/z</em>. This, in theory, could better capture the underlying structural similarities between molecules.</p>
 
 </blockquote>
 
 <h2 id="format-the-output">Format the output</h2>
 
-<p>The output of the previous step is a <code class="language-plaintext highlighter-rouge">json</code> file. This format is very simple to read for our computers, but not so much for us. We can use the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4" title="matchms output formatter tool" aria-role="link"><strong>matchms output formatter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4</span></span> to convert the data to a tab-separated file with a scores matrix.</p>
+<p>The output of the previous step is a <code class="language-plaintext highlighter-rouge">json</code> file. This format is very simple to read for our computers, but not so much for us. We can use the <span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.20.0+galaxy0" title="matchms scores formatter tool" aria-role="link"><strong>matchms scores formatter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.20.0+galaxy0</span></span> to convert the data to a tab-separated file with a scores matrix.</p>
 
 <p>The output table contains the scores and number of matched ions of the deconvoluted spectra with the spectra in the reference library. The raw output can be filtered to only contain the top matches (3 by default) and/or to contain only pairs with a score and number of matched ions larger than provided thresholds.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-format-the-output"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on:  Format the output</div>
+  <div class="box-title hands-on-title" id="hands-on-format-the-output"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on:  Format the output</div>
 
   <ol>
-    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4" title="matchms output formatter tool" aria-role="link"><strong>matchms output formatter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.1.4</span></span> with the following parameters:
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.20.0+galaxy0" title="matchms scores formatter tool" aria-role="link"><strong>matchms scores formatter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: toolshed.g2.bx.psu.edu/repos/recetox/matchms_formatter/matchms_formatter/0.20.0+galaxy0</span></span> with the following parameters:
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Scores object”</em>: <code class="language-plaintext highlighter-rouge">CosineGreedy scores</code> (output of <strong>matchms similarity</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
       </ul>
@@ -1394,28 +1391,28 @@ your data:</p>
       <tr>
         <th>query</th>
         <th>reference</th>
-        <th>matches</th>
-        <th>scores</th>
+        <th>CosineGreedy_score</th>
+        <th>CosineGreedy_matches</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>C001</td>
-        <td>Uridine_4TMS isomer 1</td>
-        <td>81</td>
-        <td>0.787</td>
+        <td>C044</td>
+        <td>Guanine_3TMS</td>
+        <td>0.987</td>
+        <td>19</td>
       </tr>
       <tr>
-        <td>C004</td>
-        <td>Asparagine_3TMS</td>
-        <td>56</td>
-        <td>0.909</td>
+        <td>C068</td>
+        <td>Tryptophan_3TMS</td>
+        <td>0.981</td>
+        <td>9</td>
       </tr>
       <tr>
-        <td>C012</td>
-        <td>Myo-inositol_6TMS</td>
-        <td>29</td>
-        <td>0.688</td>
+        <td>C053</td>
+        <td>Norleucine_2TMS</td>
+        <td>0.980</td>
+        <td>12</td>
       </tr>
       <tr>
         <td>…</td>
@@ -1512,6 +1509,9 @@ Another option for normalization outside of the built-in normalization tools of 
                             Matej Troják, Helge Hecht, Maxim Skoryk,  <b>Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms) (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
+                        Hiltemann, Saskia, Rasche, Helena et al., 2023 <b>Galaxy Training: A Powerful Framework for Teaching!</b> PLOS Computational Biology <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010752">10.1371/journal.pcbi.1010752</a>
+                        </li>
+                        <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
                         </li>
                     </ol>
@@ -1533,12 +1533,12 @@ Another option for normalization outside of the built-in normalization tools of 
 
 <code id="citation-code">@misc{metabolomics-gc_ms_with_xcms,
 author = "Matej Troják and Helge Hecht and Maxim Skoryk",
-title = "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms) (Galaxy Training Materials)",
-year = "",
-month = "",
-day = ""
-url = "\url{https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html}",
-note = "[Online; accessed TODAY]"
+	title = "Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms) (Galaxy Training Materials)",
+	year = "",
+	month = "",
+	day = ""
+	url = "\url{https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html}",
+	note = "[Online; accessed TODAY]"
 }
 @article{Hiltemann_2023,
 	doi = {10.1371/journal.pcbi.1010752},
@@ -1624,11 +1624,6 @@ tools:
   revisions: b02d1992a43a
   tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: matchms
-  owner: recetox
-  revisions: 4015f250a5a1
-  tool_panel_section_label: Metabolomics
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: matchms_filtering
   owner: recetox
   revisions: 357df6c47d92
@@ -1636,7 +1631,12 @@ tools:
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: matchms_formatter
   owner: recetox
-  revisions: 715fe77be601
+  revisions: 1b09315a3f87
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: matchms_similarity
+  owner: recetox
+  revisions: e5010b19d64d
   tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: ramclustr
@@ -1644,14 +1644,14 @@ tools:
   revisions: 2ec9253a647e
   tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: ramclustr
+  owner: recetox
+  revisions: 050cfef6ba65
+  tool_panel_section_label: Metabolomics
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: ramclustr_define_experiment
   owner: recetox
   revisions: 25625114618e
-  tool_panel_section_label: Metabolomics
-  tool_shed_url: https://toolshed.g2.bx.psu.edu/
-- name: riassigner
-  owner: recetox
-  revisions: f6bf8f1f3224
   tool_panel_section_label: Metabolomics
   tool_shed_url: https://toolshed.g2.bx.psu.edu/
 - name: riassigner
@@ -1693,19 +1693,19 @@ tools:
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf">ccccd1f</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
 				
 				<p>
-					Resource <abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00344">https://gxy.io/GTN:T00344</a>
+					Resource <i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00344">https://gxy.io/GTN:T00344</a>
 				</p>
 				
 				<p>
 					<i>This Material</i>:
 					
-					It is licensed under
+					is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
@@ -1724,41 +1724,8 @@ tools:
     </div>
 </footer>
 
-        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script src="/training-material/assets/js/popper.min.js"></script>
-        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+
+        <script src='/training-material/assets/js/bundle.main.js?v=1694703124'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script src="/training-material/assets/js/main.js"></script>
-        <script src="/training-material/assets/js/clipboard.min.js"></script>
-        <script>
-        document.querySelectorAll('div.highlight').forEach((snippet) => {
-                // Google translate has additional #text nodes mixed in with
-                // the pre for some reason.
-                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
-                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
-                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-                }
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

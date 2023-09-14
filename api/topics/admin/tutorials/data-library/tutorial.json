@@ -26,6 +26,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -75,6 +76,7 @@
       ]
     }
   ],
+  "short_id": "T00005",
   "url": "/topics/admin/tutorials/data-library/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "data-library",

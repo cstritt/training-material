@@ -49,6 +49,7 @@
       "erasmusplus"
     ]
   },
+  "short_id": "T00062",
   "url": "/topics/contributing/tutorials/design/tutorial.html",
   "topic_name": "contributing",
   "tutorial_name": "design",
@@ -162,6 +163,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

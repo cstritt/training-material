@@ -70,6 +70,7 @@
       ]
     }
   ],
+  "short_id": "T00245",
   "url": "/topics/single-cell/tutorials/scrna-case_alevin/tutorial.html",
   "topic_name": "single-cell",
   "tutorial_name": "scrna-case_alevin",
@@ -286,6 +287,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

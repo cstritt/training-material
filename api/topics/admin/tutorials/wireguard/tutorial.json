@@ -37,6 +37,7 @@
     "wireguard",
     "networking"
   ],
+  "short_id": "T00026",
   "url": "/topics/admin/tutorials/wireguard/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "wireguard",
@@ -109,6 +110,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

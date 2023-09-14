@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  release: "galaxy-training-network@ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -32,15 +32,21 @@ Sentry.init({
 </script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/tutorial.html">
         <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as="script" crossorigin>
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.theme.js?v=1694703124' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.main.js?v=1694703124' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
+
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
@@ -59,7 +65,7 @@ Sentry.init({
         <meta property="og:title" content="Galaxy Training: Generic plugins">
         <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
         <script type="application/ld+json">
@@ -227,7 +233,7 @@ Sentry.init({
         
     </head>
     <body data-spy="scroll" data-target="#toc">
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script src='/training-material/assets/js/bundle.theme.js?v=1694703124'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -296,7 +302,7 @@ Sentry.init({
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/maintopics/dev/tutorials/visualization-generic/tutorial.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/dev/tutorials/visualization-generic/tutorial.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -343,13 +349,13 @@ Sentry.init({
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/dev/tutorials/visualization-generic/tutorial.html" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/dev/tutorials/visualization-generic/tutorial.html">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/dev/tutorials/visualization-generic/tutorial.html" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/dev/tutorials/visualization-generic/tutorial.html">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/dev/tutorials/visualization-generic/tutorial.html" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/dev/tutorials/visualization-generic/tutorial.html">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -362,7 +368,7 @@ Sentry.init({
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -399,14 +405,7 @@ Sentry.init({
 
 
 
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'galaxyproject/dev'
-  };
-</script>
 
-
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <article class="tutorial topic-dev">
     <h1 data-toc-skip>Generic plugins</h1>
@@ -416,7 +415,7 @@ Sentry.init({
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/shiltemann?s=27" alt="Avatar">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/yhoogstrate/" class="contributor-badge contributor-yhoogstrate"><img src="https://avatars.githubusercontent.com/yhoogstrate?s=27" alt="Avatar">Youri Hoogstrate</a>
+		Authors: <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge contributor-shiltemann"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/shiltemann?s=36" alt="Avatar" width="36" height="36">Saskia Hiltemann</a><a href="/training-material/hall-of-fame/yhoogstrate/" class="contributor-badge contributor-yhoogstrate"><img src="https://avatars.githubusercontent.com/yhoogstrate?s=36" alt="Avatar" width="36" height="36">Youri Hoogstrate</a>
 	</div>
 
 </div>
@@ -581,7 +580,7 @@ Sentry.init({
              The GTN Framework is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
         </div>
         
-        <div><strong>Short Link:</strong> <a href="https://gxy.io/GTN:T00121">https://gxy.io/GTN:T00121</a> </div>
+        <div><strong><i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>:</strong> <a href="https://gxy.io/GTN:T00121">https://gxy.io/GTN:T00121</a> </div>
         
     </blockquote>
     </section>
@@ -651,7 +650,7 @@ to which we align are named <code class="language-plaintext highlighter-rouge">R
 <p>The development of a Galaxy visualization takes place within the Galaxy codebase.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on: Data upload</div>
 
   <ol>
     <li>Clone an instance of Galaxy in a path, further referred to as <code class="language-plaintext highlighter-rouge">$GALAXY_ROOT</code></li>
@@ -685,7 +684,7 @@ to which we align are named <code class="language-plaintext highlighter-rouge">R
 configuration in XML format.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-data-upload-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload-1"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on: Data upload</div>
 
   <p>Create the file  <code class="language-plaintext highlighter-rouge">config/alignment_rname_boxplot.xml</code> with the following contents:</p>
 
@@ -787,7 +786,7 @@ bam file and its index share the same prefix, as expected by samtools and pysam.
 <p>We can create this symlink as follows in our mako template:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">## Ensure BAI index is symlinked
-</span><span class="n">bai_target</span> <span class="o">=</span> <span class="n">hda</span><span class="p">.</span><span class="n">file_name</span><span class="o">+</span><span class="s">'.bai'</span>
+</span><span class="n">bai_target</span> <span class="o">=</span> <span class="n">hda</span><span class="p">.</span><span class="n">file_name</span><span class="o">+</span><span class="sh">'</span><span class="s">.bai</span><span class="sh">'</span>
 <span class="kn">import</span> <span class="n">os</span>
 
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="nf">isfile</span><span class="p">(</span><span class="n">bai_target</span><span class="p">):</span>
@@ -822,7 +821,7 @@ the HTML page and also does HTML escaping by providing the ` | h`-flag (for secu
 <p>Let’s put this all together.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-data-upload-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload-2"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on: Data upload</div>
 
   <ol>
     <li>Create the mako file <code class="language-plaintext highlighter-rouge">templates/alignment_rname_boxplot.mako</code></li>
@@ -881,7 +880,7 @@ the HTML page and also does HTML escaping by providing the ` | h`-flag (for secu
       <p>If everything went well, our plugin has appeared as a visualization option for the dataset</p>
 
       <blockquote class="comment">
-        <div class="box-title comment-title" id="comment"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment</div>
+        <div class="box-title comment-title" id="comment"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment</div>
         <p>You must be logged in to be able to use visualizations</p>
       </blockquote>
     </li>
@@ -902,7 +901,7 @@ length of the RNAME (chromosome) is 5386 bases and 2 reads are aligned to it.</p
 <p>To make the data a bit more usable for Javascript , we convert it into a simple dictionary
 of the following syntax:</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="s">'chrA'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrB'</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="s">'chrC'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'chrD'</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="s">'chrE'</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s">'chrF'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s">'chrG'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s">'*'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="sh">'</span><span class="s">chrA</span><span class="sh">'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrB</span><span class="sh">'</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrC</span><span class="sh">'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrD</span><span class="sh">'</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrE</span><span class="sh">'</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrF</span><span class="sh">'</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="sh">'</span><span class="s">chrG</span><span class="sh">'</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="sh">'</span><span class="s">*</span><span class="sh">'</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
 </code></pre></div></div>
 
 <p>Although it is possible to do this in python we recommend doing this in JS.
@@ -925,7 +924,7 @@ so getting the raw data into Javascript is rather easy:</p>
       <span class="kd">var</span> <span class="nx">line</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
       <span class="kd">var</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="nx">line</span><span class="p">.</span><span class="nf">split</span><span class="p">(</span><span class="dl">"</span><span class="se">\t</span><span class="dl">"</span><span class="p">);</span>
 
-      <span class="nf">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">_</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nf">split</span><span class="p">(</span><span class="dl">"</span><span class="s2">_</span><span class="dl">"</span><span class="p">).</span><span class="nx">length</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// only if it does not contain underscore</span>
         <span class="nx">output</span><span class="p">[</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="nf">parseInt</span><span class="p">(</span><span class="nx">chunks</span><span class="p">[</span><span class="mi">2</span><span class="p">]);</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -939,7 +938,7 @@ so getting the raw data into Javascript is rather easy:</p>
 functional changes to the mako files.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-data-upload-3"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on: Data upload</div>
+  <div class="box-title hands-on-title" id="hands-on-data-upload-3"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on: Data upload</div>
 
   <ol>
     <li>
@@ -1012,7 +1011,7 @@ solutions :).</p>
 <p>Below is an example visualization, which creates a bar plot showing the number of reads per
 chromosome.</p>
 
-<p><img src="../../images/vis_plugins_example.png" alt="Example visualization. " loading="lazy" /></p>
+<p><img src="../../images/vis_plugins_example.png" alt="Example visualization. " width="567" height="321" loading="lazy" /></p>
 
 <p>The full contents of this plugin are provided in the <a href="https://github.com/galaxyproject/training-material/tree/main/topics/dev/files/hands_on-visualizations/alignment_rname_boxplot">GitHub repository related to this material in <code class="language-plaintext highlighter-rouge">tree/master/topics/dev/files/hands_on-visualizations/alignment_rname_boxplot</code></a>.
 To try out this example, simply copy this folder to the <code class="language-plaintext highlighter-rouge">$GALAXY_ROOT/config/plugins/visualizations/</code> folder
@@ -1148,7 +1147,7 @@ contributing to quicker understanding of the data which is generally not so conv
 using static Galaxy tools.</p>
 
 <blockquote class="comment">
-  <div class="box-title comment-title" id="comment-static-files"><i class="far fa-comment-dots" aria-hidden="true"></i> Comment: Static files</div>
+  <div class="box-title comment-title" id="comment-static-files"><i class="far fa-comment-dots" aria-hidden="true" ></i> Comment: Static files</div>
 
   <p>In the example we included Javascript and CSS into the HTML website.
 Remember that for every new invocation of the visualization the entire CSS en JS are copied
@@ -1238,6 +1237,9 @@ per <code class="language-plaintext highlighter-rouge">RNAME</code> (chromosome)
                             Saskia Hiltemann, Youri Hoogstrate,  <b>Generic plugins (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/tutorial.html">https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
+                        Hiltemann, Saskia, Rasche, Helena et al., 2023 <b>Galaxy Training: A Powerful Framework for Teaching!</b> PLOS Computational Biology <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010752">10.1371/journal.pcbi.1010752</a>
+                        </li>
+                        <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
                         </li>
                     </ol>
@@ -1259,12 +1261,12 @@ per <code class="language-plaintext highlighter-rouge">RNAME</code> (chromosome)
 
 <code id="citation-code">@misc{dev-visualization-generic,
 author = "Saskia Hiltemann and Youri Hoogstrate",
-title = "Generic plugins (Galaxy Training Materials)",
-year = "",
-month = "",
-day = ""
-url = "\url{https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/tutorial.html}",
-note = "[Online; accessed TODAY]"
+	title = "Generic plugins (Galaxy Training Materials)",
+	year = "",
+	month = "",
+	day = ""
+	url = "\url{https://training.galaxyproject.org/training-material/topics/dev/tutorials/visualization-generic/tutorial.html}",
+	note = "[Online; accessed TODAY]"
 }
 @article{Hiltemann_2023,
 	doi = {10.1371/journal.pcbi.1010752},
@@ -1341,19 +1343,19 @@ tools: []
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf">ccccd1f</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
 				
 				<p>
-					Resource <abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00121">https://gxy.io/GTN:T00121</a>
+					Resource <i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00121">https://gxy.io/GTN:T00121</a>
 				</p>
 				
 				<p>
 					<i>This Material</i>:
 					
-					It is licensed under
+					is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
@@ -1372,41 +1374,8 @@ tools: []
     </div>
 </footer>
 
-        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script src="/training-material/assets/js/popper.min.js"></script>
-        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+
+        <script src='/training-material/assets/js/bundle.main.js?v=1694703124'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script src="/training-material/assets/js/main.js"></script>
-        <script src="/training-material/assets/js/clipboard.min.js"></script>
-        <script>
-        document.querySelectorAll('div.highlight').forEach((snippet) => {
-                // Google translate has additional #text nodes mixed in with
-                // the pre for some reason.
-                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
-                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
-                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-                }
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

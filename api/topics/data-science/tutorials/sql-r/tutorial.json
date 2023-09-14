@@ -57,6 +57,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -85,6 +86,7 @@
     "SQL",
     "R"
   ],
+  "short_id": "T00110",
   "url": "/topics/data-science/tutorials/sql-r/tutorial.html",
   "topic_name": "data-science",
   "tutorial_name": "sql-r",

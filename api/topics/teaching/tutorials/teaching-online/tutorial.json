@@ -24,6 +24,7 @@
       "erasmusplus"
     ]
   },
+  "short_id": "T00287",
   "url": "/topics/teaching/tutorials/teaching-online/tutorial.html",
   "topic_name": "teaching",
   "tutorial_name": "teaching-online",
@@ -106,6 +107,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

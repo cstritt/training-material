@@ -58,6 +58,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -99,6 +100,7 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
     }
   ],
+  "short_id": "T00299",
   "url": "/topics/transcriptomics/tutorials/rna-seq-counts-to-viz-in-r/tutorial.html",
   "topic_name": "transcriptomics",
   "tutorial_name": "rna-seq-counts-to-viz-in-r",

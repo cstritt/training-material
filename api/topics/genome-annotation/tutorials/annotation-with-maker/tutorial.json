@@ -37,6 +37,7 @@
         "lon": -1.64
       },
       "fediverse": "https://genomic.social/@abretaud",
+      "fediverse_flavor": "mastodon",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -44,6 +45,7 @@
   ],
   "subtopic": "eukaryote",
   "priority": 4,
+  "short_id": "T00166",
   "url": "/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "annotation-with-maker",

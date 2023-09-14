@@ -24,6 +24,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -79,6 +80,7 @@
   "abbreviations": {
     "TIaaS": "Training Infrastructure as a Service"
   },
+  "short_id": "T00022",
   "url": "/topics/admin/tutorials/tiaas/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "tiaas",

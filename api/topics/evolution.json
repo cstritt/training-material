@@ -10,7 +10,7 @@
     }
   ],
   "docker_image": "",
-  "maintainers": [
+  "editorial_board": [
     {
       "name": "Christoph Stritt",
       "joined": "2022-03",
@@ -78,6 +78,7 @@
         "one-health",
         "phylogenetics"
       ],
+      "short_id": "T00144",
       "url": "/topics/evolution/tutorials/mtb_phylogeny/tutorial.html",
       "topic_name": "evolution",
       "tutorial_name": "mtb_phylogeny",
@@ -196,8 +197,11 @@
         {
           "name": "Wolfgang Maier",
           "orcid": "0000-0002-9464-6640",
+          "matrix": "wm75:matrix.org",
           "joined": "2017-09",
           "elixir_node": "de",
+          "fediverse": "https://scholar.social/@zerodivision",
+          "fediverse_flavor": "mastodon",
           "id": "wm75",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
@@ -256,6 +260,7 @@
         "prokaryote",
         "one-health"
       ],
+      "short_id": "T00145",
       "url": "/topics/evolution/tutorials/mtb_transmission/tutorial.html",
       "topic_name": "evolution",
       "tutorial_name": "mtb_transmission",
@@ -552,8 +557,11 @@
         {
           "name": "Wolfgang Maier",
           "orcid": "0000-0002-9464-6640",
+          "matrix": "wm75:matrix.org",
           "joined": "2017-09",
           "elixir_node": "de",
+          "fediverse": "https://scholar.social/@zerodivision",
+          "fediverse_flavor": "mastodon",
           "id": "wm75",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"

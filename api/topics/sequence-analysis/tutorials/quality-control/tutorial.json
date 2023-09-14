@@ -49,6 +49,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -86,6 +87,7 @@
         "lon": -1.64
       },
       "fediverse": "https://genomic.social/@abretaud",
+      "fediverse_flavor": "mastodon",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -133,6 +135,7 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
     }
   ],
+  "short_id": "T00239",
   "url": "/topics/sequence-analysis/tutorials/quality-control/tutorial.html",
   "topic_name": "sequence-analysis",
   "tutorial_name": "quality-control",

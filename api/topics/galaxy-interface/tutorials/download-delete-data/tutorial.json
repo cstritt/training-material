@@ -42,6 +42,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -54,6 +55,7 @@
     }
   ],
   "subtopic": "cleanup",
+  "short_id": "T00147",
   "url": "/topics/galaxy-interface/tutorials/download-delete-data/tutorial.html",
   "topic_name": "galaxy-interface",
   "tutorial_name": "download-delete-data",

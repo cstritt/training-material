@@ -41,6 +41,7 @@
   "notebook": {
     "language": "bash"
   },
+  "short_id": "T00101",
   "url": "/topics/data-science/tutorials/python-venv/tutorial.html",
   "topic_name": "data-science",
   "tutorial_name": "python-venv",
@@ -120,6 +121,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

@@ -61,6 +61,7 @@
   "abbreviations": {
     "SVs": "Structural Variations"
   },
+  "short_id": "T00037",
   "url": "/topics/assembly/tutorials/mrsa-nanopore/tutorial.html",
   "topic_name": "assembly",
   "tutorial_name": "mrsa-nanopore",
@@ -259,6 +260,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

@@ -3,7 +3,7 @@
   "title": "Comparative gene analysis in unannotated genomes",
   "zenodo_link": "https://zenodo.org/record/7034885",
   "questions": [
-    "I have several genomes assemblies that are not annoatated (or I do not trust annotations)",
+    "I have several genomes assemblies that are not annotated (or I do not trust annotations)",
     "I am interested to compare structure of a particular gene across these genome assemblies",
     "How do I do that?"
   ],
@@ -52,6 +52,7 @@
     "ORF": "Open Reading Frame"
   },
   "priority": 2,
+  "short_id": "T00174",
   "url": "/topics/genome-annotation/tutorials/gene-centric/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "gene-centric",

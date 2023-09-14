@@ -44,6 +44,7 @@
       ]
     }
   ],
+  "short_id": "T00349",
   "url": "/topics/fair/tutorials/data-management/tutorial.html",
   "topic_name": "fair",
   "tutorial_name": "data-management",
@@ -109,6 +110,7 @@
   "contributors": [
     {
       "name": "Katarzyna Kamieniecka",
+      "twitter": "katemurat",
       "orcid": "0009-0004-2454-5950",
       "joined": "2018-08",
       "elixir_node": "uk",
@@ -135,6 +137,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

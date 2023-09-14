@@ -47,6 +47,7 @@
       "bebatut"
     ]
   },
+  "short_id": "T00190",
   "url": "/topics/introduction/tutorials/galaxy-intro-short/tutorial.html",
   "topic_name": "introduction",
   "tutorial_name": "galaxy-intro-short",
@@ -210,6 +211,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

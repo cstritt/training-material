@@ -25,6 +25,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -68,6 +69,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -85,6 +87,7 @@
     "Data flows from the external data resource to the Galaxy server without the need of \"downloading\" the data"
   ],
   "subtopic": "advanced",
+  "short_id": "T00114",
   "url": "/topics/dev/tutorials/data-source-integration/tutorial.html",
   "topic_name": "dev",
   "tutorial_name": "data-source-integration",

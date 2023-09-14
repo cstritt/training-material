@@ -37,7 +37,7 @@
       "description": "Once you are done with your analyses in Galaxy, it's time to download your data and free up space."
     }
   ],
-  "maintainers": [
+  "editorial_board": [
     {
       "name": "Jennifer Hillman-Jackson",
       "maintainer_contact": "https://help.galaxyproject.org/",
@@ -66,6 +66,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -108,6 +109,7 @@
         }
       ],
       "subtopic": "analyse",
+      "short_id": "T00152",
       "url": "/topics/galaxy-interface/tutorials/intermine/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "intermine",
@@ -268,6 +270,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bedroesb/"
         }
       ],
+      "short_id": "T00159",
       "url": "/topics/galaxy-interface/tutorials/upload-data-to-ena/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "upload-data-to-ena",
@@ -386,6 +389,7 @@
       ],
       "level": "Intermediate",
       "subtopic": "workflows",
+      "short_id": "T00163",
       "url": "/topics/galaxy-interface/tutorials/workflow-editor/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "workflow-editor",
@@ -564,6 +568,7 @@
       },
       "level": "Intermediate",
       "subtopic": "workflows",
+      "short_id": "T00165",
       "url": "/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "workflow-reports",
@@ -757,6 +762,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -852,6 +858,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -865,6 +872,7 @@
       ],
       "level": "Intermediate",
       "subtopic": "workflows",
+      "short_id": "T00164",
       "url": "/topics/galaxy-interface/tutorials/workflow-parameters/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "workflow-parameters",
@@ -1068,14 +1076,18 @@
         {
           "name": "Wolfgang Maier",
           "orcid": "0000-0002-9464-6640",
+          "matrix": "wm75:matrix.org",
           "joined": "2017-09",
           "elixir_node": "de",
+          "fediverse": "https://scholar.social/@zerodivision",
+          "fediverse_flavor": "mastodon",
           "id": "wm75",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/wm75.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wm75/"
         }
       ],
       "subtopic": "workflows",
+      "short_id": "T00162",
       "url": "/topics/galaxy-interface/tutorials/workflow-automation/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "workflow-automation",
@@ -1298,6 +1310,7 @@
           ]
         }
       ],
+      "short_id": "T00155",
       "url": "/topics/galaxy-interface/tutorials/ncbi-sarf/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "ncbi-sarf",
@@ -1569,6 +1582,7 @@
         }
       ],
       "subtopic": "upload",
+      "short_id": "S00062",
       "url": "/topics/galaxy-interface/tutorials/get-data/slides.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "get-data",
@@ -1682,6 +1696,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/afgane/"
         }
       ],
+      "short_id": "S00061",
       "url": "/topics/galaxy-interface/tutorials/galaxy-on-dockstore/slides.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "galaxy-on-dockstore",
@@ -1793,6 +1808,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1805,6 +1821,7 @@
         }
       ],
       "subtopic": "cleanup",
+      "short_id": "T00147",
       "url": "/topics/galaxy-interface/tutorials/download-delete-data/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "download-delete-data",
@@ -1909,6 +1926,7 @@
         }
       ],
       "subtopic": "manage",
+      "short_id": "T00146",
       "url": "/topics/galaxy-interface/tutorials/collections/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "collections",
@@ -2115,6 +2133,7 @@
         }
       ],
       "subtopic": "workflows",
+      "short_id": "T00151",
       "url": "/topics/galaxy-interface/tutorials/history-to-workflow/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "history-to-workflow",
@@ -2217,6 +2236,7 @@
         }
       ],
       "subtopic": "analyse",
+      "short_id": "T00148",
       "url": "/topics/galaxy-interface/tutorials/galaxy-intro-jupyter/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "galaxy-intro-jupyter",
@@ -2332,6 +2352,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2344,6 +2365,7 @@
         }
       ],
       "subtopic": "upload",
+      "short_id": "T00161",
       "url": "/topics/galaxy-interface/tutorials/upload-rules-advanced/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "upload-rules-advanced",
@@ -2446,6 +2468,7 @@
         }
       ],
       "subtopic": "manage",
+      "short_id": "T00156",
       "url": "/topics/galaxy-interface/tutorials/processing-many-samples-at-once/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "processing-many-samples-at-once",
@@ -2545,6 +2568,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2557,6 +2581,7 @@
         }
       ],
       "subtopic": "manage",
+      "short_id": "T00154",
       "url": "/topics/galaxy-interface/tutorials/name-tags/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "name-tags",
@@ -2655,6 +2680,7 @@
         }
       ],
       "subtopic": "manage",
+      "short_id": "T00149",
       "url": "/topics/galaxy-interface/tutorials/group-tags/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "group-tags",
@@ -2750,6 +2776,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2770,6 +2797,7 @@
         }
       ],
       "subtopic": "histories",
+      "short_id": "T00158",
       "url": "/topics/galaxy-interface/tutorials/search/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "search",
@@ -2877,6 +2905,7 @@
         ]
       },
       "subtopic": "histories",
+      "short_id": "T00150",
       "url": "/topics/galaxy-interface/tutorials/history/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "history",
@@ -2996,6 +3025,7 @@
             "lon": -122.0
           },
           "fediverse": "https://mastodon.world/@martenson",
+          "fediverse_flavor": "mastodon",
           "joined": "2017-09",
           "id": "martenson",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/martenson.json",
@@ -3047,6 +3077,7 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -3055,6 +3086,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -3073,6 +3106,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3150,6 +3184,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3162,6 +3197,7 @@
         }
       ],
       "subtopic": "upload",
+      "short_id": "T00160",
       "url": "/topics/galaxy-interface/tutorials/upload-rules/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "upload-rules",
@@ -3310,6 +3346,7 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -3352,6 +3389,7 @@
         }
       ],
       "subtopic": "analyse",
+      "short_id": "T00157",
       "url": "/topics/galaxy-interface/tutorials/rstudio/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "rstudio",
@@ -3468,6 +3506,7 @@
         ]
       },
       "subtopic": "analyse",
+      "short_id": "T00153",
       "url": "/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html",
       "topic_name": "galaxy-interface",
       "tutorial_name": "jupyterlab",
@@ -3560,6 +3599,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",

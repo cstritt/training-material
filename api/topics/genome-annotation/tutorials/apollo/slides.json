@@ -26,13 +26,17 @@
     "Use Apollo to edit annotations within your group.",
     "Export manual annotations as GFF3."
   ],
-  "contributors": [
-    "abretaud",
-    "hexylena",
-    "nathandunn",
-    "mboudet",
-    "erasmusplus"
-  ],
+  "contributions": {
+    "authorship": [
+      "abretaud",
+      "hexylena",
+      "nathandunn",
+      "mboudet"
+    ],
+    "funding": [
+      "erasmusplus"
+    ]
+  },
   "requirements": [
     {
       "type": "internal",
@@ -53,6 +57,7 @@
   "abbreviations": {
     "OGS": "Official Gene Set"
   },
+  "short_id": "S00066",
   "url": "/topics/genome-annotation/tutorials/apollo/slides.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "apollo",
@@ -234,8 +239,14 @@
     "video": true
   },
   "type": "tutorial",
+  "contributors": [
+    "abretaud",
+    "hexylena",
+    "nathandunn",
+    "mboudet",
+    "erasmusplus"
+  ],
   "logo": "assets/images/gga.png",
-  "short_id": "S00066",
   "redirect_from": [
     "/short/genome-annotation/apollo/slides",
     "/short/S00066"

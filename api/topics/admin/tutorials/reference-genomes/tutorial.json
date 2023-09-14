@@ -35,6 +35,7 @@
     }
   ],
   "subtopic": "data",
+  "short_id": "T00329",
   "url": "/topics/admin/tutorials/reference-genomes/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "reference-genomes",
@@ -133,6 +134,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

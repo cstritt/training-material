@@ -57,6 +57,7 @@
     "language": "r",
     "snippet": "topics/single-cell/tutorials/scrna-case_monocle3-rstudio/preamble.md"
   },
+  "short_id": "T00336",
   "url": "/topics/single-cell/tutorials/scrna-case_monocle3-rstudio/tutorial.html",
   "topic_name": "single-cell",
   "tutorial_name": "scrna-case_monocle3-rstudio",
@@ -137,6 +138,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -170,6 +172,7 @@
     },
     {
       "name": "EOSC-Life",
+      "github": false,
       "joined": "2023-04",
       "avatar": "https://www.eosc-life.eu/wp-content/themes/eosc-life-v2/assets/images/eosclogo.png",
       "funder": true,

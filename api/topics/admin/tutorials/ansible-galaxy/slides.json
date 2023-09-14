@@ -49,6 +49,7 @@
     "topic_0605",
     "topic_3071"
   ],
+  "short_id": "S00002",
   "url": "/topics/admin/tutorials/ansible-galaxy/slides.html",
   "topic_name": "admin",
   "tutorial_name": "ansible-galaxy",
@@ -195,6 +196,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -288,6 +290,7 @@
         "lon": -122.0
       },
       "fediverse": "https://mastodon.world/@martenson",
+      "fediverse_flavor": "mastodon",
       "joined": "2017-09",
       "id": "martenson",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/martenson.json",
@@ -334,6 +337,7 @@
         "lon": -1.64
       },
       "fediverse": "https://genomic.social/@abretaud",
+      "fediverse_flavor": "mastodon",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -367,7 +371,6 @@
     }
   ],
   "logo": "assets/images/gat.png",
-  "short_id": "S00002",
   "redirect_from": [
     "/short/admin/ansible-galaxy/slides",
     "/short/S00002"

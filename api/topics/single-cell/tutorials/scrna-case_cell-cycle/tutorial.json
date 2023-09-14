@@ -28,6 +28,11 @@
     "Cell cycle genes can conceal what is happening in your data if cells are grouping together according to their stage in the cycle",
     "Identifying the cell cycle genes and using them to regress out the effects of the cell cycle can reveal underlying patterns in the data"
   ],
+  "tags": [
+    "single-cell",
+    "10x",
+    "transcriptomics"
+  ],
   "contributions": {
     "authorship": [
       "MarisaJL"
@@ -39,6 +44,7 @@
       "hrukkudyr"
     ]
   },
+  "short_id": "T00248",
   "url": "/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html",
   "topic_name": "single-cell",
   "tutorial_name": "scrna-case_cell-cycle",

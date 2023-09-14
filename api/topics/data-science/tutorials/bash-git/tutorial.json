@@ -56,6 +56,7 @@
       "erasmusplus"
     ]
   },
+  "short_id": "T00072",
   "url": "/topics/data-science/tutorials/bash-git/tutorial.html",
   "topic_name": "data-science",
   "tutorial_name": "bash-git",
@@ -181,6 +182,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

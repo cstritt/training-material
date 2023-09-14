@@ -55,6 +55,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -68,6 +69,7 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/tnabtaf/"
     }
   ],
+  "short_id": "T00206",
   "url": "/topics/metagenomics/tutorials/mothur-miseq-sop-short/tutorial.html",
   "topic_name": "metagenomics",
   "tutorial_name": "mothur-miseq-sop-short",

@@ -26,6 +26,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -71,6 +72,7 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/erasmusplus/"
     }
   ],
+  "short_id": "T00322",
   "url": "/topics/visualisation/tutorials/jbrowse/tutorial.html",
   "topic_name": "visualisation",
   "tutorial_name": "jbrowse",

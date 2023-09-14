@@ -15,7 +15,7 @@
       "description": "This section brought to you by the BY-COVID project, and will teach you how to make your research objects more FAIR with practical, hands-on advice."
     }
   ],
-  "maintainers": [
+  "editorial_board": [
     {
       "name": "Simone Leo",
       "joined": "2023-04",
@@ -46,6 +46,7 @@
         "lon": -2.233631283105614
       },
       "fediverse": "https://scholar.social/@soilandreyes",
+      "fediverse_flavor": "mastodon",
       "id": "stain",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/stain.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/stain/"
@@ -61,6 +62,7 @@
     },
     {
       "name": "Katarzyna Kamieniecka",
+      "twitter": "katemurat",
       "orcid": "0009-0004-2454-5950",
       "joined": "2018-08",
       "elixir_node": "uk",
@@ -146,6 +148,7 @@
             "lon": -2.233631283105614
           },
           "fediverse": "https://scholar.social/@soilandreyes",
+          "fediverse_flavor": "mastodon",
           "id": "stain",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/stain.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/stain/"
@@ -166,6 +169,7 @@
         "JSON-LD": "JSON Linked Data, a way to express Linked Data (RDF) using regular JSON",
         "RO-Crate": "Research Object Crate; a way to package research data with structured FAIR metadata"
       },
+      "short_id": "T00348",
       "url": "/topics/fair/tutorials/ro-crate-intro/tutorial.html",
       "topic_name": "fair",
       "tutorial_name": "ro-crate-intro",
@@ -235,128 +239,6 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "Best practices for workflows in GitHub repositories",
-      "time_estimation": "30M",
-      "questions": [
-        "What are Workflow Best Practices",
-        "How does RO-Crate help?"
-      ],
-      "objectives": [
-        "Generate a workflow test using Planemo",
-        "Understand how testing can be automated with GitHub Actions"
-      ],
-      "key_points": [
-        "repo2rocrate lets you easily generate templated out metadata for your workflow",
-        "Generating tests is easy and something everyone should do."
-      ],
-      "tags": [
-        "ro-crate"
-      ],
-      "priority": 1,
-      "contributions": {
-        "authorship": [
-          "simleo"
-        ],
-        "funding": [
-          "by-covid"
-        ]
-      },
-      "license": "Apache-2.0",
-      "subtopic": "ro-crate",
-      "notebook": {
-        "language": "bash"
-      },
-      "url": "/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.html",
-      "topic_name": "fair",
-      "tutorial_name": "ro-crate-galaxy-best-practices",
-      "dir": "topics/fair/tutorials/ro-crate-galaxy-best-practices",
-      "id": "fair/ro-crate-galaxy-best-practices",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json",
-      "tools": [
-
-      ],
-      "supported_servers": {
-        "exact": [
-
-        ],
-        "inexact": [
-          {
-            "name": "UseGalaxy.eu",
-            "url": "https://usegalaxy.eu",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org",
-            "url": "https://usegalaxy.org",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org.au",
-            "url": "https://usegalaxy.org.au",
-            "usegalaxy": true
-          }
-        ]
-      },
-      "topic_name_human": "FAIR Data, Workflows, and Research",
-      "admin_install": {
-        "install_tool_dependencies": true,
-        "install_repository_dependencies": true,
-        "install_resolver_dependencies": true,
-        "tools": [
-
-        ]
-      },
-      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "Simone Leo",
-          "joined": "2023-04",
-          "elixir_node": "it",
-          "orcid": "0000-0001-8271-5429",
-          "id": "simleo",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/simleo.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simleo/"
-        },
-        {
-          "name": "BeYond-COVID",
-          "joined": "2023-04",
-          "funder": true,
-          "funding_id": "101046203",
-          "funding_system": "cordis",
-          "funding_statement": "BY-COVID is an <a href=\"https://cordis.europa.eu/project/id/101046203\">EC funded project</a> that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No. 101046203 (BY-COVID)",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
-          "id": "by-covid",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
       "title": "FAIR in a nutshell",
       "abbreviations": {
         "FAIR": "Findable, Accessible, Interoperable, Reusable"
@@ -392,6 +274,7 @@
         ]
       },
       "subtopic": "fair-data",
+      "short_id": "T00351",
       "url": "/topics/fair/tutorials/fair-intro/tutorial.html",
       "topic_name": "fair",
       "tutorial_name": "fair-intro",
@@ -457,6 +340,7 @@
       "contributors": [
         {
           "name": "Katarzyna Kamieniecka",
+          "twitter": "katemurat",
           "orcid": "0009-0004-2454-5950",
           "joined": "2018-08",
           "elixir_node": "uk",
@@ -483,6 +367,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -497,126 +382,6 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-intro/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-intro/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "Exporting Workflow Run RO-Crates from Galaxy",
-      "time_estimation": "30m",
-      "questions": [
-        "What is a Workflow Run Crate?",
-        "How can I export a Galaxy Workflow Run Crate?"
-      ],
-      "objectives": [
-        "Understanding, viewing and creating Galaxy Workflow Run Crates"
-      ],
-      "key_points": [
-        "Galaxy Workflow Run Crates help you keep provenance of a workflow run / invocation.",
-        "Galaxy Workflow Run Crates give extra context to the standard workflow run export",
-        "Galaxy Workflow Run Crates can be exported from the top menu, **User -> Workflow Invocations**."
-      ],
-      "tags": [
-        "ro-crate",
-        "workflows"
-      ],
-      "priority": 1,
-      "contributions": {
-        "authorship": [
-          "pauldg"
-        ],
-        "funding": [
-          "by-covid"
-        ]
-      },
-      "license": "Apache-2.0",
-      "subtopic": "ro-crate",
-      "url": "/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.html",
-      "topic_name": "fair",
-      "tutorial_name": "ro-crate-in-galaxy",
-      "dir": "topics/fair/tutorials/ro-crate-in-galaxy",
-      "id": "fair/ro-crate-in-galaxy",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json",
-      "tools": [
-
-      ],
-      "supported_servers": {
-        "exact": [
-
-        ],
-        "inexact": [
-          {
-            "name": "UseGalaxy.eu",
-            "url": "https://usegalaxy.eu",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org",
-            "url": "https://usegalaxy.org",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org.au",
-            "url": "https://usegalaxy.org.au",
-            "usegalaxy": true
-          }
-        ]
-      },
-      "topic_name_human": "FAIR Data, Workflows, and Research",
-      "admin_install": {
-        "install_tool_dependencies": true,
-        "install_repository_dependencies": true,
-        "install_resolver_dependencies": true,
-        "tools": [
-
-        ]
-      },
-      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "Paul De Geest",
-          "joined": "2023-04",
-          "elixir_node": "be",
-          "orcid": "0000-0002-8940-4946",
-          "id": "pauldg",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/pauldg.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/pauldg/"
-        },
-        {
-          "name": "BeYond-COVID",
-          "joined": "2023-04",
-          "funder": true,
-          "funding_id": "101046203",
-          "funding_system": "cordis",
-          "funding_statement": "BY-COVID is an <a href=\"https://cordis.europa.eu/project/id/101046203\">EC funded project</a> that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No. 101046203 (BY-COVID)",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
-          "id": "by-covid",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json"
       }
     },
     {
@@ -646,6 +411,7 @@
       },
       "license": "Apache-2.0",
       "subtopic": "ro-crate",
+      "short_id": "T00343",
       "url": "/topics/fair/tutorials/ro-crate-workflow-run-ro-crate/tutorial.html",
       "topic_name": "fair",
       "tutorial_name": "ro-crate-workflow-run-ro-crate",
@@ -724,7 +490,7 @@
           "funder": true,
           "funding_id": "101046203",
           "funding_system": "cordis",
-          "funding_statement": "BY-COVID is an <a href=\"https://cordis.europa.eu/project/id/101046203\">EC funded project</a> that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No. 101046203 (BY-COVID)",
+          "funding_statement": "BY-COVID is an EC funded project that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement № 101046203 (BY-COVID)",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
           "id": "by-covid",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
@@ -733,6 +499,283 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-workflow-run-ro-crate/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-workflow-run-ro-crate/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "FAIR data management solutions",
+      "abbreviations": {
+        "FAIR": "Findable, Accessible, Interoperable, Reusable",
+        "DMP": "Data Management Plan",
+        "PID": "Persistent Identifier"
+      },
+      "zenodo_link": "",
+      "questions": [
+        "Is there a reproducibility crisis?",
+        "What can go wrong with data analysis?"
+      ],
+      "objectives": [
+        "Learn best practices in data management",
+        "Learn how to introduce computational reproducibility in your research"
+      ],
+      "time_estimation": "10M",
+      "key_points": [
+        "FAIR data management allows machines to automatically find and use the data accordingly."
+      ],
+      "tags": [
+        "fair",
+        "dmp",
+        "data stewardship"
+      ],
+      "priority": 2,
+      "contributions": {
+        "authorship": [
+          "kkamieniecka",
+          "poterlowicz-lab"
+        ],
+        "editing": [
+          "hexylena"
+        ]
+      },
+      "subtopic": "fair-data",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "fair",
+          "tutorials": [
+            "fair-intro"
+          ]
+        }
+      ],
+      "short_id": "T00349",
+      "url": "/topics/fair/tutorials/data-management/tutorial.html",
+      "topic_name": "fair",
+      "tutorial_name": "data-management",
+      "dir": "topics/fair/tutorials/data-management",
+      "id": "fair/data-management",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json",
+      "tools": [
+
+      ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "topic_name_human": "FAIR Data, Workflows, and Research",
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Katarzyna Kamieniecka",
+          "twitter": "katemurat",
+          "orcid": "0009-0004-2454-5950",
+          "joined": "2018-08",
+          "elixir_node": "uk",
+          "id": "kkamieniecka",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kkamieniecka.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kkamieniecka/"
+        },
+        {
+          "name": "Krzysztof Poterlowicz",
+          "twitter": "bioinfbrad",
+          "orcid": "0000-0001-6173-5674",
+          "joined": "2017-09",
+          "elixir_node": "uk",
+          "id": "poterlowicz-lab",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/poterlowicz-lab.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/poterlowicz-lab/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "matrix": "hexylena:matrix.org",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Exporting Workflow Run RO-Crates from Galaxy",
+      "time_estimation": "30m",
+      "questions": [
+        "What is a Workflow Run Crate?",
+        "How can I export a Galaxy Workflow Run Crate?"
+      ],
+      "objectives": [
+        "Understanding, viewing and creating Galaxy Workflow Run Crates"
+      ],
+      "key_points": [
+        "Galaxy Workflow Run Crates help you keep provenance of a workflow run / invocation.",
+        "Galaxy Workflow Run Crates give extra context to the standard workflow run export",
+        "Galaxy Workflow Run Crates can be exported from the top menu, **User -> Workflow Invocations**."
+      ],
+      "tags": [
+        "ro-crate",
+        "workflows"
+      ],
+      "priority": 2,
+      "contributions": {
+        "authorship": [
+          "pauldg"
+        ],
+        "funding": [
+          "by-covid"
+        ]
+      },
+      "license": "Apache-2.0",
+      "subtopic": "ro-crate",
+      "short_id": "T00340",
+      "url": "/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.html",
+      "topic_name": "fair",
+      "tutorial_name": "ro-crate-in-galaxy",
+      "dir": "topics/fair/tutorials/ro-crate-in-galaxy",
+      "id": "fair/ro-crate-in-galaxy",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json",
+      "tools": [
+
+      ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "topic_name_human": "FAIR Data, Workflows, and Research",
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Paul De Geest",
+          "joined": "2023-04",
+          "elixir_node": "be",
+          "orcid": "0000-0002-8940-4946",
+          "id": "pauldg",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/pauldg.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/pauldg/"
+        },
+        {
+          "name": "BeYond-COVID",
+          "joined": "2023-04",
+          "funder": true,
+          "funding_id": "101046203",
+          "funding_system": "cordis",
+          "funding_statement": "BY-COVID is an EC funded project that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement № 101046203 (BY-COVID)",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
+          "id": "by-covid",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-galaxy/tutorial.json"
       }
     },
     {
@@ -754,7 +797,7 @@
       "tags": [
         "ro-crate"
       ],
-      "priority": 1,
+      "priority": 2,
       "contributions": {
         "authorship": [
           "simleo",
@@ -772,6 +815,7 @@
       "notebook": {
         "language": "python"
       },
+      "short_id": "T00341",
       "url": "/topics/fair/tutorials/ro-crate-in-python/tutorial.html",
       "topic_name": "fair",
       "tutorial_name": "ro-crate-in-python",
@@ -862,6 +906,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -878,7 +923,7 @@
           "funder": true,
           "funding_id": "101046203",
           "funding_system": "cordis",
-          "funding_statement": "BY-COVID is an <a href=\"https://cordis.europa.eu/project/id/101046203\">EC funded project</a> that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No. 101046203 (BY-COVID)",
+          "funding_statement": "BY-COVID is an EC funded project that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement № 101046203 (BY-COVID)",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
           "id": "by-covid",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
@@ -887,6 +932,449 @@
       "urls": {
         "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-python/tutorial.json",
         "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-in-python/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "Best practices for workflows in GitHub repositories",
+      "time_estimation": "30M",
+      "questions": [
+        "What are Workflow Best Practices",
+        "How does RO-Crate help?"
+      ],
+      "objectives": [
+        "Generate a workflow test using Planemo",
+        "Understand how testing can be automated with GitHub Actions"
+      ],
+      "key_points": [
+        "repo2rocrate lets you easily generate templated out metadata for your workflow",
+        "Generating tests is easy and something everyone should do."
+      ],
+      "tags": [
+        "ro-crate"
+      ],
+      "priority": 3,
+      "contributions": {
+        "authorship": [
+          "simleo"
+        ],
+        "funding": [
+          "by-covid"
+        ]
+      },
+      "license": "Apache-2.0",
+      "subtopic": "ro-crate",
+      "notebook": {
+        "language": "bash"
+      },
+      "short_id": "T00339",
+      "url": "/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.html",
+      "topic_name": "fair",
+      "tutorial_name": "ro-crate-galaxy-best-practices",
+      "dir": "topics/fair/tutorials/ro-crate-galaxy-best-practices",
+      "id": "fair/ro-crate-galaxy-best-practices",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json",
+      "tools": [
+
+      ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "topic_name_human": "FAIR Data, Workflows, and Research",
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Simone Leo",
+          "joined": "2023-04",
+          "elixir_node": "it",
+          "orcid": "0000-0001-8271-5429",
+          "id": "simleo",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/simleo.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/simleo/"
+        },
+        {
+          "name": "BeYond-COVID",
+          "joined": "2023-04",
+          "funder": true,
+          "funding_id": "101046203",
+          "funding_system": "cordis",
+          "funding_statement": "BY-COVID is an EC funded project that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement № 101046203 (BY-COVID)",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
+          "id": "by-covid",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/ro-crate-galaxy-best-practices/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "FAIR Galaxy Training Material",
+      "abbreviations": {
+        "FAIR": "Findable, Accessible, Interoperable, Reusable",
+        "GTN": "Galaxy Training Network"
+      },
+      "zenodo_link": "",
+      "questions": [
+        "What are the FAIR training materials?",
+        "How to test, reproduce and share your content?",
+        "How to collaborate and don’t duplicate?"
+      ],
+      "objectives": [
+        "Learn about metadata and findability",
+        "Learn how to support system and content curation"
+      ],
+      "time_estimation": "30M",
+      "key_points": [
+        "FAIR principles in Galaxy training development and content creation."
+      ],
+      "tags": [
+        "fair",
+        "gtn",
+        "training"
+      ],
+      "priority": 3,
+      "contributions": {
+        "authorship": [
+          "kkamieniecka",
+          "poterlowicz-lab"
+        ],
+        "editing": [
+          "hexylena"
+        ]
+      },
+      "subtopic": "fair-data",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "fair",
+          "tutorials": [
+            "fair-intro"
+          ]
+        }
+      ],
+      "short_id": "T00350",
+      "url": "/topics/fair/tutorials/fair-gtn/tutorial.html",
+      "topic_name": "fair",
+      "tutorial_name": "fair-gtn",
+      "dir": "topics/fair/tutorials/fair-gtn",
+      "id": "fair/fair-gtn",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json",
+      "tools": [
+
+      ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "topic_name_human": "FAIR Data, Workflows, and Research",
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Katarzyna Kamieniecka",
+          "twitter": "katemurat",
+          "orcid": "0009-0004-2454-5950",
+          "joined": "2018-08",
+          "elixir_node": "uk",
+          "id": "kkamieniecka",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kkamieniecka.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kkamieniecka/"
+        },
+        {
+          "name": "Krzysztof Poterlowicz",
+          "twitter": "bioinfbrad",
+          "orcid": "0000-0001-6173-5674",
+          "joined": "2017-09",
+          "elixir_node": "uk",
+          "id": "poterlowicz-lab",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/poterlowicz-lab.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/poterlowicz-lab/"
+        },
+        {
+          "name": "Helena Rasche",
+          "email": "hexylena@galaxians.org",
+          "orcid": "0000-0001-9760-8992",
+          "maintainer_contact": "gitter",
+          "matrix": "hexylena:matrix.org",
+          "joined": "2017-09",
+          "elixir_node": "nl",
+          "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
+          "contact_for_training": false,
+          "location": {
+            "country": "NL",
+            "lat": 51.91,
+            "lon": 4.46
+          },
+          "id": "hexylena",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json"
+      }
+    },
+    {
+      "layout": "tutorial_hands_on",
+      "title": "FAIR Bioimage Metadata",
+      "zenodo_link": "",
+      "questions": [
+        "What are the commonly used repositories for bioimaging data?",
+        "Which repositories are suitable for my data?",
+        "What are the requirements for submitting?"
+      ],
+      "objectives": [
+        "Locate bioimage data repositories",
+        "Compare repositories to find which are suitable for your data",
+        "Find out what the requirements are for submitting"
+      ],
+      "time_estimation": "15m",
+      "key_points": [
+        "Data repositories such as BioImage Archive, Electron Microscopy Public Image Archive (EMPIAR) and Image Data Repository (IDR) are available to help make bioimaging data FAIR.",
+        "Find out what are the repository's requirements to help decide which is suitable for your data.",
+        "All repositories require some metadata, so collecting the metadata alongside data acquisition will make this process easier."
+      ],
+      "tags": [
+        "fair",
+        "data management",
+        "bioimaging"
+      ],
+      "priority": 4,
+      "contributions": {
+        "authorship": [
+          "wee-snufkin",
+          "Laura190",
+          "kkamieniecka",
+          "poterlowicz-lab"
+        ]
+      },
+      "subtopic": "fair-data",
+      "requirements": [
+        {
+          "type": "internal",
+          "topic_name": "fair",
+          "tutorials": [
+            "fair-intro",
+            "data-management"
+          ]
+        }
+      ],
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "fair",
+          "tutorials": [
+            "bioimage-REMBI"
+          ]
+        },
+        {
+          "type": "internal",
+          "topic_name": "imaging"
+        }
+      ],
+      "short_id": null,
+      "url": "/topics/fair/tutorials/bioimage-metadata/tutorial.html",
+      "topic_name": "fair",
+      "tutorial_name": "bioimage-metadata",
+      "dir": "topics/fair/tutorials/bioimage-metadata",
+      "id": "fair/bioimage-metadata",
+      "video_library": {
+        "tutorial": null,
+        "slides": null,
+        "demo": null,
+        "both": null,
+        "session": null
+      },
+      "hands_on": true,
+      "slides": false,
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-metadata/tutorial.json",
+      "tools": [
+
+      ],
+      "supported_servers": {
+        "exact": [
+
+        ],
+        "inexact": [
+          {
+            "name": "UseGalaxy.eu",
+            "url": "https://usegalaxy.eu",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org",
+            "url": "https://usegalaxy.org",
+            "usegalaxy": true
+          },
+          {
+            "name": "UseGalaxy.org.au",
+            "url": "https://usegalaxy.org.au",
+            "usegalaxy": true
+          }
+        ]
+      },
+      "topic_name_human": "FAIR Data, Workflows, and Research",
+      "admin_install": {
+        "install_tool_dependencies": true,
+        "install_repository_dependencies": true,
+        "install_resolver_dependencies": true,
+        "tools": [
+
+        ]
+      },
+      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
+      "tours": false,
+      "video": false,
+      "translations": {
+        "tutorial": [
+
+        ],
+        "slides": [
+
+        ],
+        "video": false
+      },
+      "type": "tutorial",
+      "contributors": [
+        {
+          "name": "Julia Jakiela",
+          "email": "juliajot36@gmail.com",
+          "joined": "2022-06",
+          "id": "wee-snufkin",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wee-snufkin/"
+        },
+        {
+          "name": "Laura Cooper",
+          "email": "L.Cooper.5@warwick.ac.uk",
+          "joined": "2023-08",
+          "id": "Laura190",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/Laura190.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/Laura190/"
+        },
+        {
+          "name": "Katarzyna Kamieniecka",
+          "twitter": "katemurat",
+          "orcid": "0009-0004-2454-5950",
+          "joined": "2018-08",
+          "elixir_node": "uk",
+          "id": "kkamieniecka",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/kkamieniecka.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kkamieniecka/"
+        },
+        {
+          "name": "Krzysztof Poterlowicz",
+          "twitter": "bioinfbrad",
+          "orcid": "0000-0001-6173-5674",
+          "joined": "2017-09",
+          "elixir_node": "uk",
+          "id": "poterlowicz-lab",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/poterlowicz-lab.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/poterlowicz-lab/"
+        }
+      ],
+      "urls": {
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-metadata/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-metadata/tutorial.json"
       }
     },
     {
@@ -909,7 +1397,7 @@
       "tags": [
         "ro-crate"
       ],
-      "priority": 1,
+      "priority": 4,
       "contributions": {
         "authorship": [
           "ilveroluca",
@@ -937,6 +1425,7 @@
       "abbreviations": {
         "LM": "Life Monitor"
       },
+      "short_id": "T00342",
       "url": "/topics/fair/tutorials/ro-crate-submitting-life-monitor/tutorial.html",
       "topic_name": "fair",
       "tutorial_name": "ro-crate-submitting-life-monitor",
@@ -1035,6 +1524,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -1051,7 +1541,7 @@
           "funder": true,
           "funding_id": "101046203",
           "funding_system": "cordis",
-          "funding_statement": "BY-COVID is an <a href=\"https://cordis.europa.eu/project/id/101046203\">EC funded project</a> that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No. 101046203 (BY-COVID)",
+          "funding_statement": "BY-COVID is an EC funded project that tackles the data challenges that can hinder effective pandemic response.\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement № 101046203 (BY-COVID)",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/by-covid.json",
           "id": "by-covid",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/by-covid/"
@@ -1064,38 +1554,34 @@
     },
     {
       "layout": "tutorial_hands_on",
-      "title": "FAIR data management solutions",
-      "abbreviations": {
-        "FAIR": "Findable, Accessible, Interoperable, Reusable",
-        "DMP": "Data Management Plan",
-        "PID": "Persistent Identifier"
-      },
+      "title": "REMBI - Recommended Metadata for Biological Images – metadata guidelines for bioimaging data",
       "zenodo_link": "",
       "questions": [
-        "Is there a reproducibility crisis?",
-        "What can go wrong with data analysis?"
+        "What is REMBI and why should I use it?",
+        "What information should be included when collecting bioimage data?"
       ],
       "objectives": [
-        "Learn best practices in data management",
-        "Learn how to introduce computational reproducibility in your research"
+        "Organise bioimage metadata",
+        "Find out what REMBI is and why it is useful",
+        "Categorise what metadata belongs to each of the submodules of REMBI",
+        "Gather the metadata for an example bioimage dataset"
       ],
-      "time_estimation": "10M",
+      "time_estimation": "15m",
       "key_points": [
-        "FAIR data management allows machines to automatically find and use the data accordingly."
+        "REMBI describes useful guidelines for bioimaging that can help unification and FARIfication of the data."
       ],
       "tags": [
         "fair",
-        "dmp",
-        "data stewardship"
+        "data management",
+        "bioimaging"
       ],
-      "priority": 2,
+      "priority": 5,
       "contributions": {
         "authorship": [
+          "wee-snufkin",
+          "Laura190",
           "kkamieniecka",
           "poterlowicz-lab"
-        ],
-        "editing": [
-          "hexylena"
         ]
       },
       "subtopic": "fair-data",
@@ -1104,15 +1590,24 @@
           "type": "internal",
           "topic_name": "fair",
           "tutorials": [
-            "fair-intro"
+            "fair-intro",
+            "data-management",
+            "bioimage-metadata"
           ]
         }
       ],
-      "url": "/topics/fair/tutorials/data-management/tutorial.html",
+      "follow_up_training": [
+        {
+          "type": "internal",
+          "topic_name": "imaging"
+        }
+      ],
+      "short_id": null,
+      "url": "/topics/fair/tutorials/bioimage-REMBI/tutorial.html",
       "topic_name": "fair",
-      "tutorial_name": "data-management",
-      "dir": "topics/fair/tutorials/data-management",
-      "id": "fair/data-management",
+      "tutorial_name": "bioimage-REMBI",
+      "dir": "topics/fair/tutorials/bioimage-REMBI",
+      "id": "fair/bioimage-REMBI",
       "video_library": {
         "tutorial": null,
         "slides": null,
@@ -1122,7 +1617,7 @@
       },
       "hands_on": true,
       "slides": false,
-      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json",
+      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-REMBI/tutorial.json",
       "tools": [
 
       ],
@@ -1172,7 +1667,24 @@
       "type": "tutorial",
       "contributors": [
         {
+          "name": "Julia Jakiela",
+          "email": "juliajot36@gmail.com",
+          "joined": "2022-06",
+          "id": "wee-snufkin",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/wee-snufkin.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/wee-snufkin/"
+        },
+        {
+          "name": "Laura Cooper",
+          "email": "L.Cooper.5@warwick.ac.uk",
+          "joined": "2023-08",
+          "id": "Laura190",
+          "url": "https://training.galaxyproject.org/training-material/api/contributors/Laura190.json",
+          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/Laura190/"
+        },
+        {
           "name": "Katarzyna Kamieniecka",
+          "twitter": "katemurat",
           "orcid": "0009-0004-2454-5950",
           "joined": "2018-08",
           "elixir_node": "uk",
@@ -1189,183 +1701,11 @@
           "id": "poterlowicz-lab",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/poterlowicz-lab.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/poterlowicz-lab/"
-        },
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "matrix": "hexylena:matrix.org",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         }
       ],
       "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/data-management/tutorial.json"
-      }
-    },
-    {
-      "layout": "tutorial_hands_on",
-      "title": "FAIR Galaxy Training Material",
-      "abbreviations": {
-        "FAIR": "Findable, Accessible, Interoperable, Reusable",
-        "GTN": "Galaxy Training Network"
-      },
-      "zenodo_link": "",
-      "questions": [
-        "What are the FAIR training materials?",
-        "How to test, reproduce and share your content?",
-        "How to collaborate and don’t duplicate?"
-      ],
-      "objectives": [
-        "Learn about metadata and findability",
-        "Learn how to support system and content curation"
-      ],
-      "time_estimation": "30M",
-      "key_points": [
-        "FAIR principles in Galaxy training development and content creation."
-      ],
-      "tags": [
-        "fair",
-        "gtn",
-        "training"
-      ],
-      "priority": 3,
-      "contributions": {
-        "authorship": [
-          "kkamieniecka",
-          "poterlowicz-lab"
-        ],
-        "editing": [
-          "hexylena"
-        ]
-      },
-      "subtopic": "fair-data",
-      "requirements": [
-        {
-          "type": "internal",
-          "topic_name": "fair",
-          "tutorials": [
-            "fair-intro"
-          ]
-        }
-      ],
-      "url": "/topics/fair/tutorials/fair-gtn/tutorial.html",
-      "topic_name": "fair",
-      "tutorial_name": "fair-gtn",
-      "dir": "topics/fair/tutorials/fair-gtn",
-      "id": "fair/fair-gtn",
-      "video_library": {
-        "tutorial": null,
-        "slides": null,
-        "demo": null,
-        "both": null,
-        "session": null
-      },
-      "hands_on": true,
-      "slides": false,
-      "api": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json",
-      "tools": [
-
-      ],
-      "supported_servers": {
-        "exact": [
-
-        ],
-        "inexact": [
-          {
-            "name": "UseGalaxy.eu",
-            "url": "https://usegalaxy.eu",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org",
-            "url": "https://usegalaxy.org",
-            "usegalaxy": true
-          },
-          {
-            "name": "UseGalaxy.org.au",
-            "url": "https://usegalaxy.org.au",
-            "usegalaxy": true
-          }
-        ]
-      },
-      "topic_name_human": "FAIR Data, Workflows, and Research",
-      "admin_install": {
-        "install_tool_dependencies": true,
-        "install_repository_dependencies": true,
-        "install_resolver_dependencies": true,
-        "tools": [
-
-        ]
-      },
-      "admin_install_yaml": "---\ninstall_tool_dependencies: true\ninstall_repository_dependencies: true\ninstall_resolver_dependencies: true\ntools: []\n",
-      "tours": false,
-      "video": false,
-      "translations": {
-        "tutorial": [
-
-        ],
-        "slides": [
-
-        ],
-        "video": false
-      },
-      "type": "tutorial",
-      "contributors": [
-        {
-          "name": "Katarzyna Kamieniecka",
-          "orcid": "0009-0004-2454-5950",
-          "joined": "2018-08",
-          "elixir_node": "uk",
-          "id": "kkamieniecka",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/kkamieniecka.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/kkamieniecka/"
-        },
-        {
-          "name": "Krzysztof Poterlowicz",
-          "twitter": "bioinfbrad",
-          "orcid": "0000-0001-6173-5674",
-          "joined": "2017-09",
-          "elixir_node": "uk",
-          "id": "poterlowicz-lab",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/poterlowicz-lab.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/poterlowicz-lab/"
-        },
-        {
-          "name": "Helena Rasche",
-          "email": "hexylena@galaxians.org",
-          "orcid": "0000-0001-9760-8992",
-          "maintainer_contact": "gitter",
-          "matrix": "hexylena:matrix.org",
-          "joined": "2017-09",
-          "elixir_node": "nl",
-          "fediverse": "https://galaxians.garden/hexylena",
-          "contact_for_training": false,
-          "location": {
-            "country": "NL",
-            "lat": 51.91,
-            "lon": 4.46
-          },
-          "id": "hexylena",
-          "url": "https://training.galaxyproject.org/training-material/api/contributors/hexylena.json",
-          "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
-        }
-      ],
-      "urls": {
-        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json",
-        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/fair-gtn/tutorial.json"
+        "hands_on": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-REMBI/tutorial.json",
+        "slides": "https://training.galaxyproject.org/training-material/api/topics/fair/tutorials/bioimage-REMBI/tutorial.json"
       }
     }
   ]

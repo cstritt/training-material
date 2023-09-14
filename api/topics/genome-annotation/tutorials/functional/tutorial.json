@@ -27,6 +27,7 @@
   },
   "subtopic": "eukaryote",
   "priority": 6,
+  "short_id": "T00173",
   "url": "/topics/genome-annotation/tutorials/functional/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "functional",
@@ -96,6 +97,11 @@
         "url": "https://galaxy.genouest.org",
         "name": "Galaxy@GenOuest",
         "usegalaxy": "false"
+      },
+      {
+        "url": "https://usegalaxy.no/",
+        "name": "UseGalaxy.no",
+        "usegalaxy": "true"
       }
     ]
   },
@@ -164,6 +170,7 @@
         "lon": -1.64
       },
       "fediverse": "https://genomic.social/@abretaud",
+      "fediverse_flavor": "mastodon",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"

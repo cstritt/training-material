@@ -40,6 +40,7 @@
       "erasmusplus"
     ]
   },
+  "short_id": "T00280",
   "url": "/topics/teaching/tutorials/learner_participation_engagement/tutorial.html",
   "topic_name": "teaching",
   "tutorial_name": "learner_participation_engagement",
@@ -161,6 +162,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"

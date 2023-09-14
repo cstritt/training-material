@@ -8,7 +8,7 @@
   ],
   "docker_image": "quay.io/galaxy/dev-training",
   "requirements": null,
-  "maintainers": [
+  "editorial_board": [
     {
       "name": "Gildas Le Corguillé",
       "joined": "2017-09",
@@ -33,6 +33,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -46,6 +47,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -145,6 +147,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/yhoogstrate/"
         }
       ],
+      "short_id": "T00121",
       "url": "/topics/dev/tutorials/visualization-generic/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "visualization-generic",
@@ -260,6 +263,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -284,6 +289,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/dannon/"
         }
       ],
+      "short_id": "T00120",
       "url": "/topics/dev/tutorials/visualization-charts/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "visualization-charts",
@@ -424,6 +430,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -435,6 +442,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         }
       ],
+      "short_id": "T00118",
       "url": "/topics/dev/tutorials/tool-generators/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "tool-generators",
@@ -569,6 +577,7 @@
       "notebook": {
         "language": "python"
       },
+      "short_id": "T00111",
       "url": "/topics/dev/tutorials/bioblend-api/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "bioblend-api",
@@ -667,6 +676,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -733,6 +743,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -751,6 +763,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -763,6 +776,7 @@
         }
       ],
       "subtopic": "advanced",
+      "short_id": "S00048",
       "url": "/topics/dev/tutorials/interactive-environments/slides.html",
       "topic_name": "dev",
       "tutorial_name": "interactive-environments",
@@ -870,6 +884,7 @@
             "lon": -1.64
           },
           "fediverse": "https://genomic.social/@abretaud",
+          "fediverse_flavor": "mastodon",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -904,11 +919,13 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
         }
       ],
+      "short_id": "S00052",
       "url": "/topics/dev/tutorials/toolshed/slides.html",
       "topic_name": "dev",
       "tutorial_name": "toolshed",
@@ -1040,6 +1057,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1058,6 +1077,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hmenager/"
         }
       ],
+      "short_id": "S00045",
       "url": "/topics/dev/tutorials/conda/slides.html",
       "topic_name": "dev",
       "tutorial_name": "conda",
@@ -1172,6 +1192,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1182,6 +1204,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/"
         }
       ],
+      "short_id": "S00047",
       "url": "/topics/dev/tutorials/containers/slides.html",
       "topic_name": "dev",
       "tutorial_name": "containers",
@@ -1285,6 +1308,7 @@
             "lon": -1.64
           },
           "fediverse": "https://genomic.social/@abretaud",
+          "fediverse_flavor": "mastodon",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1297,6 +1321,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/cmonjeau/"
         }
       ],
+      "short_id": "S00046",
       "url": "/topics/dev/tutorials/conda_sys/slides.html",
       "topic_name": "dev",
       "tutorial_name": "conda_sys",
@@ -1406,6 +1431,7 @@
             "lon": -122.0
           },
           "fediverse": "https://mastodon.world/@martenson",
+          "fediverse_flavor": "mastodon",
           "joined": "2017-09",
           "id": "martenson",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/martenson.json",
@@ -1415,6 +1441,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1426,6 +1454,7 @@
         }
       ],
       "subtopic": "advanced",
+      "short_id": "T00122",
       "url": "/topics/dev/tutorials/webhooks/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "webhooks",
@@ -1568,6 +1597,7 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1587,6 +1617,7 @@
             "lon": -1.64
           },
           "fediverse": "https://genomic.social/@abretaud",
+          "fediverse_flavor": "mastodon",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -1617,6 +1648,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1635,6 +1668,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/lecorguille/"
         }
       ],
+      "short_id": "S00051",
       "url": "/topics/dev/tutorials/tool-integration/slides.html",
       "topic_name": "dev",
       "tutorial_name": "tool-integration",
@@ -1737,6 +1771,7 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -1745,6 +1780,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1756,6 +1793,7 @@
         }
       ],
       "subtopic": "advanced",
+      "short_id": "S00049",
       "url": "/topics/dev/tutorials/interactive-tours/slides.html",
       "topic_name": "dev",
       "tutorial_name": "interactive-tours",
@@ -1862,6 +1900,8 @@
           "name": "Björn Grüning",
           "email": "bjoern.gruening@gmail.com",
           "twitter": "bjoerngruening",
+          "fediverse": "https://fosstodon.org/@bgruening",
+          "fediverse_flavor": "mastodon",
           "matrix": "bgruening:matrix.org",
           "orcid": "0000-0002-3079-6586",
           "linkedin": "bgruening",
@@ -1872,6 +1912,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bgruening/"
         }
       ],
+      "short_id": "S00043",
       "url": "/topics/dev/tutorials/architecture/slides.html",
       "topic_name": "dev",
       "tutorial_name": "architecture",
@@ -1980,6 +2021,7 @@
             "lon": 3.08
           },
           "fediverse": "https://piaille.fr/@bebatut",
+          "fediverse_flavor": "mastodon",
           "id": "bebatut",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -2023,6 +2065,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -2040,6 +2083,7 @@
         "Data flows from the external data resource to the Galaxy server without the need of \"downloading\" the data"
       ],
       "subtopic": "advanced",
+      "short_id": "T00114",
       "url": "/topics/dev/tutorials/data-source-integration/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "data-source-integration",
@@ -2167,6 +2211,7 @@
         "API": "Application Programming Interface",
         "PR": "Pull Request"
       },
+      "short_id": "T00112",
       "url": "/topics/dev/tutorials/bioblend-dev/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "bioblend-dev",
@@ -2286,6 +2331,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/fubar2/"
         }
       ],
+      "short_id": "T00119",
       "url": "/topics/dev/tutorials/tool-generators-advanced/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "tool-generators-advanced",
@@ -2433,6 +2479,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bernt-matthias/"
         }
       ],
+      "short_id": "T00117",
       "url": "/topics/dev/tutorials/tool-from-scratch/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "tool-from-scratch",
@@ -2636,6 +2683,7 @@
         }
       ],
       "subtopic": "core",
+      "short_id": "T00115",
       "url": "/topics/dev/tutorials/debugging/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "debugging",
@@ -2759,6 +2807,7 @@
           ]
         }
       ],
+      "short_id": "T00113",
       "url": "/topics/dev/tutorials/core-contributing/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "core-contributing",
@@ -2889,6 +2938,7 @@
         }
       ],
       "subtopic": "core",
+      "short_id": "T00123",
       "url": "/topics/dev/tutorials/writing_tests/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "writing_tests",
@@ -3052,6 +3102,7 @@
             "lon": -1.64
           },
           "fediverse": "https://genomic.social/@abretaud",
+          "fediverse_flavor": "mastodon",
           "id": "abretaud",
           "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -3065,6 +3116,7 @@
           "joined": "2017-09",
           "elixir_node": "nl",
           "fediverse": "https://galaxians.garden/hexylena",
+          "fediverse_flavor": "akkoma",
           "contact_for_training": false,
           "location": {
             "country": "NL",
@@ -3076,6 +3128,7 @@
           "page": "https://training.galaxyproject.org/training-material/hall-of-fame/hexylena/"
         }
       ],
+      "short_id": "T00116",
       "url": "/topics/dev/tutorials/interactive-tools/tutorial.html",
       "topic_name": "dev",
       "tutorial_name": "interactive-tools",

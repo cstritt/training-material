@@ -37,6 +37,7 @@
     "ansible",
     "git-gat"
   ],
+  "short_id": "T00326",
   "url": "/topics/admin/tutorials/celery/tutorial.html",
   "topic_name": "admin",
   "tutorial_name": "celery",
@@ -120,6 +121,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",

@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  release: "galaxy-training-network@ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -32,15 +32,21 @@ Sentry.init({
 </script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/webhooks/tutorial.html">
         <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as="script" crossorigin>
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.theme.js?v=1694703124' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.main.js?v=1694703124' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
+
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
@@ -60,7 +66,7 @@ Sentry.init({
         <meta property="og:title" content="Galaxy Training: Galaxy Webhooks">
         <meta property="og:description" content="Galaxy is an open-source project. Everyone can contribute...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
         <script type="application/ld+json">
@@ -250,7 +256,7 @@ Sentry.init({
         
     </head>
     <body data-spy="scroll" data-target="#toc">
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script src='/training-material/assets/js/bundle.theme.js?v=1694703124'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -319,7 +325,7 @@ Sentry.init({
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/maintopics/dev/tutorials/webhooks/tutorial.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/dev/tutorials/webhooks/tutorial.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -366,13 +372,13 @@ Sentry.init({
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/dev/tutorials/webhooks/tutorial.html" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/dev/tutorials/webhooks/tutorial.html">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/dev/tutorials/webhooks/tutorial.html" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/dev/tutorials/webhooks/tutorial.html">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/dev/tutorials/webhooks/tutorial.html" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/dev/tutorials/webhooks/tutorial.html">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -385,7 +391,7 @@ Sentry.init({
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -422,14 +428,7 @@ Sentry.init({
 
 
 
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'galaxyproject/dev'
-  };
-</script>
 
-
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <article class="tutorial topic-dev">
     <h1 data-toc-skip>Galaxy Webhooks</h1>
@@ -439,7 +438,7 @@ Sentry.init({
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/blankclemens/" class="contributor-badge contributor-blankclemens"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/blankclemens?s=27" alt="Avatar">Clemens Blank</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/martenson?s=27" alt="Avatar">Martin Čech</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/bgruening?s=27" alt="Avatar">Björn Grüning</a>
+		Authors: <a href="/training-material/hall-of-fame/blankclemens/" class="contributor-badge contributor-blankclemens"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/blankclemens?s=36" alt="Avatar" width="36" height="36">Clemens Blank</a><a href="/training-material/hall-of-fame/martenson/" class="contributor-badge contributor-martenson"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/martenson?s=36" alt="Avatar" width="36" height="36">Martin Čech</a><a href="/training-material/hall-of-fame/bgruening/" class="contributor-badge contributor-bgruening"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/bgruening?s=36" alt="Avatar" width="36" height="36">Björn Grüning</a>
 	</div>
 
 </div>
@@ -598,7 +597,7 @@ Sentry.init({
              The GTN Framework is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
         </div>
         
-        <div><strong>Short Link:</strong> <a href="https://gxy.io/GTN:T00122">https://gxy.io/GTN:T00122</a> </div>
+        <div><strong><i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>:</strong> <a href="https://gxy.io/GTN:T00122">https://gxy.io/GTN:T00122</a> </div>
         
     </blockquote>
     </section>
@@ -624,7 +623,7 @@ at which we modify the Galaxy user-interface. In our case we want to display an 
 The key <code class="language-plaintext highlighter-rouge">activate</code> gives you control per-webhook to activate or deactivate it.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on</div>
 
   <ol>
     <li>
@@ -648,7 +647,7 @@ in Python to demonstrate webhooks abilitity to call self-defined python function
 calls an REST endpoint defined by use in the next step. The return value of this endpoint is retrived in JS and can be displayed or modified.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-1"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on</div>
 
   <ol>
     <li>
@@ -695,7 +694,7 @@ calls an REST endpoint defined by use in the next step. The return value of this
                 <span class="p">}));</span>
 
                 <span class="nx">$</span><span class="p">.</span><span class="nf">getJSON</span><span class="p">(</span><span class="nx">url</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="nf">if </span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">if </span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">success</span><span class="p">)</span> <span class="p">{</span>
                         <span class="nx">me</span><span class="p">.</span><span class="nf">renderImg</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">src</span><span class="p">);</span>
                     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                         <span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">[ERROR] "</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">url</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">":</span><span class="se">\n</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
@@ -721,7 +720,7 @@ Please note that the <code class="language-plaintext highlighter-rouge">main()</
 entire user-object, including histories and datasets.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-2"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-2"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on</div>
 
   <ol>
     <li>
@@ -736,8 +735,8 @@ entire user-object, including histories and datasets.</p>
 
 
 <span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">trans</span><span class="p">,</span> <span class="n">webhook</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
-    <span class="n">error</span> <span class="o">=</span> <span class="s">''</span>
-    <span class="n">comic_src</span> <span class="o">=</span> <span class="s">''</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="sh">''</span>
+    <span class="n">comic_src</span> <span class="o">=</span> <span class="sh">''</span>
 
     <span class="k">try</span><span class="p">:</span>
         <span class="c1"># Third-party dependencies
@@ -745,36 +744,36 @@ entire user-object, including histories and datasets.</p>
             <span class="kn">from</span> <span class="n">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
         <span class="k">except</span> <span class="nb">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">log</span><span class="p">.</span><span class="nf">exception</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
-            <span class="k">return</span> <span class="p">{</span><span class="s">'success'</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="s">'error'</span><span class="p">:</span> <span class="nf">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+            <span class="k">return</span> <span class="p">{</span><span class="sh">'</span><span class="s">success</span><span class="sh">'</span><span class="p">:</span> <span class="bp">False</span><span class="p">,</span> <span class="sh">'</span><span class="s">error</span><span class="sh">'</span><span class="p">:</span> <span class="nf">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
 
         <span class="c1"># Get latest id
-</span>        <span class="k">if</span> <span class="s">'latest_id'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="nf">keys</span><span class="p">():</span>
-            <span class="n">url</span> <span class="o">=</span> <span class="s">'https://phdcomics.com/gradfeed.php'</span>
+</span>        <span class="k">if</span> <span class="sh">'</span><span class="s">latest_id</span><span class="sh">'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">.</span><span class="nf">keys</span><span class="p">():</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://phdcomics.com/gradfeed.php</span><span class="sh">'</span>
             <span class="n">content</span> <span class="o">=</span> <span class="n">urllib</span><span class="p">.</span><span class="nf">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">).</span><span class="nf">read</span><span class="p">()</span>
-            <span class="n">soap</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-            <span class="n">pattern</span> <span class="o">=</span> <span class="s">'(?:https://www\.phdcomics\.com/comics\.php\?f=)(\d+)'</span>
-            <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">[</span><span class="s">'latest_id'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">max</span><span class="p">([</span>
+            <span class="n">soap</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="sh">'</span><span class="s">html.parser</span><span class="sh">'</span><span class="p">)</span>
+            <span class="n">pattern</span> <span class="o">=</span> <span class="sh">'</span><span class="s">(?:https://www\.phdcomics\.com/comics\.php\?f=)(\d+)</span><span class="sh">'</span>
+            <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">latest_id</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="nf">max</span><span class="p">([</span>
                 <span class="nf">int</span><span class="p">(</span><span class="n">re</span><span class="p">.</span><span class="nf">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">link</span><span class="p">.</span><span class="n">text</span><span class="p">).</span><span class="nf">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-                <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">soap</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="s">'link'</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">re</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">))</span>
+                <span class="k">for</span> <span class="n">link</span> <span class="ow">in</span> <span class="n">soap</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="sh">'</span><span class="s">link</span><span class="sh">'</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">re</span><span class="p">.</span><span class="nf">compile</span><span class="p">(</span><span class="n">pattern</span><span class="p">))</span>
             <span class="p">])</span>
 
-        <span class="n">random_id</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">[</span><span class="s">'latest_id'</span><span class="p">])</span>
-        <span class="n">url</span> <span class="o">=</span> <span class="s">'https://www.phdcomics.com/comics/archive.php?comicid=%d'</span> <span class="o">%</span> \
+        <span class="n">random_id</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">webhook</span><span class="p">.</span><span class="n">config</span><span class="p">[</span><span class="sh">'</span><span class="s">latest_id</span><span class="sh">'</span><span class="p">])</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="sh">'</span><span class="s">https://www.phdcomics.com/comics/archive.php?comicid=%d</span><span class="sh">'</span> <span class="o">%</span> \
             <span class="n">random_id</span>
         <span class="n">content</span> <span class="o">=</span> <span class="n">urllib</span><span class="p">.</span><span class="nf">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">).</span><span class="nf">read</span><span class="p">()</span>
-        <span class="n">soup</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
-        <span class="n">comic_img</span> <span class="o">=</span> <span class="n">soup</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="s">'img'</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="s">'comic2'</span><span class="p">)</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="sh">'</span><span class="s">html.parser</span><span class="sh">'</span><span class="p">)</span>
+        <span class="n">comic_img</span> <span class="o">=</span> <span class="n">soup</span><span class="p">.</span><span class="nf">find_all</span><span class="p">(</span><span class="sh">'</span><span class="s">img</span><span class="sh">'</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="sh">'</span><span class="s">comic2</span><span class="sh">'</span><span class="p">)</span>
 
         <span class="k">try</span><span class="p">:</span>
-            <span class="n">comic_src</span> <span class="o">=</span> <span class="n">comic_img</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">attrs</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="s">'src'</span><span class="p">)</span>
+            <span class="n">comic_src</span> <span class="o">=</span> <span class="n">comic_img</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">attrs</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="sh">'</span><span class="s">src</span><span class="sh">'</span><span class="p">)</span>
         <span class="k">except</span> <span class="nb">IndexError</span><span class="p">:</span>
-            <span class="n">pattern</span> <span class="o">=</span> <span class="s">'&lt;img id=comic2 name=comic2 src=([\w:\/\.]+)'</span>
+            <span class="n">pattern</span> <span class="o">=</span> <span class="sh">'</span><span class="s">&lt;img id=comic2 name=comic2 src=([\w:\/\.]+)</span><span class="sh">'</span>
             <span class="n">comic_src</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="nf">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">content</span><span class="p">).</span><span class="nf">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="n">error</span> <span class="o">=</span> <span class="nf">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
 
-    <span class="k">return</span> <span class="p">{</span><span class="s">'success'</span><span class="p">:</span> <span class="ow">not</span> <span class="n">error</span><span class="p">,</span> <span class="s">'error'</span><span class="p">:</span> <span class="n">error</span><span class="p">,</span> <span class="s">'src'</span><span class="p">:</span> <span class="n">comic_src</span><span class="p">}</span>
+    <span class="k">return</span> <span class="p">{</span><span class="sh">'</span><span class="s">success</span><span class="sh">'</span><span class="p">:</span> <span class="ow">not</span> <span class="n">error</span><span class="p">,</span> <span class="sh">'</span><span class="s">error</span><span class="sh">'</span><span class="p">:</span> <span class="n">error</span><span class="p">,</span> <span class="sh">'</span><span class="s">src</span><span class="sh">'</span><span class="p">:</span> <span class="n">comic_src</span><span class="p">}</span>
 </code></pre></div>      </div>
     </li>
   </ol>
@@ -783,7 +782,7 @@ entire user-object, including histories and datasets.</p>
 <p>To make your webhook appealing you can also add custom CSS which you can use in your HTML/JS code.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-3"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-3"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on</div>
 
   <ol>
     <li>
@@ -863,7 +862,7 @@ entire user-object, including histories and datasets.</p>
 <p>Please make sure you have activated webhooks in your <code class="language-plaintext highlighter-rouge">config/galaxy.yml</code> file by setting the <code class="language-plaintext highlighter-rouge">webhooks_dir</code> to the path in which your <code class="language-plaintext highlighter-rouge">phdcomics</code> folder is located.</p>
 
 <blockquote class="notranslate hands_on">
-  <div class="box-title hands-on-title" id="hands-on-4"><i class="fas fa-pencil-alt" aria-hidden="true"></i> Hands-on</div>
+  <div class="box-title hands-on-title" id="hands-on-4"><i class="fas fa-pencil-alt" aria-hidden="true" ></i> Hands-on</div>
 
   <ol>
     <li>Submit one tool and see if your webhook is working on the tool-submit page.</li>
@@ -873,7 +872,7 @@ entire user-object, including histories and datasets.</p>
 
 <p>If successful it should look like this:</p>
 
-<p><img src="../../images/phdcomics.png" alt="First view. " loading="lazy" /></p>
+<p><img src="../../images/phdcomics.png" alt="First view. " width="1188" height="897" loading="lazy" /></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -930,6 +929,9 @@ entire user-object, including histories and datasets.</p>
                             Clemens Blank, Martin Čech, Björn Grüning,  <b>Galaxy Webhooks (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/dev/tutorials/webhooks/tutorial.html">https://training.galaxyproject.org/training-material/topics/dev/tutorials/webhooks/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
+                        Hiltemann, Saskia, Rasche, Helena et al., 2023 <b>Galaxy Training: A Powerful Framework for Teaching!</b> PLOS Computational Biology <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010752">10.1371/journal.pcbi.1010752</a>
+                        </li>
+                        <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
                         </li>
                     </ol>
@@ -951,12 +953,12 @@ entire user-object, including histories and datasets.</p>
 
 <code id="citation-code">@misc{dev-webhooks,
 author = "Clemens Blank and Martin Čech and Björn Grüning",
-title = "Galaxy Webhooks (Galaxy Training Materials)",
-year = "",
-month = "",
-day = ""
-url = "\url{https://training.galaxyproject.org/training-material/topics/dev/tutorials/webhooks/tutorial.html}",
-note = "[Online; accessed TODAY]"
+	title = "Galaxy Webhooks (Galaxy Training Materials)",
+	year = "",
+	month = "",
+	day = ""
+	url = "\url{https://training.galaxyproject.org/training-material/topics/dev/tutorials/webhooks/tutorial.html}",
+	note = "[Online; accessed TODAY]"
 }
 @article{Hiltemann_2023,
 	doi = {10.1371/journal.pcbi.1010752},
@@ -1033,19 +1035,19 @@ tools: []
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf">ccccd1f</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
 				
 				<p>
-					Resource <abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00122">https://gxy.io/GTN:T00122</a>
+					Resource <i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00122">https://gxy.io/GTN:T00122</a>
 				</p>
 				
 				<p>
 					<i>This Material</i>:
 					
-					It is licensed under
+					is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
@@ -1064,41 +1066,8 @@ tools: []
     </div>
 </footer>
 
-        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script src="/training-material/assets/js/popper.min.js"></script>
-        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+
+        <script src='/training-material/assets/js/bundle.main.js?v=1694703124'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script src="/training-material/assets/js/main.js"></script>
-        <script src="/training-material/assets/js/clipboard.min.js"></script>
-        <script>
-        document.querySelectorAll('div.highlight').forEach((snippet) => {
-                // Google translate has additional #text nodes mixed in with
-                // the pre for some reason.
-                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
-                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
-                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-                }
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

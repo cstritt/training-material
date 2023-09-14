@@ -50,6 +50,7 @@
         "lon": 3.08
       },
       "fediverse": "https://piaille.fr/@bebatut",
+      "fediverse_flavor": "mastodon",
       "id": "bebatut",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/bebatut.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/bebatut/"
@@ -57,6 +58,7 @@
   ],
   "subtopic": "prokaryote",
   "priority": 4,
+  "short_id": "T00179",
   "url": "/topics/genome-annotation/tutorials/tnseq/tutorial.html",
   "topic_name": "genome-annotation",
   "tutorial_name": "tnseq",

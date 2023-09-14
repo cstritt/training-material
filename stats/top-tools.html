@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  release: "galaxy-training-network@ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -32,15 +32,21 @@ Sentry.init({
 </script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/stats/top-tools.html">
         <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as="script" crossorigin>
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.theme.js?v=1694703124' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.main.js?v=1694703124' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
+
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
@@ -57,12 +63,12 @@ Sentry.init({
         <meta property="og:title" content="Galaxy Training: Top Tools">
         <meta property="og:description" content="Collection of tutorials developed and maintained by the w...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
     </head>
     <body data-spy="scroll" data-target="#toc">
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script src='/training-material/assets/js/bundle.theme.js?v=1694703124'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -126,7 +132,7 @@ Sentry.init({
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/mainstats/top-tools.html" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/stats/top-tools.html" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -170,13 +176,13 @@ Sentry.init({
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/stats/top-tools.html" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/stats/top-tools.html">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/stats/top-tools.html" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/stats/top-tools.html">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/stats/top-tools.html" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/stats/top-tools.html">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -189,7 +195,7 @@ Sentry.init({
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -375,6 +381,13 @@ Sentry.init({
 					Sequence analysis /
 					<a href="/training-material/topics/sequence-analysis/tutorials/quality-control/tutorial.html">
 					Quality Control
+					</a>
+				</li>
+				
+				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/sars-with-galaxy-on-anvil/tutorial.html">
+					SARS-CoV-2 Viral Sample Alignment and Variant Visualization
 					</a>
 				</li>
 				
@@ -932,6 +945,13 @@ Sentry.init({
 					Statistics and machine learning /
 					<a href="/training-material/topics/statistics/tutorials/gpu_jupyter_lab/tutorial.html">
 					A Docker-based interactive Jupyterlab powered by GPU for artificial intelligence in Galaxy
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
 					</a>
 				</li>
 				
@@ -1662,6 +1682,134 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/nml/collapse_dataset.html">nml/collapse_dataset</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
+					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ecoli_comparison/tutorial.html">
+					Making sense of a newly assembled genome
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/cheminformatics/tutorial.html">
+					Protein-ligand docking
+					</a>
+				</li>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html">
+					Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring
+					</a>
+				</li>
+				
+				<li>
+					Ecology /
+					<a href="/training-material/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html">
+					Preparing genomic data for phylogeny reconstruction
+					</a>
+				</li>
+				
+				<li>
+					Evolution /
+					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
+					Identifying tuberculosis transmission links: from SNPs to transmission clusters
+					</a>
+				</li>
+				
+				<li>
+					Using Galaxy and Managing your Data /
+					<a href="/training-material/topics/galaxy-interface/tutorials/collections/tutorial.html">
+					Using dataset collections
+					</a>
+				</li>
+				
+				<li>
+					Using Galaxy and Managing your Data /
+					<a href="/training-material/topics/galaxy-interface/tutorials/workflow-automation/tutorial.html">
+					Automating Galaxy workflows using the command line
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
+					Comparative gene analysis in unannotated genomes
+					</a>
+				</li>
+				
+				<li>
+					Imaging /
+					<a href="/training-material/topics/imaging/tutorials/hela-screen-analysis/tutorial.html">
+					Analyse HeLa fluorescence siRNA screen
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
+					NGS data logistics
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/tutorial.html">
+					16S Microbial Analysis with mothur (short)
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
+					Avian influenza viral strain analysis from gene segment sequencing data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/tp_cat.html">bgruening/tp_cat</a></td>
 		<td>
 			<ul>
@@ -1782,127 +1930,6 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
 					Pox virus genome analysis from tiled-amplicon sequencing data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/nml/collapse_dataset.html">nml/collapse_dataset</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
-					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/ecoli_comparison/tutorial.html">
-					Making sense of a newly assembled genome
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/cheminformatics/tutorial.html">
-					Protein-ligand docking
-					</a>
-				</li>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html">
-					Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring
-					</a>
-				</li>
-				
-				<li>
-					Ecology /
-					<a href="/training-material/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html">
-					Preparing genomic data for phylogeny reconstruction
-					</a>
-				</li>
-				
-				<li>
-					Evolution /
-					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
-					Identifying tuberculosis transmission links: from SNPs to transmission clusters
-					</a>
-				</li>
-				
-				<li>
-					Using Galaxy and Managing your Data /
-					<a href="/training-material/topics/galaxy-interface/tutorials/collections/tutorial.html">
-					Using dataset collections
-					</a>
-				</li>
-				
-				<li>
-					Using Galaxy and Managing your Data /
-					<a href="/training-material/topics/galaxy-interface/tutorials/workflow-automation/tutorial.html">
-					Automating Galaxy workflows using the command line
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
-					Comparative gene analysis in unannotated genomes
-					</a>
-				</li>
-				
-				<li>
-					Imaging /
-					<a href="/training-material/topics/imaging/tutorials/hela-screen-analysis/tutorial.html">
-					Analyse HeLa fluorescence siRNA screen
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
-					NGS data logistics
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/mothur-miseq-sop-short/tutorial.html">
-					16S Microbial Analysis with mothur (short)
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
-					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
-					Avian influenza viral strain analysis from gene segment sequencing data
 					</a>
 				</li>
 				
@@ -2221,6 +2248,13 @@ Sentry.init({
 				</li>
 				
 				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/sars-with-galaxy-on-anvil/tutorial.html">
+					SARS-CoV-2 Viral Sample Alignment and Variant Visualization
+					</a>
+				</li>
+				
+				<li>
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/microbial-variants/tutorial.html">
 					Microbial Variant Calling
@@ -2282,6 +2316,13 @@ Sentry.init({
 					Sequence analysis /
 					<a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html">
 					Removal of human reads from SARS-CoV-2 sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/sars-with-galaxy-on-anvil/tutorial.html">
+					SARS-CoV-2 Viral Sample Alignment and Variant Visualization
 					</a>
 				</li>
 				
@@ -2486,13 +2527,6 @@ Sentry.init({
 				</li>
 				
 				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
-					Formation of the Super-Structures on the Inactive X
-					</a>
-				</li>
-				
-				<li>
 					Genome Annotation /
 					<a href="/training-material/topics/genome-annotation/tutorials/tnseq/tutorial.html">
 					Essential genes detection with Transposon insertion sequencing
@@ -2553,6 +2587,92 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/bgruening/tp_find_and_replace.html">bgruening/tp_find_and_replace</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+				<li>
+					Climate /
+					<a href="/training-material/topics/climate/tutorials/fates/tutorial.html">
+					Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
+					</a>
+				</li>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/cheminformatics/tutorial.html">
+					Protein-ligand docking
+					</a>
+				</li>
+				
+				<li>
+					Ecology /
+					<a href="/training-material/topics/ecology/tutorials/species-distribution-modeling/tutorial.html">
+					Species distribution modeling
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/metatranscriptomics/tutorial.html">
+					Metatranscriptomics analysis using microbiome RNA-seq data
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html">
+					Metatranscriptomics analysis using microbiome RNA-seq data (short)
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
+					Avian influenza viral strain analysis from gene segment sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html">
+					Mapping and molecular identification of phenotype-causing mutations
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/datamash_ops.html">iuc/datamash_ops</a></td>
 		<td>
 			<ul>
@@ -2568,13 +2688,6 @@ Sentry.init({
 					Climate /
 					<a href="/training-material/topics/climate/tutorials/climate-101/tutorial.html">
 					Getting your hands-on climate data
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
-					Formation of the Super-Structures on the Inactive X
 					</a>
 				</li>
 				
@@ -2818,92 +2931,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/devteam/Add_a_column1.html">devteam/Add_a_column1</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
-					Formation of the Super-Structures on the Inactive X
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
-					Comparative gene analysis in unannotated genomes
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/tnseq/tutorial.html">
-					Essential genes detection with Transposon insertion sequencing
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html">
-					Data Manipulation Olympics
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html">
-					From peaks to genes
-					</a>
-				</li>
-				
-				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/maxquant-label-free/tutorial.html">
-					Label-free data analysis using MaxQuant
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
-					Reference-based RNA-Seq data analysis
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.html">
-					3: RNA-seq genes to pathways
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
-					Pox virus genome analysis from tiled-amplicon sequencing data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/iuc/fastp.html">iuc/fastp</a></td>
 		<td>
 			<ul>
@@ -2983,9 +3010,37 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/bgruening/tp_find_and_replace.html">bgruening/tp_find_and_replace</a></td>
+		<td><a href="/training-material/by-tool/iuc/busco.html">iuc/busco</a></td>
 		<td>
 			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
+					Genome Assembly Quality Control
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/flye-assembly/tutorial.html">
+					Genome assembly using PacBio data
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
+					Large genome assembly and polishing
+					</a>
+				</li>
 				
 				<li>
 					Assembly /
@@ -3002,37 +3057,95 @@ Sentry.init({
 				</li>
 				
 				<li>
-					Climate /
-					<a href="/training-material/topics/climate/tutorials/fates/tutorial.html">
-					Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
-					</a>
-				</li>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/cheminformatics/tutorial.html">
-					Protein-ligand docking
-					</a>
-				</li>
-				
-				<li>
 					Ecology /
-					<a href="/training-material/topics/ecology/tutorials/species-distribution-modeling/tutorial.html">
-					Species distribution modeling
+					<a href="/training-material/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html">
+					Preparing genomic data for phylogeny reconstruction
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.html">
+					Genome annotation with Maker
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.html">
+					Genome annotation with Maker (short)
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/funannotate/tutorial.html">
+					Genome annotation with Funannotate
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/bandage_image.html">iuc/bandage_image</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
+					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html">
+					Chloroplast genome assembly
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
+					Large genome assembly and polishing
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/metagenomics-assembly/tutorial.html">
+					Assembly of metagenomic sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html">
+					Genome Assembly of MRSA using Illumina MiSeq Data
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/mrsa-nanopore/tutorial.html">
+					Genome Assembly of MRSA using Oxford Nanopore MinION Data
 					</a>
 				</li>
 				
 				<li>
 					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/metatranscriptomics/tutorial.html">
-					Metatranscriptomics analysis using microbiome RNA-seq data
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/metatranscriptomics-short/tutorial.html">
-					Metatranscriptomics analysis using microbiome RNA-seq data (short)
+					<a href="/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html">
+					Assembly of metagenomic sequencing data
 					</a>
 				</li>
 				
@@ -3044,16 +3157,9 @@ Sentry.init({
 				</li>
 				
 				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
-					Avian influenza viral strain analysis from gene segment sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html">
-					Mapping and molecular identification of phenotype-causing mutations
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/plasmid-metagenomics-nanopore/tutorial.html">
+					Antibiotic resistance detection
 					</a>
 				</li>
 				
@@ -3141,6 +3247,164 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/pjbriggs/trimmomatic.html">pjbriggs/trimmomatic</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html">
+					Genome Assembly of MRSA using Illumina MiSeq Data
+					</a>
+				</li>
+				
+				<li>
+					Epigenetics /
+					<a href="/training-material/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html">
+					Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)
+					</a>
+				</li>
+				
+				<li>
+					Evolution /
+					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
+					Identifying tuberculosis transmission links: from SNPs to transmission clusters
+					</a>
+				</li>
+				
+				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html">
+					Removal of human reads from SARS-CoV-2 sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
+					De novo transcriptome reconstruction with RNA-Seq
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/full-de-novo/tutorial.html">
+					De novo transcriptome assembly, annotation, and differential expression analysis
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/exome-seq/tutorial.html">
+					Exome sequencing data analysis for diagnosing a genetic disease
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
+					Somatic Variant Discovery from WES Data Using Control-FREEC
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html">
+					Identification of somatic and germline variants from tumor and normal sample pairs
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html">
+					M. tuberculosis Variant Analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/sort1.html">sort1</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/zauberkugel/tutorial.html">
+					Protein target prediction of a bioactive ligand with Align-it and ePharmaLib
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html">
+					Galaxy 101
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.html">
+					Creating the single-cell RNA-seq reference dataset for deconvolution
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/bulk-music-3-preparebulk/tutorial.html">
+					Creating the bulk RNA-seq dataset for deconvolution
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html">
+					Removing the effects of the cell cycle
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html">
+					CLIP-Seq data analysis from pre-processing to motif detection
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html">
+					Whole transcriptome analysis of Arabidopsis thaliana
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/tp_replace_in_line.html">bgruening/tp_replace_in_line</a></td>
 		<td>
 			<ul>
@@ -3220,30 +3484,9 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/iuc/busco.html">iuc/busco</a></td>
+		<td><a href="/training-material/by-tool/devteam/Add_a_column1.html">devteam/Add_a_column1</a></td>
 		<td>
 			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
-					Genome Assembly Quality Control
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/flye-assembly/tutorial.html">
-					Genome assembly using PacBio data
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
-					Large genome assembly and polishing
-					</a>
-				</li>
 				
 				<li>
 					Assembly /
@@ -3260,102 +3503,58 @@ Sentry.init({
 				</li>
 				
 				<li>
-					Ecology /
-					<a href="/training-material/topics/ecology/tutorials/phylogeny-data-prep/tutorial.html">
-					Preparing genomic data for phylogeny reconstruction
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
+					Comparative gene analysis in unannotated genomes
 					</a>
 				</li>
 				
 				<li>
 					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.html">
-					Genome annotation with Maker
+					<a href="/training-material/topics/genome-annotation/tutorials/tnseq/tutorial.html">
+					Essential genes detection with Transposon insertion sequencing
 					</a>
 				</li>
 				
 				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.html">
-					Genome annotation with Maker (short)
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html">
+					Data Manipulation Olympics
 					</a>
 				</li>
 				
 				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/funannotate/tutorial.html">
-					Genome annotation with Funannotate
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/bandage_image.html">iuc/bandage_image</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
-					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html">
+					From peaks to genes
 					</a>
 				</li>
 				
 				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/chloroplast-assembly/tutorial.html">
-					Chloroplast genome assembly
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/maxquant-label-free/tutorial.html">
+					Label-free data analysis using MaxQuant
 					</a>
 				</li>
 				
 				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
-					Large genome assembly and polishing
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
+					Reference-based RNA-Seq data analysis
 					</a>
 				</li>
 				
 				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/metagenomics-assembly/tutorial.html">
-					Assembly of metagenomic sequencing data
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.html">
+					3: RNA-seq genes to pathways
 					</a>
 				</li>
 				
 				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html">
-					Genome Assembly of MRSA using Illumina MiSeq Data
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/mrsa-nanopore/tutorial.html">
-					Genome Assembly of MRSA using Oxford Nanopore MinION Data
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html">
-					Assembly of metagenomic sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
-					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/plasmid-metagenomics-nanopore/tutorial.html">
-					Antibiotic resistance detection
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
+					Pox virus genome analysis from tiled-amplicon sequencing data
 					</a>
 				</li>
 				
@@ -3500,150 +3699,6 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
 					Trio Analysis using Synthetic Datasets from RD-Connect GPAP
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/pjbriggs/trimmomatic.html">pjbriggs/trimmomatic</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html">
-					Genome Assembly of MRSA using Illumina MiSeq Data
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html">
-					Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)
-					</a>
-				</li>
-				
-				<li>
-					Evolution /
-					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
-					Identifying tuberculosis transmission links: from SNPs to transmission clusters
-					</a>
-				</li>
-				
-				<li>
-					Sequence analysis /
-					<a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html">
-					Removal of human reads from SARS-CoV-2 sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
-					De novo transcriptome reconstruction with RNA-Seq
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/full-de-novo/tutorial.html">
-					De novo transcriptome assembly, annotation, and differential expression analysis
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
-					Somatic Variant Discovery from WES Data Using Control-FREEC
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html">
-					Identification of somatic and germline variants from tumor and normal sample pairs
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html">
-					M. tuberculosis Variant Analysis
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/sort1.html">sort1</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/zauberkugel/tutorial.html">
-					Protein target prediction of a bioactive ligand with Align-it and ePharmaLib
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html">
-					Galaxy 101
-					</a>
-				</li>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/bulk-music-2-preparescref/tutorial.html">
-					Creating the single-cell RNA-seq reference dataset for deconvolution
-					</a>
-				</li>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/bulk-music-3-preparebulk/tutorial.html">
-					Creating the bulk RNA-seq dataset for deconvolution
-					</a>
-				</li>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_cell-cycle/tutorial.html">
-					Removing the effects of the cell cycle
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/clipseq/tutorial.html">
-					CLIP-Seq data analysis from pre-processing to motif detection
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/mirna-target-finder/tutorial.html">
-					Whole transcriptome analysis of Arabidopsis thaliana
 					</a>
 				</li>
 				
@@ -3861,6 +3916,71 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/bgruening/tp_sorted_uniq.html">bgruening/tp_sorted_uniq</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Contributing to the Galaxy Training Material /
+					<a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">
+					Creating a new tutorial
+					</a>
+				</li>
+				
+				<li>
+					Using Galaxy and Managing your Data /
+					<a href="/training-material/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html">
+					Workflow Reports
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html">
+					Data Manipulation Olympics
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html">
+					Galaxy 101 for everyone
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-reproduce/tutorial.html">
+					How to reproduce published Galaxy analyses
+					</a>
+				</li>
+				
+				<li>
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/secretome-prediction/tutorial.html">
+					Secretome Prediction
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html">
+					Pre-processing of 10X Single-Cell ATAC-seq Datasets
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/tp_sed_tool.html">bgruening/tp_sed_tool</a></td>
 		<td>
 			<ul>
@@ -3918,6 +4038,71 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html">
 					M. tuberculosis Variant Analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/samtools_view.html">iuc/samtools_view</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
+					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
+					</a>
+				</li>
+				
+				<li>
+					Evolution /
+					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
+					Identifying tuberculosis transmission links: from SNPs to transmission clusters
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
+					NGS data logistics
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
+					Reference-based RNA-Seq data analysis
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
+					Avian influenza viral strain analysis from gene segment sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/exome-seq/tutorial.html">
+					Exome sequencing data analysis for diagnosing a genetic disease
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
+					Pox virus genome analysis from tiled-amplicon sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
+					Somatic Variant Discovery from WES Data Using Control-FREEC
 					</a>
 				</li>
 				
@@ -4172,56 +4357,56 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/bgruening/tp_sorted_uniq.html">bgruening/tp_sorted_uniq</a></td>
+		<td><a href="/training-material/by-tool/devteam/samtools_stats.html">devteam/samtools_stats</a></td>
 		<td>
 			<ul>
 				
 				<li>
-					Contributing to the Galaxy Training Material /
-					<a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">
-					Creating a new tutorial
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
 					</a>
 				</li>
 				
 				<li>
-					Using Galaxy and Managing your Data /
-					<a href="/training-material/topics/galaxy-interface/tutorials/workflow-reports/tutorial.html">
-					Workflow Reports
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/data-manipulation-olympics/tutorial.html">
-					Data Manipulation Olympics
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
+					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
 					</a>
 				</li>
 				
 				<li>
 					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html">
-					Galaxy 101 for everyone
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
+					NGS data logistics
 					</a>
 				</li>
 				
 				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-reproduce/tutorial.html">
-					How to reproduce published Galaxy analyses
-					</a>
-				</li>
-				
-				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/secretome-prediction/tutorial.html">
-					Secretome Prediction
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">
+					Mapping
 					</a>
 				</li>
 				
 				<li>
 					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html">
-					Pre-processing of 10X Single-Cell ATAC-seq Datasets
+					<a href="/training-material/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html">
+					Pre-processing of Single-Cell RNA Data
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/sars-cov-2/tutorial.html">
+					From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html">
+					M. tuberculosis Variant Analysis
 					</a>
 				</li>
 				
@@ -4338,64 +4523,6 @@ Sentry.init({
 					Metagenomics /
 					<a href="/training-material/topics/metagenomics/tutorials/plasmid-metagenomics-nanopore/tutorial.html">
 					Antibiotic resistance detection
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/samtools_view.html">iuc/samtools_view</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
-					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
-					</a>
-				</li>
-				
-				<li>
-					Evolution /
-					<a href="/training-material/topics/evolution/tutorials/mtb_transmission/tutorial.html">
-					Identifying tuberculosis transmission links: from SNPs to transmission clusters
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
-					NGS data logistics
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
-					Reference-based RNA-Seq data analysis
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/aiv-analysis/tutorial.html">
-					Avian influenza viral strain analysis from gene segment sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
-					Pox virus genome analysis from tiled-amplicon sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
-					Somatic Variant Discovery from WES Data Using Control-FREEC
 					</a>
 				</li>
 				
@@ -4564,49 +4691,49 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/devteam/samtools_stats.html">devteam/samtools_stats</a></td>
+		<td><a href="/training-material/by-tool/iuc/hisat2.html">iuc/hisat2</a></td>
 		<td>
 			<ul>
 				
 				<li>
 					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-with-preprocessing/tutorial.html">
-					Unicycler assembly of SARS-CoV-2 genome with preprocessing to remove human genome reads
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
 					</a>
 				</li>
 				
 				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-ngs-data-managment/tutorial.html">
-					NGS data logistics
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
+					Proteogenomics 1: Database Creation
 					</a>
 				</li>
 				
 				<li>
-					Sequence analysis /
-					<a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">
-					Mapping
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
+					De novo transcriptome reconstruction with RNA-Seq
 					</a>
 				</li>
 				
 				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-preprocessing/tutorial.html">
-					Pre-processing of Single-Cell RNA Data
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
 					</a>
 				</li>
 				
 				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/sars-cov-2/tutorial.html">
-					From NCBI's Sequence Read Archive (SRA) to Galaxy: SARS-CoV-2 variant analysis
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html">
+					1: RNA-Seq reads to counts
 					</a>
 				</li>
 				
 				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/tb-variant-analysis/tutorial.html">
-					M. tuberculosis Variant Analysis
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/srna/tutorial.html">
+					Differential abundance testing of small RNAs
 					</a>
 				</li>
 				
@@ -4658,6 +4785,57 @@ Sentry.init({
 					Transcriptomics /
 					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html">
 					1: RNA-Seq reads to counts
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/__EXTRACT_DATASET__.html">__EXTRACT_DATASET__</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Climate /
+					<a href="/training-material/topics/climate/tutorials/fates/tutorial.html">
+					Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
+					</a>
+				</li>
+				
+				<li>
+					Climate /
+					<a href="/training-material/topics/climate/tutorials/pangeo/tutorial.html">
+					Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/tnseq/tutorial.html">
+					Essential genes detection with Transposon insertion sequencing
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
+					Reference-based RNA-Seq data analysis
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
+					Somatic Variant Discovery from WES Data Using Control-FREEC
 					</a>
 				</li>
 				
@@ -4980,50 +5158,6 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
 					Trio Analysis using Synthetic Datasets from RD-Connect GPAP
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/hisat2.html">iuc/hisat2</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
-					Proteogenomics 1: Database Creation
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
-					De novo transcriptome reconstruction with RNA-Seq
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
-					Genome-wide alternative splicing analysis
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html">
-					1: RNA-Seq reads to counts
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/srna/tutorial.html">
-					Differential abundance testing of small RNAs
 					</a>
 				</li>
 				
@@ -5472,6 +5606,50 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/iuc/meryl.html">iuc/meryl</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
+					Genome Assembly Quality Control
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
+					Large genome assembly and polishing
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/flye.html">bgruening/flye</a></td>
 		<td>
 			<ul>
@@ -5596,50 +5774,6 @@ Sentry.init({
 					Single Cell /
 					<a href="/training-material/topics/single-cell/tutorials/scatac-preprocessing-tenx/tutorial.html">
 					Pre-processing of 10X Single-Cell ATAC-seq Datasets
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/bedtools_intersectbed.html">iuc/bedtools_intersectbed</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/ecoli_comparison/tutorial.html">
-					Making sense of a newly assembled genome
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html">
-					ATAC-Seq data analysis
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
-					Formation of the Super-Structures on the Inactive X
-					</a>
-				</li>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html">
-					Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html">
-					Galaxy 101
 					</a>
 				</li>
 				
@@ -5860,50 +5994,6 @@ Sentry.init({
 					Transcriptomics /
 					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
 					Reference-based RNA-Seq data analysis
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/__EXTRACT_DATASET__.html">__EXTRACT_DATASET__</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Climate /
-					<a href="/training-material/topics/climate/tutorials/fates/tutorial.html">
-					Functionally Assembled Terrestrial Ecosystem Simulator (FATES)
-					</a>
-				</li>
-				
-				<li>
-					Climate /
-					<a href="/training-material/topics/climate/tutorials/pangeo/tutorial.html">
-					Pangeo ecosystem 101 for everyone - Introduction to Xarray Galaxy Tools
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/tnseq/tutorial.html">
-					Essential genes detection with Transposon insertion sequencing
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
-					Reference-based RNA-Seq data analysis
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
-					Somatic Variant Discovery from WES Data Using Control-FREEC
 					</a>
 				</li>
 				
@@ -6421,6 +6511,80 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/devteam/ncbi_blastp_wrapper.html">devteam/ncbi_blastp_wrapper</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Foundations of Data Science /
+					<a href="/training-material/topics/data-science/tutorials/online-resources-gene/tutorial.html">
+					Learning about one gene across biological resources and formats
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/functional/tutorial.html">
+					Functional annotation of protein sequences
+					</a>
+				</li>
+				
+				<li>
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-novel-peptide-analysis/tutorial.html">
+					Proteogenomics 3: Novel peptide analysis
+					</a>
+				</li>
+				
+				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.html">
+					NCBI BLAST+ against the MAdLand
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/devteam/gffread.html">devteam/gffread</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.html">
+					Genome annotation with Maker
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.html">
+					Genome annotation with Maker (short)
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/lncrna/tutorial.html">
+					Long non-coding RNAs (lncRNAs) annotation with FEELnc
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/lecorguille/abims_xcms_xcmsSet.html">lecorguille/abims_xcms_xcmsSet</a></td>
 		<td>
 			<ul>
@@ -6606,21 +6770,14 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/iuc/filter_tabular.html">iuc/filter_tabular</a></td>
+		<td><a href="/training-material/by-tool/param_value_from_file.html">param_value_from_file</a></td>
 		<td>
 			<ul>
 				
 				<li>
 					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/metagenomics-assembly/tutorial.html">
-					Assembly of metagenomic sequencing data
-					</a>
-				</li>
-				
-				<li>
-					Metagenomics /
-					<a href="/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html">
-					Assembly of metagenomic sequencing data
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
 					</a>
 				</li>
 				
@@ -6632,46 +6789,16 @@ Sentry.init({
 				</li>
 				
 				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
-					Proteogenomics 1: Database Creation
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/meryl.html">iuc/meryl</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
-					Genome Assembly Quality Control
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
 					</a>
 				</li>
 				
 				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
-					Large genome assembly and polishing
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
+					Pox virus genome analysis from tiled-amplicon sequencing data
 					</a>
 				</li>
 				
@@ -6791,6 +6918,117 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/iuc/merqury.html">iuc/merqury</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
+					Genome Assembly Quality Control
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/genomescope.html">iuc/genomescope</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
+					Large genome assembly and polishing
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/bgruening/bg_diamond.html">bgruening/bg_diamond</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/functional/tutorial.html">
+					Functional annotation of protein sequences
+					</a>
+				</li>
+				
+				<li>
+					Genome Annotation /
+					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
+					Comparative gene analysis in unannotated genomes
+					</a>
+				</li>
+				
+				<li>
+					Sequence analysis /
+					<a href="/training-material/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.html">
+					NCBI BLAST+ against the MAdLand
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/porechop.html">iuc/porechop</a></td>
 		<td>
 			<ul>
@@ -6820,6 +7058,43 @@ Sentry.init({
 					Metagenomics /
 					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
 					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/bedtools_intersectbed.html">iuc/bedtools_intersectbed</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ecoli_comparison/tutorial.html">
+					Making sense of a newly assembled genome
+					</a>
+				</li>
+				
+				<li>
+					Epigenetics /
+					<a href="/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html">
+					ATAC-Seq data analysis
+					</a>
+				</li>
+				
+				<li>
+					Epigenetics /
+					<a href="/training-material/topics/epigenetics/tutorials/tal1-binding-site-identification/tutorial.html">
+					Identification of the binding sites of the T-cell acute lymphocytic leukemia protein 1 (TAL1)
+					</a>
+				</li>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-101/tutorial.html">
+					Galaxy 101
 					</a>
 				</li>
 				
@@ -7317,6 +7592,66 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html">
 					Identification of somatic and germline variants from tumor and normal sample pairs
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/snpEff_download.html">iuc/snpEff_download</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/dip/tutorial.html">
+					Calling variants in diploid systems
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/exome-seq/tutorial.html">
+					Exome sequencing data analysis for diagnosing a genetic disease
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html">
+					Mapping and molecular identification of phenotype-causing mutations
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/gffcompare.html">iuc/gffcompare</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
+					Proteogenomics 1: Database Creation
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
+					De novo transcriptome reconstruction with RNA-Seq
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
 					</a>
 				</li>
 				
@@ -7865,36 +8200,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/devteam/ncbi_blastp_wrapper.html">devteam/ncbi_blastp_wrapper</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/functional/tutorial.html">
-					Functional annotation of protein sequences
-					</a>
-				</li>
-				
-				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-novel-peptide-analysis/tutorial.html">
-					Proteogenomics 3: Novel peptide analysis
-					</a>
-				</li>
-				
-				<li>
-					Sequence analysis /
-					<a href="/training-material/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.html">
-					NCBI BLAST+ against the MAdLand
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/rnateam/rbc_mafft.html">rnateam/rbc_mafft</a></td>
 		<td>
 			<ul>
@@ -7947,66 +8252,6 @@ Sentry.init({
 					Metagenomics /
 					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
 					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/bgruening/bg_diamond.html">bgruening/bg_diamond</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/functional/tutorial.html">
-					Functional annotation of protein sequences
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/gene-centric/tutorial.html">
-					Comparative gene analysis in unannotated genomes
-					</a>
-				</li>
-				
-				<li>
-					Sequence analysis /
-					<a href="/training-material/topics/sequence-analysis/tutorials/ncbi-blast-against-the-madland/tutorial.html">
-					NCBI BLAST+ against the MAdLand
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/devteam/gffread.html">devteam/gffread</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker/tutorial.html">
-					Genome annotation with Maker
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/annotation-with-maker-short/tutorial.html">
-					Genome annotation with Maker (short)
-					</a>
-				</li>
-				
-				<li>
-					Genome Annotation /
-					<a href="/training-material/topics/genome-annotation/tutorials/lncrna/tutorial.html">
-					Long non-coding RNAs (lncRNAs) annotation with FEELnc
 					</a>
 				</li>
 				
@@ -8105,6 +8350,36 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/bgruening/split_file_to_collection.html">bgruening/split_file_to_collection</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html">
+					Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring
+					</a>
+				</li>
+				
+				<li>
+					Computational chemistry /
+					<a href="/training-material/topics/computational-chemistry/tutorials/zauberkugel/tutorial.html">
+					Protein target prediction of a bioactive ligand with Align-it and ePharmaLib
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/openbabel_compound_convert.html">bgruening/openbabel_compound_convert</a></td>
 		<td>
 			<ul>
@@ -8127,6 +8402,36 @@ Sentry.init({
 					Computational chemistry /
 					<a href="/training-material/topics/computational-chemistry/tutorials/htmd-analysis/tutorial.html">
 					High Throughput Molecular Dynamics and Analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/filter_tabular.html">iuc/filter_tabular</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/metagenomics-assembly/tutorial.html">
+					Assembly of metagenomic sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/metagenomics-assembly/tutorial.html">
+					Assembly of metagenomic sequencing data
+					</a>
+				</li>
+				
+				<li>
+					Proteomics /
+					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
+					Proteogenomics 1: Database Creation
 					</a>
 				</li>
 				
@@ -8165,36 +8470,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/iuc/merqury.html">iuc/merqury</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/assembly-quality-control/tutorial.html">
-					Genome Assembly Quality Control
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/iuc/gfa_to_fa.html">iuc/gfa_to_fa</a></td>
 		<td>
 			<ul>
@@ -8217,36 +8492,6 @@ Sentry.init({
 					Metagenomics /
 					<a href="/training-material/topics/metagenomics/tutorials/plasmid-metagenomics-nanopore/tutorial.html">
 					Antibiotic resistance detection
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/genomescope.html">iuc/genomescope</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/largegenome/tutorial.html">
-					Large genome assembly and polishing
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
 					</a>
 				</li>
 				
@@ -8307,6 +8552,126 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
 					Pox virus genome analysis from tiled-amplicon sequencing data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/pretext_snapshot.html">iuc/pretext_snapshot</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/pretext_map.html">iuc/pretext_map</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/bellerophon.html">iuc/bellerophon</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
+					VGP assembly pipeline - short version
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/CONVERTER_gz_to_uncompressed.html">CONVERTER_gz_to_uncompressed</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
+					Trio Analysis using Synthetic Datasets from RD-Connect GPAP
 					</a>
 				</li>
 				
@@ -8757,6 +9122,36 @@ Sentry.init({
 					Transcriptomics /
 					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-viz-with-heatmap2/tutorial.html">
 					Visualization of RNA-Seq results with heatmap2
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/collection_element_identifiers.html">iuc/collection_element_identifiers</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
+					Reference-based RNA-Seq data analysis
 					</a>
 				</li>
 				
@@ -9567,6 +9962,29 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/iuc/stringtie_merge.html">iuc/stringtie_merge</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
+					De novo transcriptome reconstruction with RNA-Seq
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/bgruening/salmon.html">bgruening/salmon</a></td>
 		<td>
 			<ul>
@@ -9651,29 +10069,6 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
 					Trio Analysis using Synthetic Datasets from RD-Connect GPAP
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/devteam/samtool_filter2.html">devteam/samtool_filter2</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/srna/tutorial.html">
-					Differential abundance testing of small RNAs
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/exome-seq/tutorial.html">
-					Exome sequencing data analysis for diagnosing a genetic disease
 					</a>
 				</li>
 				
@@ -9774,29 +10169,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/iuc/snpEff_download.html">iuc/snpEff_download</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/dip/tutorial.html">
-					Calling variants in diploid systems
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/mapping-by-sequencing/tutorial.html">
-					Mapping and molecular identification of phenotype-causing mutations
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/iuc/gemini_query.html">iuc/gemini_query</a></td>
 		<td>
 			<ul>
@@ -9812,29 +10184,6 @@ Sentry.init({
 					Variant Analysis /
 					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variants/tutorial.html">
 					Identification of somatic and germline variants from tumor and normal sample pairs
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/gffcompare.html">iuc/gffcompare</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Proteomics /
-					<a href="/training-material/topics/proteomics/tutorials/proteogenomics-dbcreation/tutorial.html">
-					Proteogenomics 1: Database Creation
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
-					De novo transcriptome reconstruction with RNA-Seq
 					</a>
 				</li>
 				
@@ -10464,6 +10813,29 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/gene2exon1.html">gene2exon1</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Introduction to Galaxy Analyses /
+					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html">
+					Introduction to Genomics and Galaxy
+					</a>
+				</li>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/lofreq_viterbi.html">iuc/lofreq_viterbi</a></td>
 		<td>
 			<ul>
@@ -10525,6 +10897,29 @@ Sentry.init({
 					Metagenomics /
 					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
 					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/__BUILD_LIST__.html">__BUILD_LIST__</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
+					Somatic Variant Discovery from WES Data Using Control-FREEC
 					</a>
 				</li>
 				
@@ -11476,6 +11871,121 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_run_umap.html">ebi-gxa/scanpy_run_umap</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
+					Filter, Plot and Explore Single-cell RNA-seq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_run_tsne.html">ebi-gxa/scanpy_run_tsne</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
+					Filter, Plot and Explore Single-cell RNA-seq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_plot_embed.html">ebi-gxa/scanpy_plot_embed</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
+					Filter, Plot and Explore Single-cell RNA-seq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_find_cluster.html">ebi-gxa/scanpy_find_cluster</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
+					Filter, Plot and Explore Single-cell RNA-seq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_compute_graph.html">ebi-gxa/scanpy_compute_graph</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
+					Filter, Plot and Explore Single-cell RNA-seq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/scanpy_remove_confounders.html">iuc/scanpy_remove_confounders</a></td>
 		<td>
 			<ul>
@@ -12189,29 +12699,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/bgruening/split_file_to_collection.html">bgruening/split_file_to_collection</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/covid19-docking/tutorial.html">
-					Virtual screening of the SARS-CoV-2 main protease with rxDock and pose scoring
-					</a>
-				</li>
-				
-				<li>
-					Computational chemistry /
-					<a href="/training-material/topics/computational-chemistry/tutorials/zauberkugel/tutorial.html">
-					Protein target prediction of a bioactive ligand with Align-it and ePharmaLib
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/__UNZIP_COLLECTION__.html">__UNZIP_COLLECTION__</a></td>
 		<td>
 			<ul>
@@ -12442,29 +12929,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/param_value_from_file.html">param_value_from_file</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/pox-tiled-amplicon/tutorial.html">
-					Pox virus genome analysis from tiled-amplicon sequencing data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/iuc/salsa.html">iuc/salsa</a></td>
 		<td>
 			<ul>
@@ -12489,75 +12953,6 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/iuc/purge_dups.html">iuc/purge_dups</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/pretext_snapshot.html">iuc/pretext_snapshot</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/pretext_map.html">iuc/pretext_map</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_workflow_training/tutorial.html">
-					VGP assembly pipeline - short version
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/bellerophon.html">iuc/bellerophon</a></td>
 		<td>
 			<ul>
 				
@@ -12641,6 +13036,52 @@ Sentry.init({
 					Sequence analysis /
 					<a href="/training-material/topics/sequence-analysis/tutorials/human-reads-removal/tutorial.html">
 					Removal of human reads from SARS-CoV-2 sequencing data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/bwa_mem2.html">iuc/bwa_mem2</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/bgruening/gfastats.html">bgruening/gfastats</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
+					VGP assembly pipeline
 					</a>
 				</li>
 				
@@ -12948,29 +13389,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/ucsc_table_direct1.html">ucsc_table_direct1</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/atac-seq/tutorial.html">
-					ATAC-Seq data analysis
-					</a>
-				</li>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html">
-					Introduction to Genomics and Galaxy
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/comp1.html">comp1</a></td>
 		<td>
 			<ul>
@@ -13032,29 +13450,6 @@ Sentry.init({
 					Transcriptomics /
 					<a href="/training-material/topics/transcriptomics/tutorials/rna-seq-genes-to-pathways/tutorial.html">
 					3: RNA-seq genes to pathways
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/collection_element_identifiers.html">iuc/collection_element_identifiers</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
-					Genome-wide alternative splicing analysis
-					</a>
-				</li>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/ref-based/tutorial.html">
-					Reference-based RNA-Seq data analysis
 					</a>
 				</li>
 				
@@ -14083,6 +14478,22 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/imgteam/ip_overlay_images.html">imgteam/ip_overlay_images</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Imaging /
+					<a href="/training-material/topics/imaging/tutorials/imaging-introduction/tutorial.html">
+					Introduction to image analysis using Galaxy
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/imgteam/ip_imageinfo.html">imgteam/ip_imageinfo</a></td>
 		<td>
 			<ul>
@@ -14363,22 +14774,6 @@ Sentry.init({
 					Using Galaxy and Managing your Data /
 					<a href="/training-material/topics/galaxy-interface/tutorials/intermine/tutorial.html">
 					InterMine integration with Galaxy
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/iuc/stringtie_merge.html">iuc/stringtie_merge</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Transcriptomics /
-					<a href="/training-material/topics/transcriptomics/tutorials/de-novo/tutorial.html">
-					De novo transcriptome reconstruction with RNA-Seq
 					</a>
 				</li>
 				
@@ -14803,6 +15198,38 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/nilesh/rseqc_inner_distance.html">nilesh/rseqc_inner_distance</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/iuc/rna_quast.html">iuc/rna_quast</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/differential-isoform-expression/tutorial.html">
+					Genome-wide alternative splicing analysis
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/isoformswitchanalyzer.html">iuc/isoformswitchanalyzer</a></td>
 		<td>
 			<ul>
@@ -14884,6 +15311,22 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/iuc/bedtools_bamtofastq.html">iuc/bedtools_bamtofastq</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Transcriptomics /
+					<a href="/training-material/topics/transcriptomics/tutorials/srna/tutorial.html">
+					Differential abundance testing of small RNAs
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/devteam/samtool_filter2.html">devteam/samtool_filter2</a></td>
 		<td>
 			<ul>
 				
@@ -15267,6 +15710,22 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/iuc/gene_iobio_display_generation_iframe.html">iuc/gene_iobio_display_generation_iframe</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Variant Analysis /
+					<a href="/training-material/topics/variant-analysis/tutorials/trio-analysis/tutorial.html">
+					Trio Analysis using Synthetic Datasets from RD-Connect GPAP
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/pyega3.html">iuc/pyega3</a></td>
 		<td>
 			<ul>
@@ -15299,7 +15758,7 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/CONVERTER_gz_to_uncompressed.html">CONVERTER_gz_to_uncompressed</a></td>
+		<td><a href="/training-material/by-tool/CONVERTER_uncompressed_to_gz.html">CONVERTER_uncompressed_to_gz</a></td>
 		<td>
 			<ul>
 				
@@ -15524,22 +15983,6 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/bgruening/tp_text_file_with_recurring_lines.html">bgruening/tp_text_file_with_recurring_lines</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Variant Analysis /
-					<a href="/training-material/topics/variant-analysis/tutorials/somatic-variant-discovery/tutorial.html">
-					Somatic Variant Discovery from WES Data Using Control-FREEC
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/__BUILD_LIST__.html">__BUILD_LIST__</a></td>
 		<td>
 			<ul>
 				
@@ -16803,22 +17246,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/gene2exon1.html">gene2exon1</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Introduction to Galaxy Analyses /
-					<a href="/training-material/topics/introduction/tutorials/galaxy-intro-strands/tutorial.html">
-					Introduction to Genomics and Galaxy
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/{{version_wc}}.html">{{version_wc}}</a></td>
 		<td>
 			<ul>
@@ -17171,6 +17598,22 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/iuc/krakentools_extract_kraken_reads.html">iuc/krakentools_extract_kraken_reads</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/iuc/ggplot2_heatmap.html">iuc/ggplot2_heatmap</a></td>
 		<td>
 			<ul>
@@ -17252,6 +17695,22 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/bgruening/tp_multijoin_tool.html">bgruening/tp_multijoin_tool</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Metagenomics /
+					<a href="/training-material/topics/metagenomics/tutorials/pathogen-detection-from-nanopore-foodborne-data/tutorial.html">
+					Pathogen detection from (direct Nanopore) sequencing data using Galaxy - Foodborne Edition
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/__FILTER_FAILED_DATASETS__.html">__FILTER_FAILED_DATASETS__</a></td>
 		<td>
 			<ul>
 				
@@ -18291,55 +18750,7 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_run_umap.html">ebi-gxa/scanpy_run_umap</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
-					Filter, Plot and Explore Single-cell RNA-seq Data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_run_tsne.html">ebi-gxa/scanpy_run_tsne</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
-					Filter, Plot and Explore Single-cell RNA-seq Data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_run_pca.html">ebi-gxa/scanpy_run_pca</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
-					Filter, Plot and Explore Single-cell RNA-seq Data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_plot_embed.html">ebi-gxa/scanpy_plot_embed</a></td>
 		<td>
 			<ul>
 				
@@ -18403,22 +18814,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_find_cluster.html">ebi-gxa/scanpy_find_cluster</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
-					Filter, Plot and Explore Single-cell RNA-seq Data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_filter_genes.html">ebi-gxa/scanpy_filter_genes</a></td>
 		<td>
 			<ul>
@@ -18436,22 +18831,6 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_filter_cells.html">ebi-gxa/scanpy_filter_cells</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Single Cell /
-					<a href="/training-material/topics/single-cell/tutorials/scrna-case_basic-pipeline/tutorial.html">
-					Filter, Plot and Explore Single-cell RNA-seq Data
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_compute_graph.html">ebi-gxa/scanpy_compute_graph</a></td>
 		<td>
 			<ul>
 				
@@ -19155,6 +19534,22 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/ebi-gxa/scanpy_parameter_iterator.html">ebi-gxa/scanpy_parameter_iterator</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Single Cell /
+					<a href="/training-material/topics/single-cell/tutorials/scanpy_parameter_iterator/tutorial.html">
+					Scanpy Parameter Iterator
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/mvdbeek/addName.html">mvdbeek/addName</a></td>
 		<td>
 			<ul>
@@ -19635,6 +20030,22 @@ Sentry.init({
 	</tr>
 	
 	<tr>
+		<td><a href="/training-material/by-tool/recetox/matchms_similarity.html">recetox/matchms_similarity</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Metabolomics /
+					<a href="/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">
+					Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
 		<td><a href="/training-material/by-tool/recetox/matchms_formatter.html">recetox/matchms_formatter</a></td>
 		<td>
 			<ul>
@@ -19652,22 +20063,6 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/recetox/matchms_filtering.html">recetox/matchms_filtering</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Metabolomics /
-					<a href="/training-material/topics/metabolomics/tutorials/gc_ms_with_xcms/tutorial.html">
-					Mass spectrometry: GC-MS data processing (with XCMS, RAMClustR, RIAssigner, and matchms)
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/recetox/matchms.html">recetox/matchms</a></td>
 		<td>
 			<ul>
 				
@@ -20691,38 +21086,6 @@ Sentry.init({
 	</tr>
 	
 	<tr>
-		<td><a href="/training-material/by-tool/iuc/bwa_mem2.html">iuc/bwa_mem2</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/bgruening/gfastats.html">bgruening/gfastats</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Assembly /
-					<a href="/training-material/topics/assembly/tutorials/vgp_genome_assembly/tutorial.html">
-					VGP assembly pipeline
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
 		<td><a href="/training-material/by-tool/iuc/seqtk_sample.html">iuc/seqtk_sample</a></td>
 		<td>
 			<ul>
@@ -20747,6 +21110,54 @@ Sentry.init({
 					Assembly /
 					<a href="/training-material/topics/assembly/tutorials/mrsa-illumina/tutorial.html">
 					Genome Assembly of MRSA using Illumina MiSeq Data
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/galaxy-australia/smudgeplot.html">galaxy-australia/smudgeplot</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/bgruening/blobtoolkit.html">bgruening/blobtoolkit</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
+					</a>
+				</li>
+				
+			</ul>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><a href="/training-material/by-tool/interactive_tool_blobtoolkit.html">interactive_tool_blobtoolkit</a></td>
+		<td>
+			<ul>
+				
+				<li>
+					Assembly /
+					<a href="/training-material/topics/assembly/tutorials/ERGA-post-assembly-QC/tutorial.html">
+					ERGA post-assembly QC
 					</a>
 				</li>
 				
@@ -21156,22 +21567,6 @@ Sentry.init({
 	
 	<tr>
 		<td><a href="/training-material/by-tool/iuc/bedtools_mergebed.html">iuc/bedtools_mergebed</a></td>
-		<td>
-			<ul>
-				
-				<li>
-					Epigenetics /
-					<a href="/training-material/topics/epigenetics/tutorials/formation_of_super-structures_on_xi/tutorial.html">
-					Formation of the Super-Structures on the Inactive X
-					</a>
-				</li>
-				
-			</ul>
-		</td>
-	</tr>
-	
-	<tr>
-		<td><a href="/training-material/by-tool/devteam/gops_concat_1.html">devteam/gops_concat_1</a></td>
 		<td>
 			<ul>
 				
@@ -21748,7 +22143,7 @@ Sentry.init({
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf">ccccd1f</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
@@ -21756,7 +22151,7 @@ Sentry.init({
 				<p>
 					<i>This Material</i>:
 					
-					It is licensed under
+					is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
@@ -21775,41 +22170,8 @@ Sentry.init({
     </div>
 </footer>
 
-        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script src="/training-material/assets/js/popper.min.js"></script>
-        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+
+        <script src='/training-material/assets/js/bundle.main.js?v=1694703124'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script src="/training-material/assets/js/main.js"></script>
-        <script src="/training-material/assets/js/clipboard.min.js"></script>
-        <script>
-        document.querySelectorAll('div.highlight').forEach((snippet) => {
-                // Google translate has additional #text nodes mixed in with
-                // the pre for some reason.
-                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
-                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
-                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-                }
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

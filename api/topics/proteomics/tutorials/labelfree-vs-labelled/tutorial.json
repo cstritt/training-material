@@ -29,6 +29,8 @@
       "name": "Björn Grüning",
       "email": "bjoern.gruening@gmail.com",
       "twitter": "bjoerngruening",
+      "fediverse": "https://fosstodon.org/@bgruening",
+      "fediverse_flavor": "mastodon",
       "matrix": "bgruening:matrix.org",
       "orcid": "0000-0002-3079-6586",
       "linkedin": "bgruening",
@@ -43,6 +45,7 @@
   "tags": [
     "DDA"
   ],
+  "short_id": "T00216",
   "url": "/topics/proteomics/tutorials/labelfree-vs-labelled/tutorial.html",
   "topic_name": "proteomics",
   "tutorial_name": "labelfree-vs-labelled",

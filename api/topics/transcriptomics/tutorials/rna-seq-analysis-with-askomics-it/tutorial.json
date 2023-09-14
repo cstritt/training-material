@@ -52,6 +52,7 @@
         "lon": -1.64
       },
       "fediverse": "https://genomic.social/@abretaud",
+      "fediverse_flavor": "mastodon",
       "id": "abretaud",
       "url": "https://training.galaxyproject.org/training-material/api/contributors/abretaud.json",
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/abretaud/"
@@ -81,6 +82,7 @@
       "page": "https://training.galaxyproject.org/training-material/hall-of-fame/mboudet/"
     }
   ],
+  "short_id": "T00297",
   "url": "/topics/transcriptomics/tutorials/rna-seq-analysis-with-askomics-it/tutorial.html",
   "topic_name": "transcriptomics",
   "tutorial_name": "rna-seq-analysis-with-askomics-it",

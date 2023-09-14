@@ -17,7 +17,7 @@
 <script type="text/javascript">
 Sentry.init({
   dsn: "https://45e0ec6e4373462b92969505df37cf40@sentry.galaxyproject.org/10",
-  release: "galaxy-training-network@c7c213be450c13d64551e41fbe653db4c1b2095c",
+  release: "galaxy-training-network@ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf",
   integrations: [new Sentry.BrowserTracing(), new Sentry.Replay()],
   sampleRate: 0.1,
   tracesSampleRate: 0.1,
@@ -32,15 +32,21 @@ Sentry.init({
 </script>
 
         
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
-        <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
-        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
-        <link rel="stylesheet" href="/training-material/assets/fontawesome/css/all.css">
-        <link rel="stylesheet" href="/training-material/assets/css/academicons.css">
         <link rel="shortcut icon" href="/training-material/favicon.ico" type="image/x-icon">
         <link rel="alternate" type="application/atom+xml" href="/training-material/feed.xml">
         <link rel="canonical" href="https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-exceptions/tutorial.html">
         <link rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/training-material/assets/fonts/AtkinsonHyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" as="script" crossorigin>
+        <link rel="preload" href="/training-material/assets/css/main.css?v=3" as="style">
+        <link rel='preload' href='/training-material/assets/js/bundle.theme.js?v=1694703124' as='script'>
+<link rel='preload' href='/training-material/assets/js/bundle.main.js?v=1694703124' as='script'>
+        <link rel="stylesheet" href="/training-material/assets/css/main.css?v=3">
+        <link rel="manifest" href="/training-material/manifest.json">
+        <meta name="theme-color" content="#2c3143"/>
+
 
         <meta name="DC.identifier" content="https://github.com/galaxyproject/training-material">
 <meta name="DC.type" content="text">
@@ -60,7 +66,7 @@ Sentry.init({
         <meta property="og:title" content="Galaxy Training: Python - Try & Except">
         <meta property="og:description" content="These lessons will help you get your feet in data science...">
         
-        <meta property="og:image" content="/training-material/assets/images/GTN.png">
+        <meta property="og:image" content="/training-material/assets/images/GTNLogo1000.png">
 
         
         <script type="application/ld+json">
@@ -249,7 +255,7 @@ Sentry.init({
         
     </head>
     <body data-spy="scroll" data-target="#toc">
-        <script type="text/javascript" src="/training-material/assets/js/theme.js"></script>
+        <script src='/training-material/assets/js/bundle.theme.js?v=1694703124'></script>
         <header>
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="Site Navigation">
         <div class="container">
@@ -318,7 +324,7 @@ Sentry.init({
     </a>
     <div class="dropdown-menu dropdown-menu-right">
 
-        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/maintopics/data-science/tutorials/python-exceptions/tutorial.md" title="Edit on GitHub">
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/data-science/tutorials/python-exceptions/tutorial.md" title="Edit on GitHub">
           <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
         </a>
 
@@ -365,13 +371,13 @@ Sentry.init({
 
             <div id="archive-selector">
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/data-science/tutorials/python-exceptions/tutorial.html" title="Version 2022-03-01">2022-03-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-03-01/topics/data-science/tutorials/python-exceptions/tutorial.html">2022-03-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/data-science/tutorials/python-exceptions/tutorial.html" title="Version 2022-02-01">2022-02-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-02-01/topics/data-science/tutorials/python-exceptions/tutorial.html">2022-02-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/data-science/tutorials/python-exceptions/tutorial.html" title="Version 2022-01-01">2022-01-01</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2022-01-01/topics/data-science/tutorials/python-exceptions/tutorial.html">2022-01-01</a>
             
-                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/">Older Versions</a>
             </div>
 
         </div>
@@ -384,7 +390,7 @@ Sentry.init({
                     <li class="nav-item">
                       <div id="navbarSupportedContent" role="search">
                         <!-- Search form -->
-                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search2">
                           <i class="fas fa-search nav-link" aria-hidden="true"></i>
                           <div class="md-form mb-2">
                             <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
@@ -421,14 +427,7 @@ Sentry.init({
 
 
 
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-  room: 'Galaxy-Training-Network/Lobby'
-  };
-</script>
 
-
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <article class="tutorial topic-data-science">
     <h1 data-toc-skip>Python - Try & Except</h1>
@@ -438,7 +437,7 @@ Sentry.init({
     <div markdown="0">
 
 	<div class="contributors-line">
-		Authors: <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo"/><img src="https://avatars.githubusercontent.com/hexylena?s=27" alt="Avatar">Helena Rasche</a><a href="/training-material/hall-of-fame/dirowa/" class="contributor-badge contributor-dirowa"><img src="https://avatars.githubusercontent.com/dirowa?s=27" alt="Avatar">Donny Vrins</a><a href="/training-material/hall-of-fame/bazante1/" class="contributor-badge contributor-bazante1"><img src="https://avatars.githubusercontent.com/bazante1?s=27" alt="Avatar">Bazante Sanders</a>
+		Authors: <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge contributor-hexylena"><img src="/training-material/assets/images/orcid.png" alt="orcid logo" width="36" height="36"/><img src="https://avatars.githubusercontent.com/hexylena?s=36" alt="Avatar" width="36" height="36">Helena Rasche</a><a href="/training-material/hall-of-fame/dirowa/" class="contributor-badge contributor-dirowa"><img src="https://avatars.githubusercontent.com/dirowa?s=36" alt="Avatar" width="36" height="36">Donny Vrins</a><a href="/training-material/hall-of-fame/bazante1/" class="contributor-badge contributor-bazante1"><img src="https://avatars.githubusercontent.com/bazante1?s=36" alt="Avatar" width="36" height="36">Bazante Sanders</a>
 	</div>
 
 </div>
@@ -560,7 +559,7 @@ Sentry.init({
              The GTN Framework is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
         </div>
         
-        <div><strong>Short Link:</strong> <a href="https://gxy.io/GTN:T00086">https://gxy.io/GTN:T00086</a> </div>
+        <div><strong><i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>:</strong> <a href="https://gxy.io/GTN:T00086">https://gxy.io/GTN:T00086</a> </div>
         
     </blockquote>
     </section>
@@ -620,7 +619,7 @@ Sentry.init({
                 <p>Try/except are a construct in Python used to catch a potential exception. Sometimes things go wrong in your code! Or in someone else’s code in a module. Sometimes some errors might be expected like when you try and read a user supplied file, maybe it isn’t available because they’ve specified the wrong path.</p>
 
 <blockquote class="agenda">
-  <div class="box-title agenda-title" id="agenda">Agenda</div>
+  <div class="box-title agenda-title" id="agenda-1">Agenda</div>
 
   <p>In this tutorial, we will cover:</p>
 
@@ -662,7 +661,7 @@ Sentry.init({
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">mean</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">numbers</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="nc">ValueError</span><span class="p">(</span><span class="s">"You are calculating the mean of an empty list, which is not possible."</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="nc">ValueError</span><span class="p">(</span><span class="sh">"</span><span class="s">You are calculating the mean of an empty list, which is not possible.</span><span class="sh">"</span><span class="p">)</span>
     <span class="k">return</span> <span class="nf">sum</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span> <span class="o">/</span> <span class="nf">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 
 <span class="nf">mean</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
@@ -670,7 +669,7 @@ Sentry.init({
 </code></pre></div></div>
 
 <blockquote class="tip">
-  <div class="box-title tip-title" id="tip-where-do-valueerror-zerodivisionerror-come-from"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-where-do-valueerror-zerodivisionerror-come-from" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true"></i> Tip: Where do ValueError, ZeroDivisionError come from?<span class="fold-unfold fa fa-minus-square"></span></button></div>
+  <div class="box-title tip-title" id="tip-where-do-valueerror-zerodivisionerror-come-from-1"><button class="gtn-boxify-button tip" type="button" aria-controls="tip-where-do-valueerror-zerodivisionerror-come-from-1" aria-expanded="true"><i class="far fa-lightbulb" aria-hidden="true" ></i> Tip: Where do ValueError, ZeroDivisionError come from?<span class="fold-unfold fa fa-minus-square"></span></button></div>
   <p>There are loads of different types of exception codes! <a href="https://docs.python.org/3/library/exceptions.html">The python documentation has a large list</a> of exceptions and some descriptions for when or why those exceptions might be raised.</p>
 </blockquote>
 
@@ -683,22 +682,22 @@ Sentry.init({
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">try</span><span class="p">:</span>
     <span class="n">result</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Result is </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Result is </span><span class="si">{</span><span class="n">result</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">except</span> <span class="nb">ValueError</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="s">"We cannot calculate the mean"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">We cannot calculate the mean</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Here we use <code class="language-plaintext highlighter-rouge">try:</code> to setup a new block, and this code is <strong>tried</strong>, Python attempts to execute it. Below are one or more <code class="language-plaintext highlighter-rouge">except:</code> blocks which catch specific errors. Here we have specifically said we know a ValueError can happen, and decided to handle it.</p>
 
 <p>Or for another example, accessing a user supplied file. Oftentimes users will call your program and supply a non-existent, or inacessible file. Here you can use multiple <code class="language-plaintext highlighter-rouge">except</code> blocks to catch all of those potential errors.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">user_supplied_file</span> <span class="o">=</span> <span class="s">'does-not-exist.txt'</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">user_supplied_file</span> <span class="o">=</span> <span class="sh">'</span><span class="s">does-not-exist.txt</span><span class="sh">'</span>
 <span class="k">try</span><span class="p">:</span>
-    <span class="nf">open</span><span class="p">(</span><span class="n">user_supplied_file</span><span class="p">,</span> <span class="s">'r'</span><span class="p">)</span>
+    <span class="nf">open</span><span class="p">(</span><span class="n">user_supplied_file</span><span class="p">,</span> <span class="sh">'</span><span class="s">r</span><span class="sh">'</span><span class="p">)</span>
 <span class="k">except</span> <span class="nb">FileNotFoundError</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"The path you supplied (</span><span class="si">{</span><span class="n">user_supplied_file</span><span class="si">}</span><span class="s">) doesn't exist, please double check it!"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">The path you supplied (</span><span class="si">{</span><span class="n">user_supplied_file</span><span class="si">}</span><span class="s">) doesn</span><span class="sh">'</span><span class="s">t exist, please double check it!</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">except</span> <span class="n">PermissionError</span><span class="p">:</span>
-    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"You supplied a valid file, but it is unreadable. Try changing it's permissions with `chmod +r </span><span class="si">{</span><span class="n">user_supplied_file</span><span class="si">}</span><span class="s">`"</span><span class="p">)</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">You supplied a valid file, but it is unreadable. Try changing it</span><span class="sh">'</span><span class="s">s permissions with `chmod +r </span><span class="si">{</span><span class="n">user_supplied_file</span><span class="si">}</span><span class="s">`</span><span class="sh">"</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Failing to open a file raises a <code class="language-plaintext highlighter-rouge">FileNotFoundError</code> which indicates the file isn’t available, and <code class="language-plaintext highlighter-rouge">PermissionError</code> indicates that a file is unreadable. However in practice, sometimes you’ll see something like this:</p>
@@ -719,8 +718,8 @@ except:
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">os</span>
 
 <span class="k">try</span><span class="p">:</span>
-    <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="s">'gene_query.fa'</span><span class="p">,</span> <span class="s">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">handle</span><span class="p">:</span>
-        <span class="n">handle</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="s">"&gt;some fasta sequence we want to search against a database"</span><span class="p">)</span>
+    <span class="k">with</span> <span class="nf">open</span><span class="p">(</span><span class="sh">'</span><span class="s">gene_query.fa</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">w</span><span class="sh">'</span><span class="p">)</span> <span class="k">as</span> <span class="n">handle</span><span class="p">:</span>
+        <span class="n">handle</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="sh">"</span><span class="s">&gt;some fasta sequence we want to search against a database</span><span class="sh">"</span><span class="p">)</span>
 
     <span class="c1"># runQuery('gene_query.fa')
 </span>
@@ -728,12 +727,12 @@ except:
 </span>    <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="c1"># And now our results are invalid.
-</span>    <span class="nf">print</span><span class="p">(</span><span class="s">"Something went wrong! Oh no! Check your inputs."</span><span class="p">)</span>
+</span>    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Something went wrong! Oh no! Check your inputs.</span><span class="sh">"</span><span class="p">)</span>
 <span class="k">finally</span><span class="p">:</span>
     <span class="c1"># So we should cleanup this temporary file we created, so it doesn't cause
 </span>    <span class="c1"># problems or distract the user from the results file.
 </span>    <span class="c1"># This function will delete a file from your computer:
-</span>    <span class="n">os</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="s">'gene_query.fa'</span><span class="p">)</span>
+</span>    <span class="n">os</span><span class="p">.</span><span class="nf">remove</span><span class="p">(</span><span class="sh">'</span><span class="s">gene_query.fa</span><span class="sh">'</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h2 id="fallback">Fallback</h2>
@@ -805,6 +804,9 @@ except BlastNotAvailable:
                             Helena Rasche, Donny Vrins, Bazante Sanders,  <b>Python - Try & Except (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-exceptions/tutorial.html">https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-exceptions/tutorial.html</a> Online; accessed TODAY
                         </li>
                         <li>
+                        Hiltemann, Saskia, Rasche, Helena et al., 2023 <b>Galaxy Training: A Powerful Framework for Teaching!</b> PLOS Computational Biology <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010752">10.1371/journal.pcbi.1010752</a>
+                        </li>
+                        <li>
                         Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
                         </li>
                     </ol>
@@ -826,12 +828,12 @@ except BlastNotAvailable:
 
 <code id="citation-code">@misc{data-science-python-exceptions,
 author = "Helena Rasche and Donny Vrins and Bazante Sanders",
-title = "Python - Try & Except (Galaxy Training Materials)",
-year = "",
-month = "",
-day = ""
-url = "\url{https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-exceptions/tutorial.html}",
-note = "[Online; accessed TODAY]"
+	title = "Python - Try & Except (Galaxy Training Materials)",
+	year = "",
+	month = "",
+	day = ""
+	url = "\url{https://training.galaxyproject.org/training-material/topics/data-science/tutorials/python-exceptions/tutorial.html}",
+	note = "[Online; accessed TODAY]"
 }
 @article{Hiltemann_2023,
 	doi = {10.1371/journal.pcbi.1010752},
@@ -916,19 +918,19 @@ tools: []
 				The GTN infrastructure is licensed under <a rel="license" href="https://github.com/galaxyproject/training-material/blob/main/LICENSE.md">MIT</a>
 				</p>
 				<p>
-				Revision <a href="https://github.com/galaxyproject/training-material/commit/c7c213be450c13d64551e41fbe653db4c1b2095c">c7c213b</a>, built with Jekyll (4.3.2 | production)
+				Revision <a href="https://github.com/galaxyproject/training-material/commit/ccccd1fb4d0598ecdaabad8b57a5835f5cd13dcf">ccccd1f</a>, built with Jekyll (4.3.2 | production)
 				</p>
 			</div>
 			<div class="col-sm-6" style="text-align: right">
 				
 				<p>
-					Resource <abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00086">https://gxy.io/GTN:T00086</a>
+					Resource <i class="fas fa-fingerprint" aria-hidden="true"></i><span class="visually-hidden">purl</span><abbr title="Persistent URL">PURL</abbr>: <a href="https://gxy.io/GTN:T00086">https://gxy.io/GTN:T00086</a>
 				</p>
 				
 				<p>
 					<i>This Material</i>:
 					
-					It is licensed under
+					is licensed under
 					<a rel="license" href="https://spdx.org/licenses/CC-BY-4.0">
 						Creative Commons Attribution 4.0 International License
 					</a>
@@ -947,41 +949,8 @@ tools: []
     </div>
 </footer>
 
-        <script src="/training-material/assets/js/jquery.slim.min.js"></script>
-        <script src="/training-material/assets/js/popper.min.js"></script>
-        <script src="/training-material/assets/js/bootstrap.min.js?v=3"></script>
-        <script src="/training-material/assets/js/details-element-polyfill.js"></script>
+
+        <script src='/training-material/assets/js/bundle.main.js?v=1694703124'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script src="/training-material/assets/js/bootstrap-toc.min.js"></script>
-        <script src="/training-material/assets/js/main.js"></script>
-        <script src="/training-material/assets/js/clipboard.min.js"></script>
-        <script>
-        document.querySelectorAll('div.highlight').forEach((snippet) => {
-                // Google translate has additional #text nodes mixed in with
-                // the pre for some reason.
-                var gtn_snippet_pres = [...snippet.childNodes].filter(x => x.tagName == "PRE")
-                if(gtn_snippet_pres && gtn_snippet_pres.length > 0){
-                        gtn_snippet_pres[0].insertAdjacentHTML('beforebegin','<button class="btn btn-light" data-clipboard-snippet tabindex="0"><i class="fa fa-copy"></i>&nbsp;Copy</button>');
-                }
-        });
-
-        var clipboardSnippets=new ClipboardJS('[data-clipboard-snippet]',{
-            target:function(trigger){return trigger.nextElementSibling;
-        }});
-        </script>
-        
-
-        <script type="text/javascript">
-            if(window.location.hostname === "galaxyproject.github.io") {
-                // Redirect
-                var redirect = "https://training.galaxyproject.org" + window.location.pathname + window.location.search;
-                $('div.container.main-content').prepend("<div class='alert alert-warning'><strong>Note: </strong>This content has a new home at <a href=\"" + redirect + "\">" + redirect + "</a>, which you will be redirected to in 5 seconds.</div>");
-
-                window.setTimeout(function(){
-                    window.location.href = redirect;
-                }, 5000)
-
-            }
-        </script>
     </body>
 </html>

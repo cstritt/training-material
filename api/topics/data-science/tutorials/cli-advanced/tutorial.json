@@ -90,6 +90,7 @@
       "joined": "2017-09",
       "elixir_node": "nl",
       "fediverse": "https://galaxians.garden/hexylena",
+      "fediverse_flavor": "akkoma",
       "contact_for_training": false,
       "location": {
         "country": "NL",
@@ -133,6 +134,7 @@
   "tags": [
     "bash"
   ],
+  "short_id": "T00074",
   "url": "/topics/data-science/tutorials/cli-advanced/tutorial.html",
   "topic_name": "data-science",
   "tutorial_name": "cli-advanced",
