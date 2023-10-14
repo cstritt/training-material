@@ -190,8 +190,8 @@
       "supported_servers": {
         "exact": [
           {
-            "url": "https://galaxy.genouest.org",
-            "name": "Galaxy@GenOuest",
+            "url": "https://galaxy.mesocentre.uca.fr",
+            "name": "Galaxy@AuBi",
             "usegalaxy": "false"
           },
           {
@@ -1756,11 +1756,6 @@
       ],
       "supported_servers": {
         "exact": [
-          {
-            "url": "https://galaxy.genouest.org",
-            "name": "Galaxy@GenOuest",
-            "usegalaxy": "false"
-          },
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
@@ -3498,11 +3493,6 @@
       "supported_servers": {
         "exact": [
           {
-            "url": "https://galaxy.genouest.org",
-            "name": "Galaxy@GenOuest",
-            "usegalaxy": "false"
-          },
-          {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
             "usegalaxy": "true"
@@ -3949,11 +3939,6 @@
       ],
       "supported_servers": {
         "exact": [
-          {
-            "url": "https://galaxy.genouest.org",
-            "name": "Galaxy@GenOuest",
-            "usegalaxy": "false"
-          },
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",

@@ -55,8 +55,8 @@
   "supported_servers": {
     "exact": [
       {
-        "url": "https://galaxy.genouest.org",
-        "name": "Galaxy@GenOuest",
+        "url": "https://galaxy.mesocentre.uca.fr",
+        "name": "Galaxy@AuBi",
         "usegalaxy": "false"
       },
       {
