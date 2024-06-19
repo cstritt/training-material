@@ -175,6 +175,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.org.au",
             "name": "UseGalaxy.org.au",
             "usegalaxy": "true"
@@ -331,6 +336,11 @@
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -1005,6 +1015,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.org.au",
             "name": "UseGalaxy.org.au",
             "usegalaxy": "true"
@@ -1154,6 +1169,11 @@
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -1346,6 +1366,11 @@
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -1573,6 +1598,11 @@
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -2042,6 +2072,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.org.au",
             "name": "UseGalaxy.org.au",
             "usegalaxy": "true"
@@ -2355,6 +2390,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.org.au",
             "name": "UseGalaxy.org.au",
             "usegalaxy": "true"
@@ -2529,6 +2569,11 @@
           {
             "url": "https://usegalaxy.no/",
             "name": "UseGalaxy.no",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -2723,6 +2768,11 @@
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -2967,6 +3017,11 @@
             "usegalaxy": "true"
           },
           {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          },
+          {
             "url": "https://usegalaxy.org.au",
             "name": "UseGalaxy.org.au",
             "usegalaxy": "true"
@@ -3177,6 +3232,11 @@
           {
             "url": "https://usegalaxy.eu",
             "name": "UseGalaxy.eu",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
@@ -3489,7 +3549,11 @@
       ],
       "supported_servers": {
         "exact": [
-
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
+            "usegalaxy": "true"
+          }
         ],
         "inexact": [
 
@@ -3668,6 +3732,11 @@
           {
             "url": "https://usegalaxy.fr/",
             "name": "UseGalaxy.fr",
+            "usegalaxy": "true"
+          },
+          {
+            "url": "https://usegalaxy.org",
+            "name": "UseGalaxy.org (Main)",
             "usegalaxy": "true"
           },
           {
